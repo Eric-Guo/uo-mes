@@ -1,0 +1,121 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{225F7893-550B-4569-B8ED-6CAD5A72041D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UO_Service</RootNamespace>
+    <AssemblyName>UO_Service</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ServiceModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\Microsoft.NET\Framework\v3.0\Windows Communication Foundation\System.ServiceModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.OpenAccess, Version=2008.3.1110.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App.config" />
+    <EmbeddedResource Include="Resx\MSG.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MSG.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resx\MSG.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Base\ObjectScopeProvider.cs" />
+    <Compile Include="Base\NamedObjectMaint.cs" />
+    <Compile Include="Base\RevisionedObjectMaint.cs" />
+    <Compile Include="Base\Service.cs" />
+    <Compile Include="Base\ServiceDetail.cs" />
+    <Compile Include="Base\ShopFloor.cs" />
+    <Compile Include="Base\UOServiceException.cs" />
+    <Compile Include="CompoundTxn\CompoundTxn.cs" />
+    <Compile Include="CompoundTxn\MoveOut.cs" />
+    <Compile Include="ContainerTxn\Associate.cs" />
+    <Compile Include="ContainerTxn\CollectData.cs" />
+    <Compile Include="ContainerTxn\Combine.cs" />
+    <Compile Include="ContainerTxn\ComponentIssue.cs" />
+    <Compile Include="ContainerTxn\ComponentRemove.cs" />
+    <Compile Include="ContainerTxn\ContainerTxn.cs" />
+    <Compile Include="ContainerTxn\Defect.cs" />
+    <Compile Include="ContainerTxn\Disassociate.cs" />
+    <Compile Include="ContainerTxn\Hold.cs" />
+    <Compile Include="ContainerTxn\MoveIn.cs" />
+    <Compile Include="ContainerTxn\MoveTxn.cs" />
+    <Compile Include="ContainerTxn\Release.cs" />
+    <Compile Include="ContainerTxn\Serialize.cs" />
+    <Compile Include="ContainerTxn\Split.cs" />
+    <Compile Include="ContainerTxn\Start.cs" />
+    <Compile Include="ContainerTxn\Thruput.cs" />
+    <Compile Include="Inquery\Inquery.cs" />
+    <Compile Include="Inquery\QueryContainer.cs" />
+    <Compile Include="Inquery\QueryResource.cs" />
+    <Compile Include="Inquery\QuerySpec.cs" />
+    <Compile Include="Maint\MfgOrderMaint.cs" />
+    <Compile Include="Maint\SpecMaint.cs" />
+    <Compile Include="ResourceTxn\CollectResourceData.cs" />
+    <Compile Include="ResourceTxn\ResourceSetup.cs" />
+    <Compile Include="ResourceTxn\ResourceThruput.cs" />
+    <Compile Include="ResourceTxn\ResourceTxn.cs" />
+    <Compile Include="Providers\MESProfileProvider.cs" />
+    <Compile Include="Providers\MESMemberShipProvider.cs" />
+    <Compile Include="Providers\MESRoleProvider.cs" />
+    <Compile Include="Providers\MESSiteMapProvider.cs" />
+    <Compile Include="Resx\MSG.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MSG.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UO_Model\UO_Model.csproj">
+      <Project>{EA2CB1A1-AC03-4C9B-A021-4049FCAE3A6C}</Project>
+      <Name>UO_Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties OpenAccess_ConfigFile="App.config" OpenAccess_ConnectionId="MES_SQLExpress_DBConnection" OpenAccess_Enhancing="False" OpenAccess_UpdateDatabase="False" OpenAccess_EnhancementOutputLevel="1" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

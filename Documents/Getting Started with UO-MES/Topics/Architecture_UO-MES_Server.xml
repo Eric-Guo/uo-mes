@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic template="Default" lasteditedby="Administrator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">UO MES应用服务器</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">UO MES应用服务器</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">UO MES应用服务器中包含了真正的工厂模型和业务逻辑规则，所有的工厂业务事务处理请求在UO MES应用服务器中都是使用以面向对象技术处理的，这意味着UO MES能够提供良好的数据库保护机制和事务处理机制。</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">UO MES应用服务器的底层ORM服务则负责RDBMS（关系数据库系统）和Object Model（对象模型）之间的转换和维护，使得用户在书写业务逻辑规则的时候不必关心底层RDBMS的操作，同样，自动维护的RDBMS也使得用户熟悉的已有的SQL工具可以在UO MES继续使用。</text></para>
+  </body>
+</topic>

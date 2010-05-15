@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic template="Default" lasteditedby="Administrator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">客户端</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">客户端</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">UO MES的架构将用户界面和业务逻辑完全分离，这使得完全替换客户端而不影响业务逻辑的执行成为可能，也使得系统功能更新部署更加方便。在具体MES实施过程中，设备自动化程序也可以作为一种客户端同UO MES通讯。</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">客户端UO MES出厂即支持的协议有：WCF(Windows Communication Foundation)，包括Web Service, MSMQ, COM+及WSE扩展协议。</text></para>
+  </body>
+</topic>

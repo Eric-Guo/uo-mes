@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic template="Default" lasteditedby="Eric" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">MES各组件的概念</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">MES各组件的概念</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">MES定制开发主要是改变、增强、扩展MES中的各个组件，在进行具体定制开发工作前，掌握UO MES各个组件的概念、用法和用途将使您更加容易了解定制开发中各步骤的目的，有利于培养您对UO MES的全局操纵感，因此在开始具体开发工作前，仔细阅读本章内容是很有必要的。</text></para>
+  </body>
+</topic>

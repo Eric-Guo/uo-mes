@@ -1,0 +1,110 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="General.master.cs" Inherits="UO_WebApplication.General" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="UO MES WebApplication" />
+    <title>UO MES</title>
+    <script type="text/javascript" src="/src/FormSubmit.js"></script>
+    <script type="text/javascript" src="/src/jquery-1.3.2.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#uologo-toggle").toggle(function(e) {
+                $(e.target).html(msgShow);
+                $("#mainnav-container").hide("slow");
+                $("#pageheader").hide("fast");
+            }, function(e) {
+                $(e.target).html(msgHide);
+                $("#mainnav-container").show("fast");
+                $("#pageheader").show("slow");
+            });
+            $("input.button").hover(function(e) {
+                $(e.target).addClass("button_hov");
+            }, function(e) {
+                $(e.target).removeClass("button_hov");
+            });
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="Head1" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+<div id="container">
+<form id="form1" runat="server">
+<div id="header">
+    <div id="mainnav-container" class="nav">
+      <div id="mainnav">
+        <ul>
+          <asp:Repeater ID="mainnavRepeater" runat="server" DataSourceID="SiteMapDataSource">
+            <ItemTemplate>
+                <li><b<%# (((SiteMapNode)Container.DataItem).Provider.CurrentNode == (SiteMapNode)Container.DataItem) ? " class='on'" : "" %>><a href='<%# ((SiteMapNode)Container.DataItem).Url %>' title='<%# ((SiteMapNode)Container.DataItem).Description %>'><%# ((SiteMapNode)Container.DataItem).Title %></a></b></li>
+            </ItemTemplate>
+          </asp:Repeater>
+        </ul>
+      </div>      
+      <div id="mainnav-side">
+          <asp:LoginView ID="LoginView1" runat="server">
+            <AnonymousTemplate>
+              <asp:LoginStatus ID="LoginStatus1" runat="server" />
+            </AnonymousTemplate>
+            <LoggedInTemplate>
+              <asp:LoginName ID="LoginName1" runat="server" />&nbsp;
+              <asp:LoginStatus ID="LoginStatus1" runat="server" />
+            </LoggedInTemplate>
+          </asp:LoginView>
+      </div>
+      <i class="mainnav-left"></i>
+      <i class="mainnav-right"></i>
+    </div>
+    <div id="pageheader">
+        <h1><span>Universal Object MES</span></h1>
+        <h2><span>your manufacture evolutionary force</span></h2>
+    </div>
+    <div id="breadcrumb-container">  
+      <div id="breadcrumb"> 
+          <a id="uologo-toggle" href="#" title="Show or Hide the header and navigator bar"><asp:Localize ID="locHide1" runat="server" Text="<%$ Resources:SiteMap,Hide %>" /></a>&nbsp;&nbsp;&nbsp;
+          <asp:SiteMapPath ID="SiteMapPath1" runat="server"></asp:SiteMapPath>  
+      </div>
+      <div id="breadcrumb-side">
+          <input onfocus="this.select()" onblur="if (this.value==''){this.value='enter search phrase here'}" id="search" name="search" type="text" class="searchbox" accesskey="4" value="enter search phrase here" size="20" />
+          <input class="button-search" name="Search" type="button" value="Search" />
+      </div>
+      <i class="bc-tl"></i>
+      <i class="bc-tr"></i>
+      <i class="bc-br"></i>
+      <i class="bc-bl"></i>
+    </div>
+</div>
+<div id="content-container">
+    <div id="content-side">
+        <ul class="link-list-vertical">
+          <asp:Repeater ID="contentSideRepeater" runat="server" DataSourceID="CurrentSiteMapDataSource">
+            <ItemTemplate><li><a href='<%# ((SiteMapNode)Container.DataItem).Url %>' title='<%# ((SiteMapNode)Container.DataItem).Description %>' ><%# ((SiteMapNode)Container.DataItem).Title %></a></li></ItemTemplate>
+          </asp:Repeater>        
+        </ul>
+    </div>
+  <div id="content">
+      <asp:ContentPlaceHolder ID="Holder1" runat="server">
+      Here is the ContentPlaceHolder1 text to be replace
+      </asp:ContentPlaceHolder>
+  </div>
+    <div id="footer">
+        <asp:ContentPlaceHolder ID="Footer1" runat="server">
+          <p style="text-align:center">Room 703, Building 26<br />
+          Lang 1299 Zhou Jia Zui Road, Shanghai 200092 China<br />
+          (021) 5596-8815<br />
+            Copyright &copy; 2008 UO Consultant Co., Ltd</p>
+        </asp:ContentPlaceHolder>
+        <i class="footer-tl"></i>
+        <i class="footer-tr"></i>
+        <i class="footer-br"></i>
+        <i class="footer-bl"></i>
+    </div>
+</div>
+<asp:SiteMapDataSource ID="SiteMapDataSource" runat="server" ShowStartingNode="false" />
+<asp:SiteMapDataSource ID="CurrentSiteMapDataSource" runat="server" ShowStartingNode="false" StartFromCurrentNode="true"/>
+</form>
+</div>
+<!-- These extra divs/spans may be used as catch-alls to add extra imagery. -->
+<div id="extraDiv1"><span></span></div><div id="extraDiv2"><span></span></div><div id="extraDiv3"><span></span></div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic template="Default" lasteditedby="Administrator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">定制UO MES</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">定制UO MES</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">在这一章中，将简要介绍如何定制UO MES，定制UO MES不仅仅为了符合您所在公司和行业的生产特征特点，更重要的是能够使您完全了解和控制工厂的生产状况，最终通过可执行的精益生产提高企业效益。</text></para>
+  </body>
+</topic>

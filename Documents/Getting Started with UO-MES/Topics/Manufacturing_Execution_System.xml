@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic template="Default" lasteditedby="Eric" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">制造执行系统(MES)</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">制造执行系统(MES)</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">MES(制造执行系统 Manufacturing Execution System，简称MES) 它定义为位于企业上层ERP与底层设备自动控制系统（CS）之间的、面向车间层的管理系统.是生产与管理间的桥梁。MES作为生产形态变革的产物，其起源来自工厂的内部需求。</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">上个世纪八十年代，MRPII在美国生产与库存管理协会（APICS）大力宣传和组织推动下得到了迅速的普及和广泛应用。推广过程中，MRP II也暴露出一些不足之处，如MRP II对预测需求和销售管理不够重视，对车间的大量实时事件与数据不能很好地利用等等。许多企业认识到，需要其它系统来解决MRPII在这些方面管理薄弱的问题。于是，为了满足销售、预测的需求，产生了分销资源计划DPR（Distribution Resource Planning）。同样，为了强化车间的执行功能，制造执行系统（MES）也就应运而生。制造执行系统的典型功能有生产系统建模、在制品状态监控、生产准备配置、生产过程监控和数据采集、产品状态查询、跟踪和追溯、创建及管理日常报表所需的数据和条码生成, 订单管理,打印等辅助功能。</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">MES起初是针对一个特定的、规范化的环境而设计的，实现了与上层事务处理和下层实时控制系统的集成，却常常难以与其它应用系统集成。后来AMR研究小组在分析信息技术的发展和MES应用前景的基础上，提出了可集成MES（Integratable MES，I-MES）这一概念。到90年代，MES发展为I-MES（集成MES）和MES-Ⅱ（Manufacturing Execution Solutions）。这样MES则作为整个工厂生产现场的集成系统出现，故又称为Integrated MES（E-MES）。90年代中期，又提出了MES标准化和功能组件化、模块化的思路。这时，许多MES软件实现了组件化，也方便了集成和整合，这样用户根据需要就可以灵活快速地构建自己的MES。</text></para>
+  </body>
+</topic>

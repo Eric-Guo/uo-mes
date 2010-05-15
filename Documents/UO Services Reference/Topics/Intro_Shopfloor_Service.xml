@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic template="Default" lasteditedby="Administrator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">UO车间层服务</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">UO MES车间层服务</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">车间层服务是U0 MES服务中最被常用的服务，它提供了一系列用户日常操作工作的事务功能。UO MES车间层包含了批次服务，设备服务和组合服务。</text></para>
+  </body>
+</topic>

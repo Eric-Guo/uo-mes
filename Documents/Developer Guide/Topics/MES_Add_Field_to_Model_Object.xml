@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic template="Default" lasteditedby="Eric" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">添加字段到模型对象</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">添加字段到模型对象</text></para>
+    </header>
+    <para styleclass="Normal"><link displaytype="text" defaultstyle="true" type="topiclink" href="Concept_Model_Object" styleclass="Normal" translate="true">模型对象</link><text styleclass="Normal" translate="true">是工厂模型中的的组成部分，特定行业或者工厂中的某个模型对象必然有着一些特殊于UO MES通用模型的地方，绝大多数的情况下，这些特殊情况都可以通过在UO MES的通用模型对象上添加额外的字段来描述，因此添加字段到模型对象也是最常发生的MES定制操作。</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">通过下列流程添加一个字段到模型对象：</text></para>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">1.确定新加字段的类型</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">和标准的.NET类型一致，字段类型分两种，值类型或者引用类型，从数据库角度看，值类型是直接纪录数据值的类型，引用类型则记录相应引用的模型对象的ID。</text></para>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">2.在模型对象所对应的类中添加字段</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">类中添加字段(Field)必须为private，然后用public的属性(Property)包裹字段，命名规则是private的字段名字第一个word首字母小写，其后Word为大写，对应public的属性的第一个首字母大写，其余和private相同。</text></para>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">3.更新模型对象相应app.config（可选）</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">若新增的字段类型为引用类型，且名称和类型不一致，或者引用类型为Code, Status或者Reason结尾的模型对象，则需要找到对应模型对象在app.config中的条目，显式指定新字段对应数据库列的名称，例如Container的StartReason就需要，因为它以Reason结尾：</text></para>
+    <para styleclass="Code Example"><text styleclass="Code Example" translate="true">&lt;field name=&quot;startReason&quot;&gt;</text></para>
+    <para styleclass="Code Example"><text styleclass="Code Example" translate="true"> &#160; &#160;&lt;extension key=&quot;db-column&quot;&gt;</text></para>
+    <para styleclass="Code Example"><text styleclass="Code Example" translate="true"> &#160; &#160; &#160; &#160;&lt;extension key=&quot;db-column-name&quot; value=&quot;StartReason_ID&quot; /&gt;</text></para>
+    <para styleclass="Code Example"><text styleclass="Code Example" translate="true"> &#160; &#160;&lt;/extension&gt;</text></para>
+    <para styleclass="Code Example"><text styleclass="Code Example" translate="true">&lt;/field&gt;</text></para>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">4.更新相关AssignTo方法（可选）</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">有些模型对象的定义类中有AssignTo方法，这些AssignTo方法会被相应UO MES服务调用，因此若在这些模型对象中添加新字段，也需要在AssignTo方法中添加该字段。</text></para>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">5.生成UO Model项目并更新UO MES数据库</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">添加完新字段，UO Model项目生成成功后，最后需要运行MigrateDB.bat或者类似的数据库升级脚本，UO MES会维护该字段在数据库中的对应数据列。</text></para>
+  </body>
+</topic>

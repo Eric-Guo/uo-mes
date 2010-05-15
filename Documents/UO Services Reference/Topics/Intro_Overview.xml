@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic template="Default" lasteditedby="Administrator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">UO MES服务概览</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">UO MES服务概览</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">UO MES服务(UO Service)是UO MES提供的唯一进行各类生产操作、动作，进而修改数据库的服务。用户通过调用UO MES服务对UO MES中的各类对象进行操作。</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">从数据库层面看，UO Service封装了数据库的事务处理和更新修改操作，可以让用户可以通过统一的面向对象方式进行各类操作。UO MES服务通过继承来分类，子类可继承父类的行为和动作，当然，用户也可以在新定义的子类中重新定义行为。</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">UO MES服务鼓励用户通过组合已有的UO MES服务来定制特定工厂的生产操作行为，这类服务在UO MES服务中称为组合服务(Compound Service)。</text></para>
+  </body>
+</topic>

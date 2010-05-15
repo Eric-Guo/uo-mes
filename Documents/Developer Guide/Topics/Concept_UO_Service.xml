@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic template="Default" lasteditedby="Eric" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">UO Service服务</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">UO Service服务</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">UO Service是UO MES提供的业务操作服务，业务操作是指那些工厂中时时刻刻都发生的生产相关动作，比如报告某个产品批次的废品情况，统计某个批次的数量并运输到下一工序等等。</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">从数据库角度看一个完整的UO Service就是一次数据库事务，要么这个业务操作全部成功，进而用户达到通过这个Service服务改变UO Model工厂模型状态的目的，要么此次业务操作由于不满足某个工厂模型已定义的约束，从而导致本次业务操作全部取消，并报错给用户。</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">UO Service服务根据操作目的不同和实现的不同，同UO Model模型对象类似也可以按照命名空间和继承基类来划分。</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">UO Service服务的相关命名空间和用途如下：</text></para>
+    <para styleclass="Normal"><table styleclass="Default" rowcount="6" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:128px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">命名空间</text></para>
+        </td>
+        <td style="width:523px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">用途</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:128px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">Base</text></para>
+        </td>
+        <td style="width:523px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">UO Service的基类所在的命名空间，用户不应该更改在此命名空间下的对象</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:128px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">ContainerTxn</text></para>
+        </td>
+        <td style="width:523px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">包含同批次直接相关的业务操作服务</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:128px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">ResourceTxn</text></para>
+        </td>
+        <td style="width:523px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">包含操作工厂中的资源（最主要是设备）相关的业务操作服务</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:128px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">Maint</text></para>
+        </td>
+        <td style="width:523px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">特定的模型对象维护服务所在的命名空间</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:128px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">CompoundTxn</text></para>
+        </td>
+        <td style="width:523px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">复合业务操作服务所在命名空间</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">UO Service服务可供继承的基类和用途如下：</text></para>
+    <para styleclass="Normal"><table styleclass="Default" rowcount="9" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:129px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">基类</text></para>
+        </td>
+        <td style="width:521px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">用途</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:129px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">Service</text></para>
+        </td>
+        <td style="width:521px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">提供了开发定制UO Service的基本函数和功能，不推荐直接从此派生Service服务</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:129px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">ServiceDetail</text></para>
+        </td>
+        <td style="width:521px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">是业务操作服务明细的基类，若业务操作服务需要操作明细可以从这里继承</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:129px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">NamedObjectMaint</text></para>
+        </td>
+        <td style="width:521px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">命名对象维护服务基类，若特定命名对象维护服务需要特殊操作，可从此处派生</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:129px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">RevisionedObjectMaint</text></para>
+        </td>
+        <td style="width:521px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">版本对象维护服务基类，若特定版本对象维护服务需要特殊操作，可从此处派生</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:129px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">ShopFloor</text></para>
+        </td>
+        <td style="width:521px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">生产业务流程服务基类，不能归纳到下述操作服务的新服务可以从此处派生</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:129px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">ContainerTxn</text></para>
+        </td>
+        <td style="width:521px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">批次操作服务基类，单独更改生产批次的新操作服务从此处派生</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:129px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">ResourceTxn</text></para>
+        </td>
+        <td style="width:521px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">资源操作服务基类，单独更改工厂模型中的资源新操作服务从此处派生</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:129px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">CompoundTxn</text></para>
+        </td>
+        <td style="width:521px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">组合生产操作基类，将已有操作服务组合后的新服务从此处派生</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">绝大多数定制UO Service服务都将从ShopFloor派生，一个特定的ShopFloor服务将首先完成检验操作服务输入参数的工作(</text><text style="font-family:新宋体; font-size:9pt; color:#000000;" translate="true">ValidateService</text><text styleclass="Normal" translate="true">)，然后再完成特定的制造动作(</text><text style="font-family:新宋体; font-size:9pt; color:#000000;" translate="true">ModifyEntity</text><text styleclass="Normal" translate="true">)，这将使得对应于工厂的MES模型改变，最后MES系统还有责任记录下这次操作的输入和输出结果(</text><text style="font-family:新宋体; font-size:9pt; color:#000000;" translate="true">RecordServiceHistory</text><text styleclass="Normal" translate="true">)。</text></para>
+  </body>
+</topic>

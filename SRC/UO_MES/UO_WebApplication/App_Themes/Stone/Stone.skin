@@ -1,0 +1,12 @@
+﻿<%--
+Just Copy From EcoMES, do not modify this, only paste from EcoMES.skin
+--%>
+<asp:DropDownList runat="server" CssClass="field" />
+<asp:TextBox runat="server" CssClass="field" />
+<asp:TextBox runat="server" SkinId="container_input" CssClass="container_input" />
+<asp:GridView runat="server" CssClass="table" RowStyle-CssClass="table-row-1" AlternatingRowStyle-CssClass="table-row-2" />
+<asp:Button runat="server" CssClass="button" />
+<asp:Button runat="server" SkinId="clear" />
+<asp:Login runat="server" >
+    <LoginButtonStyle CssClass="button" />
+</asp:Login>

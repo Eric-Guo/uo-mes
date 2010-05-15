@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic template="Default" lasteditedby="Administrator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">UO MES的基本模块</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">UO MES的基本模块</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">UO MES 由以下一系列模块组成。你可以把这些模块分布安装在不同的计算机上。比如在一台服务器安装Web程序和应用服务器供操作人员使用,开发人员则安装开发模块在另外的计算机上。</text></para>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">管理工具:</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">数据库更新管理</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">数据库归档管理</text></para>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">UO MES应用服务器:</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">UO Service业务逻辑服务</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Web Application网页应用程序服务</text></para>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">开发模块:</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">业务逻辑</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">操作界面</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">报表</text></para>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">客户端:</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Excel建模工具</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">操作客户端</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">报表</text></para>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">集成客户端：</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">WCF服务</text></para>
+  </body>
+</topic>

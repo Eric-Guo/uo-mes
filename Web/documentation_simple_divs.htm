@@ -1,0 +1,1592 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="robots" content="none" />
+<meta name="googlebot" content="noarchive,nofollow" />
+<title>Microsoft Visual Studio Documentation for the DIV &quot;Simple&quot; Design Template</title>
+<style type="text/css">
+<!--
+body {
+	font-family: "trebuchet MS", tahoma, verdana, arial, helvetica, sans-serif;
+	color: #666666;
+	font-size:.95em;
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+}
+acronym, abbr {
+	cursor:help;
+	color:#0B650B;
+	}
+	
+.example {
+	background-color:#EAEAEA;
+	border:1px solid #E5E5E5;
+	padding:20px;
+	margin:0px 40px;
+	}
+	
+.constant-font-size {
+	font-size:18px
+	}
+	
+.relative-font-size { 
+	font-size: 120%
+	}
+
+code {
+	color:#990000;
+	font-family:"Courier New", Courier, monospace;
+	font-size:.9em;
+}
+pre {
+	font-size:1em;
+	}
+h1, h2, h3, h4, h5, h6 {
+	color:#000000;
+}
+
+h3, h2 {
+	margin:40px 0px 0px 0px;
+	padding:30px 10px;
+	font-size:1.6em;
+	background-color:#FFFFCC;
+	}
+h5 {
+	font-size:.9em;
+	}
+
+.toclink {
+	background-color:#FFFFCC;
+	width:120px;
+	text-align:center;
+	padding:6px 0px;
+	font-size:.8em;
+	border-top:1px solid #F3F3C2;
+	}
+#mainmenu ul {
+ margin:0px;
+ padding:0px;
+}
+
+#mainmenu ul li{
+ list-style:none;
+ display:inline;
+ text-transform:uppercase;
+ font-size:.8em;
+ margin:2px;
+ padding:0px 5px;
+ background: #CCCCCC;
+ border:1px solid black;
+} 
+#mainmenu ul a {
+ text-decoration:none;
+}
+#mainmenu-vertical ul {
+ margin:0px;
+ padding:0px;
+}
+
+#mainmenu-vertical ul li{
+	list-style:none;
+	display:block;
+	text-transform:uppercase;
+	font-size:0.8em;
+	margin:3px;
+	padding:0px 2px;
+	background: #CCCCCC;
+	border:1px solid black;
+	width: 140px;
+} 
+#mainmenu-vertical ul a {
+ text-decoration:none;
+}
+.table {
+width:40%;
+border-collapse:collapse;
+border:1px solid gray;
+}
+.table-row-1 td, .table-row-2 td {
+padding:2px 6px;
+border:1px solid gray;
+}
+.table-row-2 td {
+background-color:#FFFFCC;
+color:red;
+}
+.table-column-1{
+text-align:left;
+width:65%;
+color:black;
+}
+.table-column-2{
+text-align:center;
+width:35%;
+color:red;
+} 	
+	
+-->
+</style>
+</head>
+<body><div><a name="toc" id="toc"></a></div>
+<h1>Documentation for the Microsoft Visual Studio &quot;Simple&quot; Design Template. The layout for this template is built with <abbr title="division tag" lang="en">DIV</abbr>s and <abbr title="cascading style sheets" lang="en">CSS</abbr>. </h1>
+<ol>
+  <li><a href="#section-one">About the Visual Studio Design Templates</a></li>
+  <li><a href="#section-two">Table layouts versus <abbr title="division tag" lang="en">DIV</abbr> layouts</a> </li>
+  <li><a href="#section-three">Usability &amp; Accessibility</a>    
+    <ul>
+      <li>Summary</li>
+      <li>Why read this section? </li>
+      <li>Many different kinds of browsers</li>
+      <li>Page titles</li>
+      <li>Alternative text and titles for graphics </li>
+      <li>Browser size and &quot;above the fold&quot;</li>
+      <li> Using relative font sizes</li>
+      <li>Making forms accessible </li>
+      <li>Making tables accessible </li>
+      <li>Acronyms and abbreviations</li>
+      <li>Breadcrumbs</li>
+      <li>Allow non-visual browsers to skip past repetitive navigation links</li>
+      <li>Section 508 conformance
+        <ul>
+          <li>What is Section 508? </li>
+          <li>Section 508 checklists</li>
+          <li>How this template conforms</li>
+          <li>How your code can conform</li>
+        </ul>
+      </li>
+      <li>Web Content Accessibility Guidelines (<abbr title="Web Content Accessibility Guidelines" lang="en">WCAG</abbr>)</li>
+      <li>How good usability helps optimize your site for search engines</li>
+      <li>Resources
+        <ul>
+          <li>&quot;Bobby&quot; can help  test the usability of your site</li>
+          <li>The <acronym title="Accessible Information Solutions">AIS</acronym> Web Accessibility Toolbar for Internet Explorer can help  test the usability of your site </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#section-four"><acronym title="hypertext markup language">HTML</acronym> Mark-Up</a>
+    <ul>
+      <li><acronym title="extensible hypertext markup language">XHTML</acronym> strict doctype</li>
+      <li>Why use the <acronym title="extensible hypertext markup language">XHTML</acronym> strict? </li>
+      <li>Adding the favicon.ico to your header </li>
+      <li>Keeping styles out of the <acronym title="hypertext markup language">HTML</acronym> mark-up </li>
+      <li>Using <abbr title="division tag" lang="en">DIV</abbr>s for layout </li>
+      <li>Heading tags (used to build an outline, not to make fonts larger)</li>
+      <li>Forms</li>
+      <li>Showing data in tables
+        <ul>
+          <li>Summary</li>
+          <li>Table headings, table footers and table bodies (<abbr title="table header" lang="en">THEAD</abbr>, <abbr title="table footer" lang="en">TFOOT</abbr> and <abbr title="table body" lang="en">TBODY</abbr>)</li>
+          
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#section-five">Targeted browsers</a></li>
+  <li><a href="#section-six">Cascading Style Sheets</a>    <ul>
+      <li>Why use <abbr title="cascading style sheets" lang="en">CSS</abbr></li>
+      <li>What is a <abbr title="cascading style sheets" lang="en">CSS</abbr> rule?</li>
+      <li><abbr title="cascading style sheets" lang="en">CSS</abbr> selectors (classes, <abbr title="identifier" lang="en">ID</abbr>'s or <acronym title="hypertext markup language">HTML</acronym> tags)
+        <ul>
+          <li>The difference between classes and <abbr title="identifier" lang="en">ID</abbr>s</li>
+          <li><abbr title="identifier" lang="en">ID</abbr>s as <abbr title="cascading style sheets" lang="en">CSS</abbr> selectors </li>
+          <li>Classes as <abbr title="cascading style sheets" lang="en">CSS</abbr> selectors</li>
+          <li>Class and <abbr title="identifier" lang="en">ID</abbr> naming guidelines </li>
+        </ul>
+      </li>
+      <li>Links &amp; pseudo classes (LINK, HOVER, ACTIVE, VISITED) </li>
+      <li> Heading tags</li>
+      <li>Form tags </li>
+      <li>Lists as menus (horizontal or vertical)</li>
+      <li>Specifying font families</li>
+      <li>Creating the layout with <abbr title="division tag" lang="en">DIV</abbr>s
+        <ul>
+          <li>What is a <abbr title="division tag" lang="en">DIV</abbr>? </li>
+          <li>How padding, margin and width work on <abbr title="division tag" lang="en">DIV</abbr>s</li>
+          <li><abbr title="cascading style sheets" lang="en">CSS</abbr> Shorthand </li>
+          <li> Floating <abbr title="division tag" lang="en">DIV</abbr>s</li>
+          <li>Using container <abbr title="division tag" lang="en">DIV</abbr>s and the <abbr title="cascading style sheets" lang="en">CSS</abbr> clear attribute</li>
+          <li>The 5 layout types included in the Microsoft Visual Studio Design Templates</li>
+          <li>How to create this template's three column layout with <abbr title="division tag" lang="en">DIV</abbr>s and <abbr title="cascading style sheets" lang="en">CSS</abbr></li>
+          <li><abbrev>The behavior of the side columns.</abbrev></li>
+        </ul>
+      </li>
+      <li>Background images
+        <ul>
+          <li>Summary</li>
+          <li>Include a background color along with the background image</li>
+          <li>Specifying the repeat value x, y or none </li>
+          <li>Specifying the horizontal position value right, left, center or amount</li>
+          <li>Specifying the vertical position top, center, bottom or amount</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#section-seven">Validating your pages
+    </a>
+    <ul>
+      <li>Summary</li>
+      <li><abbr title="cascading style sheets" lang="en">CSS</abbr> validation</li>
+      <li><acronym title="hypertext markup language">HTML</acronym> validation</li>
+      <li>&quot;Bobby&quot; can help validate your site's usability</li>
+    </ul>
+  </li>
+  <li><a href="#section-eight">Aesthetics</a>    <ul>
+      <li>Use of scale</li>
+      <li>Use of color</li>
+      <li>Fonts families</li>
+      <li>Details add polish </li>
+      <li>&quot;Poster&quot; photo</li>
+      <li>Making the favicon.ico file</li>
+      <li>A note on consistency</li>
+    </ul>
+  </li>
+  <li><a href="#section-nine">Extending this Template</a>    <ul>
+      <li>Changing the colors</li>
+      <li>Changing the &quot;poster photo&quot;</li>
+      <li>Adding a bit map logo instead of the &quot;site name&quot; text </li>
+      </ul>
+  </li>
+  <li><a href="#section-ten">Quick Tips and Tricks</a></li>
+  <li><a href="#section-eleven">Web Links, References &amp; Tools </a>      <ul>
+      <li>Any specific Microsoft links to include?</li>
+      <li><acronym title="hypertext markup language">HTML</acronym> validation</li>
+      <li><abbr title="cascading style sheets" lang="en">CSS</abbr> validation</li>
+      <li>Official Section 508 Web Site </li>
+      <li>The <acronym title="Accessible Information Solutions">AIS</acronym> accessibility toolbar for Internet Explorer</li>
+    </ul>
+  </li>
+</ol>
+<h2>About the Visual Studio Design Templates<a name="section-one" id="section-one"></a></h2>
+<div class="toclink" title="Go to the table of contents for this document."><a href="#toc">Table of contents</a></div>
+<p> Microsoft has created a set of five design templates you can use as is or modify to your needs. These templates illustrate high quality design principles combined with standards driven code. Each template is XHTML 1.1 Strict, Section 508/WCAG conforming and works across many browsers. This document describes how the template was built, the thought processes, tradeoffs, and workarounds necessary to build them. It also contains instructions on how to easily customize and change these templates for use in your site. You will find these HTML templates to be an excellent starting point when beginning to build out dynamic, data-driven Web sites with Microsoft Visual Studio and Microsoft Visual Web Developer. We hope they'll give both designers and developers deep insight into their creation process while providing you with a workable starting point. You can find all the information you need on MSDN at <a href="http://msdn.microsoft.com/asp.net/design" title="Microsoft Developers Network Web Site">http://msdn.microsoft.com/asp.net/design</a>. </p>
+<p>You'll find two versions of this layout made with CSS and <abbr title="division tag" lang="en" xml:lang="en">DIV</abbr>s. The second version demonstrates the expected behavior of the side columns when there is a small amount of content in the middle column. <a href="#behaviorofthesidecolumns">Learn more about the behavior of the side columns</a>.</p>
+<h2>Table layouts versus <abbr title="division tag" lang="en">DIV</abbr> layouts<a name="section-two" id="section-two"></a> </h2>
+<div class="toclink" title="Go to the table of contents for this document."><a href="#toc">Table of contents</a></div>
+<p>In the past,  developers have used tables to build their page layouts. In many cases it's acceptable to build a layout with tables. However, there are compelling arguments (and <a href="http://www.section508.gov/" title="Go to the Section 508 Web site">laws</a>) that recommend we use tables only when presenting tabular data and use <abbr title="division tag" lang="en">DIV</abbr> tags and <abbr title="cascading style sheets" lang="en">CSS</abbr> to create our layouts. Because of this there are two versions of each design template; one that uses <abbr title="division tag" lang="en">DIV</abbr> tags for layout and one that uses tables for layout. </p>
+<h3>Usability &amp; Accessibility<a name="section-three" id="section-three"></a></h3>
+<div class="toclink" title="Go to the table of contents for this document."><a href="#toc">Table of contents</a></div>
+<h4>Summary</h4>
+<p>Usability is the science of understanding how people use products and software. The information gained from usability studies is used to make the products or software easier to use, more efficient and more productive. Accessibility is a related area of study that focuses on the use of the products or software by people with disabilities.</p>
+<h4>Why Read this Section? </h4>
+<p> In some cases accessibility and usability features are <a href="http://www.section508.gov/" title="Go to the Section 508 Web site">required by law</a>. In all cases, good accessibility and usability features make your site easier to use and  affect your company's  goals. In addition, good accessibility and usability practices help to ensure your content will be accessible to future products that have  yet to come to market. This section will not cover all areas of usability and accessibility but  will help build an a attitude for best practices and an introduction to the most common usability and accessibility requirements.</p>
+<h4>Many different kinds of browsers</h4>
+<p>Before analyzing a site's degree of usability and accessibility we must first look at the different types of browsers people use and the ways users interface with a Web site. Most often Web sites are viewed in a visual browser like Microsoft Internet Explorer running on a desktop <acronym title="personal computer" lang="en">PC</acronym> with a mouse used to click different areas of the page. But there many other browsers and interfaces. </p>
+<p>There are non-visual browsers (or technology that &quot;sits on top&quot; of a browser) used by  people who are blind that read the contents of your Web page through computer generated voice. <a href="http://www.freedomscientific.com/" title="Go to the Freedom Scientific's Web site. They are the creators of JAWs assistive software."> JAWS</a> and <a href="http://www.gwmicro.com/" title="Go to the GW Micro Web site. They are the creators of Window Eyes assistive software.">Window Eyes</a> are two popular non-visual browsers. These kinds of browsers or assistive  technology rely on the keyboard alone and do not use a mouse to navigate the pages. 
+  
+
+  There are many other types of input and output devices like braille readers and the Stephen Hawking Device.
+  
+Many mobile phones now have browsers. Most browsers on phones do not use a mouse and have very small screens. Some mobile phones will render <acronym title="cascading style sheets" lang="en">CSS</acronym>, graphics and multimedia, others do not. There are new browsers and ways of interfacing with Web pages coming to the market every year. </p>
+<p>Creating a Web site that is accessible to many different browsers and interfaces require attention to detail that may otherwise be overlooked. The usability and accessibility information below will help you build pages that are accessible to a wide range of audiences and browser types. </p>
+<h4>Page Titles </h4>
+<p>One of the most important usability features of a Web page is its title. </p>
+<div class="example">
+  <p>The page title in the head of your page is an important usability feature.</p>
+  <code> &lt;head&gt;<br />
+&nbsp; &lt;title&gt;Your unique and descriptive page title here&lt;/title&gt;<br />
+&lt;/head&gt;<br />
+&lt;body&gt;<br />
+  </code> </div>
+<p>Make your page titles descriptive and meaningful. Your page titles should describe the content of its particular page. Page titles should not simply state the same thing on multiple unrelated pages. There is no need to start titles with &quot;Welcome..&quot; or &quot;Welcome to my site..&quot; because this does not give detail and meaning to your content. Each page of your site should have a unique, descriptive page title. Well written, unique titles for every page in your site will help in the following ways:</p>
+<ul>
+  <li>well-written page titles help users navigate your site </li>
+  <li>well-written page titles help search engines accurately index your site </li>
+  <li>well-written page titles help identify bookmarks or favorites </li>
+  <li>well-written page titles help non-visual browsers and people who are blind quickly understand the contents of the page</li>
+</ul>
+<h4>Alternative text and titles for graphics </h4>
+<p>People using non-visual browsers can not see your graphics (bit map files in the <acronym title="Joint Photographic Experts Group" lang="en">JPEG</acronym>, <acronym title="Graphics Interchange Format" lang="en">GIF</acronym> or <acronym title="Portable Network Graphics" lang="en">PNG</acronym> formats). However, non-visual browsers will read the alternative text and titles for each graphic. Creating alternative text for every graphic is fundamental to your site's usability and accessibility. Without well-written and informative alternative text visually impaired users have no way to understand the meaning of your graphics. </p>
+<p>The alternative text will also display in visual browsers if the image doe not load. In addition, alternative text helps search engines index your site correctly. Including a title attribute on your graphics further help sighted and non-sighted users understand your graphics.</p>
+<div class="example">
+  <p>Alternative text for graphics are set with the <abbr title="alternative" lang="en">ALT</abbr> attribute inside the <abbr title="Image" lang="EN">IMG</abbr> tag </p>
+  <p><code>&nbsp;&lt;img src=&quot;images/photo-small.jpg&quot; width=&quot;150&quot; height=&quot;100&quot; alt=&quot;Write a short description of the image here. It will show if the image is not loaded. Non visual browsers and search engines will also read this text.&quot; title=&quot;Users will see this text when they roll over this image. Non-visual browsers will read this text to people who are blind.&quot; /&gt;</code></p>
+  <p>Spacer graphics (1 pixel transparent graphics used in table layouts) are not used in this template. However, if you are forced to use spacer graphics it is the correct usability practice to set an empty <abbr title="alternative" lang="en">ALT</abbr> text string on them. This tells people using non-visual browsers that the graphic has no meaning. It is incorrect to omit the <abbr title="alternative" lang="en">ALT</abbr> tag completely since then people using non-visual browsers may wonder if the graphic has meaning or not. Below we correctly set an empty ALT tag on the &quot;spacer&quot; graphic.</p>
+  <p><code>&lt;img src=&quot;images/spacer.gif&quot; width=&quot;10&quot; height=&quot;10&quot; alt=&quot;&quot; /&gt;</code></p>
+  <p>Titles are not necessary in the example above.</p>
+</div>
+<h4>Browser size and &quot;above the fold&quot; <a name="abovethefold" id="abovethefold"></a></h4>
+<p>All the Microsoft Visual Studio Design Templates are made to fit within a 800 pixel wide by 600 pixel tall resolution monitor without the need to scroll horizontally (left - right). Do not force your visitors to scroll horizontally. Doing so will make your site unusable. </p>
+<p>The exact width of this template is 760 pixels. We leave 40 pixels of extra room for the display of vertical scrollbars and a small amount of white space so that the horizontal (left - right) scroll bars will not appear on maximized browser windows.</p>
+<p>Although vertical scrolling (up - down) is inevitable with any Web page, we can control what content is visible on screen without scrolling. The content area shown on screen after the page loads but before scrolling down is called &quot;above the fold&quot;. This term is taken from the newspaper industry. The most important newspaper articles and headlines are shown &quot;above the fold&quot; of newspaper. Web sites too should keep the most important information above the fold. Often times people will not scroll down once a page loads. Therefore, it is important to keep all major navigational menus, main advertisements and other important links and content &quot;above the fold&quot;.</p>
+<h4>Using relative font sizes</h4>
+<p>There are several ways to specify text sizes with <abbr title="cascading style sheets" lang="en">CSS</abbr>. For this discussion we'll look at two, (1) relative and (2) constant. Text is set to a relative size with the EM or % attribute. Text set to relative sizes can be enlarged or shrunk in most browsers. Text is set to a constant size with the <abbr title="pixel">PX</abbr> or <abbr title="point">PT</abbr> attribute. Text set to a constant size are &quot;locked&quot; and can not be resized in most browsers. Although, more modern browsers allow users to change the font size regardless of what attribute is used, it's an accessibility best practice to set font sizes using relative attributes (EM or %). </p>
+<p>Why should we allow users to change font sizes? It's helpful for people with visually disabilities, since they can make the fonts larger and easier to read.</p>
+<p>TIP: You can change the font size of text in Internet Explorer by clicking the &quot;View&quot; menu then &quot;Text size&quot;. If your mouse has a scroll wheel you can also hold down the &quot;Control&quot; key while scrolling the scroll wheel on your mouse. Other applications have specific keystroke shortcuts that will change the font size. </p>
+<p>Font size example: </p>
+<div class="example">
+  <p class="relative-font-size">The size of this text is set with a relative attribute and can be resized by users. The CSS rule used to set this size is below. </p>
+  <p><code>.relative-font-size {<br />
+ &nbsp;&nbsp;&nbsp;&nbsp; </code><code>font-size: 120%;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; }</code></p>
+</div><div class="example">
+  <p class="constant-font-size">The size of this text is set with a constant attribute and can't be resized by users. The CSS rule used to set this size is below. </p>
+  <p><code>.constant-font-size {<br />
+ &nbsp;&nbsp;&nbsp;&nbsp; </code><code>font-size:18px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; }</code></p>
+  </div>
+<h4>Making forms accessible<a name="makeformsaccessible" id="makeformsaccessible"></a></h4>
+<h5>Fieldset and Legend tags </h5>
+<p>The FIELDSET tag groups form elements. The LEGEND tag ads a title to the FIELDSET group. The FIELDSET and LEGEND tags clarify their purpose of your form. People using visual and non-visual browsers benefit when you use the FIELDSET and LEGEND tags on all your forms. The FIELDSET tag itself can be styled with <abbr title="cascading style sheets" lang="en">CSS</abbr> the same way any block level element can be styled. As shown in this template you can nest FIELDSETs into sub groups when it will help clarify the purpose of the form and its elements. </p>
+<div class="example">
+  <p>FIELDSETs group form elements and LEGENDs add a title to the groups.</p>
+  <form action="#" method="get" id="signup" title="Sign up to our mailing list" dir="ltr" xml:lang="en">
+    <fieldset>
+    <legend>Join our mailing list</legend>
+   <p> <label for="email">your email</label><br />
+    <input onfocus="this.select()" onblur="if (this.value==''){this.value='enter your email address'}" name="email" id="email" type="text"  value="enter your email address" size="20" /></p>
+    <p>
+      <label for="postalcode">postal code</label><br />
+      <input onfocus="this.select()" onblur="if (this.value==''){this.value='enter your postal code'}" name="postalcode" id="postalcode" value="enter your postal code" size="20" />
+    </p><p>
+    <input class="button-big" name="Join" style="width:75px" type="button" value="join"  /></p>
+    </fieldset>
+  </form>
+  <p>Below is the simplified source mark-up for this example.</p>
+  <p><code>&lt;form&gt;<br />
+&nbsp; &lt;fieldset&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;legend&gt;Join our mailing list&lt;/legend&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	&lt;label for=&quot;email&quot;&gt;your email&lt;/label&gt;<code>&lt;br /&gt;</code>  </code><code><br />
+&nbsp;&nbsp;&nbsp; &nbsp; &lt;input  name=&quot;email&quot; type=&quot;text&quot; /&gt;<br />
+&nbsp;&nbsp;&nbsp; &nbsp;	&lt;label for=&quot;postalcode&quot;&gt;postal code&lt;/label&gt;&lt;br /&gt; <br />
+&nbsp;&nbsp;&nbsp; &nbsp;	&lt;input name=&quot;postalcode&quot; type=&quot;text&quot; /&gt;<br />
+&nbsp;&nbsp;&nbsp; &nbsp;	&lt;input type=&quot;button&quot; value=&quot;join&quot; /&gt;<br />
+&nbsp; &lt;/fieldset&gt;<br />
+&lt;/form&gt;</code> </p>
+</div>
+<h5>Label tags </h5>
+<p>The LABEL tag is used to explicitly label an INPUT element. In this template we have a FORM titled &quot;Join our mailing list&quot;. In the FORM we have an INPUT field for the user's name. We tie the LABEL tag &quot;your name&quot; to this particular INPUT field by wrapping &quot;your name&quot; in a LABEL tag and then assigning a unique <abbr title="identifier" lang="en">ID</abbr> to the INPUT tag and LABEL tag.</p>
+<div class="example">
+  <p>The LABEL tag is associated to text fields with an ID.</p>
+  <p><code>&lt;label for=&quot;name&quot;&gt;your name&lt;/label&gt;<br />
+&lt;input id=&quot;name&quot; type=&quot;text&quot; value=&quot;enter your name&quot; /&gt;</code> </p>
+  <p>The LABEL tag can also be associated to radio buttons or checkboxes:</p>
+  <p><code>&lt;label for=&quot;radioformat1&quot;&gt;<br />
+&lt;input id=&quot;radioformat1&quot; type=&quot;radio&quot;  /&gt;</code></p>
+  <p><code>&lt;label for=&quot;check1&quot;&gt;<br />
+&lt;input id=&quot;check1&quot; type=&quot;checkbox&quot;  /&gt;</code></p>
+</div>
+<p>By explicitly attaching a LABEL tag to the INPUT field we clarify what information is being requested from the user. Non-visual browsers read the LABEL tag for the associated INPUT field regardless if the two tags are adjacent to each other in the source code.</p> 
+<p>When a LABEL tag is set properly users can click the LABEL text to select a form element. This increases the &quot;hot&quot; clickable area of all form fields (INPUT, RADIO, CHECKBOX, etc..) thus making them easier to use.</p>
+<h5>Optgroup tags </h5>
+<p>The OPTGROUP tag is used to group related options in a SELECT list (drop down menu). Its not often we need to use the OPTGROUP tag. However, if you have a large list in a drop down menu OPTGROUP can greatly improve the clarity and usability of your SELECT lists. </p>
+<div class="example">
+  <p>OPTGROUP tags can greatly improve the clarity and usability of large SELECT lists. </p>
+  <p><code>&lt;select id=&quot;favmag1&quot; name=&quot;favmag1&quot; &gt;<br />
+&nbsp; &lt;option value=&quot;0&quot; selected=&quot;selected&quot;&gt;- - Select your favorite magazine - -&lt;/option&gt;<br />
+&nbsp;  &lt;optgroup label=&quot;Computer&quot;&gt;<br />
+&nbsp; &nbsp; &lt;option value=&quot;1&quot;&gt;MSDN&lt;/option&gt;<br />
+&nbsp; &nbsp; &lt;option value=&quot;2&quot;&gt;CODE&lt;/option&gt;<br />
+&nbsp; &nbsp; &lt;option value=&quot;3&quot;&gt;BYTE&lt;/option&gt;<br />
+&nbsp; &lt;/optgroup&gt;<br />
+&nbsp; &lt;optgroup label=&quot;Lifestyle&quot;&gt;<br />
+&nbsp; &nbsp; &lt;option value=&quot;5&quot;&gt;GQ&lt;/option&gt;<br />
+&nbsp; &nbsp; &lt;option value=&quot;6&quot;&gt;Home and Garden&lt;/option&gt;<br />
+&nbsp; &nbsp; &lt;option value=&quot;7&quot;&gt;US&lt;/option&gt;<br />
+&nbsp; &lt;/optgroup&gt;<br />
+&nbsp; &lt;optgroup label=&quot;News&quot;&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;option value=&quot;8&quot;&gt;Time&lt;/option&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;option value=&quot;9&quot;&gt;The Week&lt;/option&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;option value=&quot;9&quot;&gt;People&lt;/option&gt;<br />
+&nbsp; &lt;/optgroup&gt;<br />
+&lt;/select&gt;</code></p>
+  <p>The code above produces this drop down list. </p>
+  <p>
+    <select id="favmag1" name="favmag1" >
+      <option value="0" selected="selected">- - Select your favorite magazine - -</option>
+      <optgroup label="Computer">
+      <option value="1">MSDN</option>
+      <option value="2">CODE</option>
+      <option value="3">BYTE</option>
+      </optgroup>
+      <optgroup label="Lifestyle">
+      <option value="5">GQ</option>
+      <option value="6">Home and Garden</option>
+      <option value="7">US</option>
+      </optgroup>
+      <optgroup label="News">
+      <option value="8">Time</option>
+      <option value="9">The Week</option>
+      <option value="9">People</option>
+      </optgroup>
+    </select>
+  </p>
+</div>
+<h5>Do not use graphics to title or label your forms </h5>
+<p>It may be tempting to use <acronym title="Joint Photographic Experts Group" lang="en" xml:lang="en">JPEG</acronym>, <acronym title="Graphics Interchange Format" lang="en" xml:lang="en">GIF</acronym> or <acronym title="Portable Network Graphics" lang="en" xml:lang="en">PNG</acronym>  graphics to label FORMs and their elements. However, in most every case, doing so will reduce the usability and accessibility of your forms. </p>
+<h4>Making tables accessible </h4>
+<h5>Table summary</h5>
+<p>As <a href="#section-two" title="Jump to a different part of this docuemnt.">explained earlier</a> TABLE tags are used in this layout only when presenting tabular data. </p>
+<p>Every TABLE tag should have an accompanying SUMMARY attribute and text that explains the contents and structure of the TABLE for people using non-visual browsers. Users without visual impairment can very quickly scan the contents of a table to get an idea of its meaning and structure. Visually impaired people using non-visual browsers must wait for their non-visual browser to read the Web site contents linearly from start to finish. Well-written TABLE SUMMARY attributes allow people using non-visual browsers to quickly understand the TABLE contents and structure. </p><p>Like most accessibility best practices, the TABLE SUMMARY attribute not only helps people who are visually impaired. It also helps search engines accurately index your content. Remember, most search engines can not "see". They can only read the text within your document.
+<div class="example">
+  <p>TABLE SUMMARY attributes explain the TABLE contents and structure to non-visual browsers. </p>
+  <p><code>&lt;table class=&quot;table&quot; rules=&quot;cols&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; summary=&quot;A list of widgets. Each widget is listed by name, price, features and in stock availability.&quot;&gt;</code></p>
+</div>
+<h5>Caption</h5>
+<p>The CAPTOIN attribute for a table will be shown in visual browsers and serves as a title for your TABLE. This caption should be descriptive and clarify the purpose and content of your TABLE. </p>
+<div class="example">
+  <p>The CAPTION attributes is the first tag inside the table and serves a title for the table. Both visual and non-visual browsers will see this CAPTION. </p>
+  <p><code>&lt;table class=&quot;table&quot; rules=&quot;cols&quot; border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; summary=&quot;A list of widgets. Each widget is listed by name, price, features and in stock availability.&quot;&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;caption&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; Widgets currently on sale.<br />
+&nbsp;&nbsp;&nbsp; &lt;/caption&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;tr&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;td&gt;<br />
+&nbsp;&nbsp;&nbsp; etc...</code></p>
+</div>
+<h4>Acronyms and abbreviations</h4>
+<p>We shouldn't assume people know the meaning of the acronyms and abbreviations in our content. The ACRONYM and <abbr title="abbreviation" lang="EN">ABBR</abbr> tags are used to help with this problem. </p>
+<p>You can style these tags so that people using visual browsers will know they are &quot;hot&quot; and look similar to a link. When  users hover the mouse over the text wrapped with these tags the cursor changes to a question mark and tool tip text appears with the title attribute you have provided. </p>
+<p>Non-visual browsers will read the ACRONYM and <abbr title="abbreviation" lang="en">ABBR</abbr> tag title attributes to users instead of trying to read the acronym or abbreviation as a word. For example. If &quot;<abbr title="Internal Revenue Service" lang="en">IRS</abbr>&quot; is not wrapped in an abbreviation tag and given a title a non-visual browser may read it as a word &quot;urse&quot;, as in &quot;purse&quot;. When the abbreviation tag and associated title is used a non-visual browser will read &quot;<abbr title="Internal Revenue Service" lang="en">IRS</abbr>&quot; as: &quot;Internal Revenue Service&quot;.</p>
+<p>Note that the <abbr title="abbreviation" lang="en" xml:lang="en">ABBR</abbr> tag is only supported in some browsers currently but we should plan on its support in new versions. </p>
+<div class="example">
+  <p>The <abbr title="Internal Revenue Service" lang="en">IRS</abbr> Web site.</p>
+  <p><code>The &lt;abbr title=&quot;Internal Revenue Service&quot; lang=&quot;en&quot;&gt;IRS&lt;/abbr&gt; Web site.</code></p>
+</div>
+<h4>Breadcrumbs</h4>
+<p>Breadcrumbs are a list of sequential links that take the user from the current page, back to its parent section(s) and finally to the home page. Breadcrumbs offer a quick and easy way for users to navigate your site and know where they are. It is a good practice to conclude your list of breadcrumbs with a non-linked title of your current page.</p>
+<div class="example">
+  <p>Breadcrumbs help to make your site usable. </p>
+  <p><a href="#" title="Users will see this text when they roll over this link. Keep it short and consise. Use this text to clarify the purpose of the link.">Home</a> / <a href="#" title="Users will see this text when they roll over this link. Keep it short and consise. Use this text to clarify the purpose of the link.">Breadcrumb link</a> / <a href="#" title="Users will see this text when they roll over this link. Keep it short and consise. Use this text to clarify the purpose of the link.">Breadcrumb link</a> / Page title</p>
+</div>
+<h4>Allow non-visual browsers to skip past repetitive navigation links</h4>
+<p>Non-visual browsers will read the contents of a page linearly from the top down. Many times the first elements to appear in a page are sets of navigation links. It's useful for people using non-visual browsers to be able to skip  links that appear on every page versus waiting for their browser to read through them. </p>
+<p>To allow users to skip past these repetitive links we add an anchor link above the repetitive content which then links to another named anchor further down the page.</p>
+<div class="example">
+  <p>It's a good accessibility practice to add an anchor link before navigation items that repeat on every page which then links to another named anchor further down the page (where the main, unique content for the page content begins). We add the link above the repetitive content like this. &nbsp;  </p>
+  <p><code>&lt;div class=&quot;none&quot;&gt;&lt;a href=&quot;#maincontent&quot;&gt;skip to the main content area of this page&lt;/a&gt;&lt;/div&gt;</code></p>
+  <p>    <code>&lt;div id=&quot;mainmenu&quot;&gt; <br />
+&nbsp; &lt;ul&gt;<br />
+&nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br />
+&nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;News&lt;/a&gt;&lt;/li&gt;<br />
+&nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;<br />
+&nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;<br />
+&nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;<br />
+&nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Login&lt;/a&gt;&lt;/li&gt;<br />
+&nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Join&lt;/a&gt;&lt;/li&gt;<br />
+&nbsp; &lt;/ul&gt;<br />
+&lt;/div&gt; </code>  </p>
+  <p>Then create a named anchor just before the main, unique content on the page like this:</p>
+  <p><code>&lt;a name=&quot;maincontent&quot; id=&quot;maincontent&quot;&gt;&lt;/a&gt;<br />
+  &lt;p&gt;The main body of the page content starts here&lt;/p&gt;</code></p>
+</div>
+<p>Notice in the example above &quot;skip to the main content area of this page&quot; link is wrapped in a <abbr title="division tag" lang="en">DIV</abbr> with class equals &quot;none&quot;. The &quot;none&quot; class below tells visual browsers not to display this <abbr title="division tag" lang="en">DIV</abbr>. Since non-visual browsers will ignore the <abbr title="cascading style sheets" lang="en">CSS</abbr> styles they will see it. </p>
+<div class="example">Hide the&nbsp;&quot;skip to the main content area of this page&quot; link from visual browsers by assigning it a <abbr title="cascading style sheets" lang="en">CSS</abbr> rule set to DISPLAY equals NONE. 
+  <p><code>.none {<br />
+   &nbsp;&nbsp;&nbsp;&nbsp; display:none;<br />
+   &nbsp;&nbsp;&nbsp;&nbsp;
+}</code></p>
+</div>
+<h4>Section 508 conformance </h4>
+<h5>What is Section 508</h5>
+<p>&quot;Section 508&quot; (as it is often called) is a part of the Rehabilitation Act that requires Federal agencies to make their electronic and information technology accessible to people with disabilities. </p>
+<p>Although non-Federal agencies are not required by law to conform to Section 508 guidelines it is commonly understood that web sites that follow many of the Section 508 guidelines are easier to use by all users (with or without disabilities) thus affecting your company's goals. </p>
+<p>The Section 508 requirements differ from the Web Content Accessibility Guidelines guidelines (WCAG, below) in that Section 508 looks at <em>all</em> possible forms of electronic and information technology. The <abbr title="Web Content Accessibility Guidelines" lang="en">WCAG</abbr> guidelines are written specifically for web authors.</p>
+<p>Below is a quote from the <a href="http://www.section508.gov/">Official Web site for <b>Section</b> <b>508</b> of the US Rehabilitation Act</a></p>
+<blockquote>
+<p>In 1998, Congress amended the Rehabilitation Act to require Federal agencies to make their electronic and information technology accessible to people with disabilities. Inaccessible technology interferes with an individual's ability to obtain and use information quickly and easily. Section 508 was enacted to eliminate barriers in information technology, to make available new opportunities for people with disabilities, and to encourage development of technologies that will help achieve these goals. The law applies to all Federal agencies when they develop, procure, maintain, or use electronic and information technology. Under Section 508 (29 U.S.C. &lsquo; 794d), agencies must give disabled employees and members of the public access to information that is comparable to the access available to others. It is recommended that you review the laws and regulations listed [on our Web site] to further your understanding about Section 508 and how you can support implementation. </p></blockquote>
+  <h5>Section 508 checklists </h5>
+<p>All the requirements for Section 508 conformance can be found on the <a href="http://www.section508.gov/" title="Go to the Section 508 Web site">Official Web site for Section 508 of the US Rehabilitation Act</a>. However, it's useful to reference Section 508 conformance checklists that have been created for Web developers specifically. </p>
+<p>The information needed to provide a thorough checklist for Section 508 is beyond the scope of this document. But, there are many reliable resources on the Web that provide checklists. Here are a few:</p>
+<ul>
+  <li><a href="http://www.webaim.org/standards/508/checklist" title="Go to the Web Aim Web site for Web specific excerpts from the Section 508 guidelines">Web Aim</a></li>
+  <li><a href="http://www.faa.gov/aio/InfoMgmt/508/checklist.htm" title="Go to the Federal Aviation Administration Web site for a brief, printable checklist of web accessibility guidelines">Federal Aviation Administration</a></li>
+  <li><a href="http://www.csufresno.edu/webaccess/learningmodules/legal_issues/readings/508_checklist.htm" title="Go to the California State University Fresno for a brief, printable checklist of web accessibility guidelines">California State University Fresno</a></li>
+</ul>
+<h5>How this template conforms</h5>
+<p>All the Microsoft Visual Studio Design Templates conform with Section 508 guidelines. However, the design templates are only a single page and do not contain scripts and other functionality that need to be tested against the Section 508 guidelines.</p>
+<h5>How your code can conform</h5>
+<p>This documentation lists many of the fundamental Section 508 guidelines needed for the single page design templates to conform. But after modifying the template to meet your needs, adding scripts, new code, multimedia and new content to the template you'll need to further research how your added code can conform.</p>
+<h4>WCAG, Web Content Accessibility Guidelines</h4>
+<p>The <abbr title="Web Content Accessibility Guidelines" lang="en" >WCAG, </abbr>written by the World Wide Web Consortium (<acronym title="World Wide Web Consortium" lang="en" >W3C</acronym>) maintains a set of <a href="http://www.w3.org/TR/WAI-WEBCONTENT/">accessibility guidelines for Web content</a>. The <abbr title="Web Content Accessibility Guidelines" lang="en" >WCAG</abbr> requirements differ from the Section 508 guidelines (above) in that <abbr title="Web Content Accessibility Guidelines" lang="en" >WCAG</abbr> requirements are written specifically for web authors. Section 508 requirements looks at <em>all</em> possible forms of electronic and information technology, not just the web. <abbr title="Web Content Accessibility Guidelines" lang="en" >WCAG</abbr> guidelines will help make your web site easy to use.</p>
+<h4>How good usability helps optimize your site for search engines</h4>
+<p>Most  search engines today base their search results on  text that is &quot;read&quot; by robots or programs that scan your site's  content. Sometimes these robots are called &quot;bots&quot; or spiders. Each search engine has their own robots that scour the internet for content. In many ways these bots respond to the content on your page the same way that non-visual browsers do. In other words, they respond mainly to well-formed, well written text that is presented logically. For example, above we looked at the CAPTION attribute for tables. The CAPTION is added to your TABLE for accessibility reasons but this CAPTION probably has important keywords in it that a search engine robot will pick up. In this way, the CAPTION may help people find your TABLE data. All search engine robots place importance on your page titles. Well written, informative page titles that do not contain unnecessary information will help your page's accessibility, but they also can help your search engine results. </p>
+<p>Here's another example. Search keywords that appear in the top part of your page content can get a higher degree of importance from search engine robots. We've talked about keeping important information &quot;above the fold&quot; for accessibility reasons. But also, important information and keywords that appear &quot;above the fold&quot; (or higher up in your source mark-up) can help your page's rank in search engine results.</p>
+<p>Let's look at another example before we move on. Not all content can be communicated with text. We often use images to communicate ideas, charts, graphs, product images, logos, etc.. Although search engine robots can not determine the content of graphic images, they will read and rank the <abbr title="Alternative" lang="en">ALT</abbr> attribute for an image. Again, the <abbr title="Alternative" lang="en" xml:lang="en">ALT</abbr> attribute is not only a fundamental accessibility feature, it can help your content get placed appropriately in search engine results. </p>
+<h4>Accessibility resources <a name="Accessibilityresources" id="Accessibilityresources"></a></h4>
+<p>There are several free accessibility validators on the Web that you can send your pages through. These validators will generate a report that displays your pages' degree of accessibility. These tools are very useful, but can never be 100% accurate. They will expose many of the most common usability problems with your site, but it will also be up to you to fully understand the concepts of the Section 508 requirement, <abbr title="Web Content Accessibility Guidelines" lang="en">WCAG</abbr> guidelines, accessibility and usability best practices in order to make your site compliant. Again, making your web site accessible increases the ease of use of your site for all visitors and can affect your company's goals.</p>
+<ul>
+  <li>
+    <a href="http://bobby.watchfire.com" title="The Bobby accessibility web site has many tips and free tools that will help you find accessibility problems in your site.">Bobby</a> is a great, free tool that will help you identify accessibility deficiencies in your site.
+  </li>
+  <li>
+    <a href="http://www.nils.org.au/ais/web/resources/toolbar/index.html" title="A valuable toolbar for Microsoft Internet Explorer that is used to discover accessibility problems and in general aid in the development of your Web pages.">The AIS Web Accessibility Toolbar</a> can help you test the usability of your site by allowing you to manually examine your pages for accessibility deficiencies.
+  </li><li> Visual Studio 2005 also includes a built-in accessibility checker to help make Section 508/WCAG conformance easier.</li>
+</ul>
+<h3><acronym title="hypertext markup language">HTML</acronym> Mark-Up<a name="section-four" id="section-four"></a> </h3>
+<div class="toclink" title="Go to the table of contents for this document."><a href="#toc">Table of contents</a></div>
+<h4><acronym title="extensible hypertext markup language">XHTML</acronym> strict doctype<a name="XHTMLstrictdoctype" id="XHTMLstrictdoctype"></a></h4>
+<p><acronym title="extensible hypertext markup language">XHTML</acronym> is a combination of <acronym title="hypertext markup language">HTML</acronym> and <abbr title="extensible markup language" lang="en">XML</abbr>. There are three <abbr title="document types" lang="en">DOCTYPEs</abbr> that can be used with <acronym title="extensible hypertext markup language">XHTML</acronym> files, (1) strict, (2) transitional and (3) frameset. The <abbr title="document types" lang="en">DOCTYPE</abbr> tells the browser to render the page in a particular way. The <acronym title="extensible hypertext markup language">XHTML</acronym> strict <abbr title="document types" lang="en">DOCTYPE</abbr> is less forgiving than the transitional <abbr title="document types" lang="en">DOCTYPE</abbr>. </p><p>Although <acronym title="extensible hypertext markup language">XHTML</acronym> strict can use most <acronym title="hypertext markup language">HTML</acronym> 4.0 tags and syntax, some of the <acronym title="hypertext markup language">HTML</acronym> 4.0 tags and nesting of tags that are valid in <acronym title="hypertext markup language">HTML</acronym> 4.0 are not valid in <acronym title="extensible hypertext markup language">XHTML</acronym>. </p>
+<p>Valid <acronym title="extensible hypertext markup language">XHTML</acronym> strict code also separates the content from the layout and style. That is, with <acronym title="extensible hypertext markup language">XHTML</acronym> strict it is not valid to include style information (font size, color, width, heights, positions, etc.) inside the source mark-up. Instead, all styles must be linked to a separate <abbr title="cascading style sheets" lang="en">CSS</abbr> file. The <acronym title="World Wide Web Consortium" lang="en">W3C</acronym> owns <a href="http://www.w3.org/TR/xhtml1/" title="Go to the official XHTML specification.">The official <acronym title="extensible hypertext markup language">XHTML</acronym> specification</a>.</p>
+<p>The Microsoft Visual Web Developer Design Templates use the strict <abbr title="document types" lang="en">DOCTYPE</abbr>. This <abbr title="document types" lang="en">DOCTYPE</abbr> is added to the top of the page code.</p>
+<div class="example">
+  <p>The <abbr title="document types" lang="en">DOCTYPE</abbr> is the first thing shown in your code. </p>
+  <p><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot;<br />
+&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;<br />
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xml:lang=&quot;en&quot; lang=&quot;en&quot;&gt;<br />
+&lt;head&gt;</code></p>
+</div>
+<h4>Why use <acronym title="extensible hypertext markup language">XHTML</acronym> Strict? </h4>
+<p><acronym title="extensible hypertext markup language">XHTML</acronym> strict pages are accessible to a broader range of viewing devices currently in the marketplace.  Code used in <acronym title="extensible hypertext markup language">XHTML</acronym> strict pages have a longer life of relevance with products that have yet to come to market. <acronym title="extensible hypertext markup language">XHTML</acronym> will eventually replace <acronym title="hypertext markup language">HTML</acronym> 4.0 as the standard. Lastly, pages that use the <acronym title="extensible hypertext markup language">XHTML</acronym> strict <abbr title="document types" lang="en">DOCTYPE</abbr> require your code to be more accurate, more efficient and clean. </p>
+<h4>Adding the favicon.ico to your header </h4>
+<p>A <abbr title="favorite icon">favicon</abbr> is a 16 by 16 pixel graphic that most modern browsers will show as the icon for your site. This icon appears in the address field, bookmark list and links bar of most browsers. </p>
+<p>Each Microsoft Visual Web Developer Design Template comes with a file called favicon.ico that can be found in the themes folder for each template. These icons match the default look of the template. In order to display this icon in the browser you link to it in the HEAD of your <acronym title="extensible hypertext markup language">XHTML</acronym> file.</p>
+<div class="example"><p>To display the favorite icon link it in the HEAD of your <acronym title="extensible hypertext markup language">XHTML</acronym>.</p>
+  <p><code>&lt;head&gt;<br />
+&lt;title&gt;div - rounded&lt;/title&gt;<br />
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;themes/default/favicon.ico&quot; /&gt;<br />
+&lt;/head&gt;</code></p>
+</div>
+<p>There are several <a href="http://search.msn.com/results.aspx?q=how+to+make+a+favicon&FORM=MSNH&srch_type=0" title="Go to the search results for 'favicon' on MSN.com." >resources on the Web</a> that can help you make your own favicon.ico files. </p>
+<h4>Keeping styles out of the <acronym title="hypertext markup language">HTML</acronym> mark-up<a name="keepingstylesoutofmarkup" id="keepingstylesoutofmarkup"></a> </h4>
+<p>With <acronym title="hypertext markup language">HTML</acronym> you were able to style your content inline with the source mark-up. As mentioned earlier, the <acronym title="extensible hypertext markup language">XHTML</acronym> strict doctype does not allow style information inside your <acronym title="extensible hypertext markup language">XHTML</acronym>. Instead, all styles must be linked to a separate <abbr title="cascading style sheets" lang="en">CSS</abbr> file. Separating the styles from the content has these advantages:</p>
+<ul>
+  <li>Separating  visual style from  content gives you more style and layout options since <abbr title="cascading style sheets" lang="en">CSS</abbr> has  greater style options than <acronym title="hypertext markup language">HTML</acronym> inline styling.</li>
+  <li>Separating visual style from content increases your ability to keep styles consistent across many pages. </li>
+  <li>Separating visual style from content allows you to change the styles on every page in your site by changing only one <abbr title="cascading style sheets" lang="en">CSS</abbr> file.</li>
+  <li>Separating visual style from content makes your pages load faster since the styles (the <abbr title="cascading style sheets" lang="en">CSS</abbr> document) are only downloaded once for any page in your site. </li>
+  <li>Separating visual style from content makes your site more accessible and usable since people using browsers that do not support styles will still have access to all your content, but simply no style information. </li>
+</ul>
+<h4>Using <abbr title="division tag" lang="en">DIV</abbr>s for layout </h4>
+<p>See <a href="#creatinglayoutwithdivs" title="Go to the 'Creating the layout with DIVs' section of this document">creating the layout with <abbr title="division tag" lang="en">DIV</abbr>s</a>.</p>
+<h4>Heading tags (used to build an outline, not to make fonts larger)</h4>
+<p>Your heading tags (<abbr title="heading one" lang="en">H1</abbr>, <abbr title="heading two" lang="en">H2, </abbr><abbr title="heading three" lang="en">H3</abbr>, <abbr title="heading four" lang="en">H4</abbr>, <abbr title="heading five" lang="en">H5</abbr> and <abbr title="heading six" lang="en">H6</abbr>) should build a logical outline of your content. This virtual outline created with heading tags will help improve the clarity of your content for all users. People using non-visual browsers can instruct their browser to only read the heading tags on your page. This allows all users to quickly understand your page contents.</p><p> Remember, non-visual browsers read all the text to users through computer voice synthesis. If there are no headings or incorrectly used heading tags these users are forced to listen to all the text read linearly from top down. In other words, heading tags help non-visual browsers scan a page. </p>
+<p>Do not use heading tags to make a FONT bold or larger. Use <abbr title="cascading style sheets" lang="en">CSS</abbr>  to style text. </p>
+<p>You can easily change the default style (FONT-SIZE, FONT-WEIGHT, COLOR, etc.) of all heading tags through <abbr title="cascading style sheets" lang="en">CSS</abbr>.</p>
+<div class="example">
+    <p>Use heading tags to build a logical outline of your content.</p>
+  <p><code>&lt;h1&gt;page title &lt;/h1&gt;</code></p>
+  <p><code> &nbsp;&nbsp; &lt;h2&gt;section title&lt;/h2&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;p&gt;Summary paragraph of the section goes here.&lt;/p&gt;</code></p>
+  <p><code> &nbsp;&nbsp;&nbsp; &lt;h3&gt;sub section heading one &lt;/h3&gt;<br />
+ &nbsp;&nbsp;&nbsp; </code><code>&lt;p&gt;Sub section one paragraph text goes here.&lt;/p&gt;</code></p>
+  <p><code> &nbsp;&nbsp;&nbsp; &lt;h3&gt;sub section heading two&lt;/h3&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;p&gt;Sub section two paragraph text goes here.&lt;/p&gt;</code></p>
+  <p><code> &nbsp;&nbsp;&nbsp; &lt;h3&gt;sub section heading three &lt;/h3&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;p&gt;Sub section three paragraph text goes here.&lt;/p&gt;</code></p>
+  <p><code>&nbsp; &lt;h2&gt;section title&lt;/h2&gt;<br />
+&nbsp; &lt;p&gt;Summary paragraph of the section goes here.&lt;/p&gt;</code></p>
+  <p><code>&nbsp; &lt;h2&gt;section title&lt;/h2&gt;<br />
+&nbsp; &lt;p&gt;Summary paragraph of the section goes here.&lt;/p&gt; <br />
+  </code> </p>
+</div>
+<h4>Forms </h4>
+<p>See <a href="#makeformsaccessible" title="Go to the 'Making forms accessible' section of this document">Making forms accessible</a></p>
+<h4>Showing data in tables </h4>
+<p>As <a href="#section-two" title="Go to the 'Table layouts versus DIV layouts' section of this document">explained earlier</a> tables are used in this layout only when presenting tabular data. </p>
+<h5>The table header, footer and body</h5>
+<p>The <abbr title="table heading" lang="en">THEAD</abbr>, <abbr title="table footer" lang="en">TFOOT</abbr> and <abbr title="table body" lang="en">TBODY</abbr> tags group the sections of your TABLE. The <abbr title="table heading" lang="en">THEAD</abbr> should come first in your source, then the <abbr title="table footer" lang="en">TFOOT</abbr> then the <abbr title="table body" lang="en">TBODY</abbr>. The footer comes before the body in the source so the browser can  render it before the contents of the entire table body are downloaded. In addition, if the contents of a TABLE span multiple pages when printing the <abbr title="table heading" lang="en">THEAD</abbr> and <abbr title="table footer" lang="en">TFOOT</abbr> will be printed on each page.</p>
+<div class="example">
+  <p>The table header, table footer and table body tags group sections of your TABLE. </p>
+  <p><code>&lt;table&gt;<br />
+&nbsp; &lt;thead&gt;<br />
+&nbsp; &nbsp; &lt;tr&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;th&gt;Table Header&lt;/th&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/tr&gt;<br />
+&nbsp; &lt;/thead&gt;<br />
+&nbsp; &lt;tfoot&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;tr&gt;<br />
+&nbsp; &nbsp; &lt;th&gt;Table Footer&lt;/th&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;/tr&gt;<br />
+&nbsp; &lt;/tfoot&gt;<br />
+&nbsp; &lt;tbody&gt;<br />
+&nbsp; &nbsp; &lt;tr&gt;<br />
+&nbsp;&nbsp;&nbsp; &lt;td&gt;Table Body&lt;/td&gt;<br />
+&nbsp; &nbsp; &lt;/tr&gt;<br />
+&nbsp; &lt;/tbody&gt;<br />
+&lt;/table&gt;</code></p>
+</div>
+
+<h3>Targeted browsers<a name="section-five" id="section-five"></a></h3>
+<div class="toclink" title="Go to the table of contents for this document."><a href="#toc">Table of contents</a></div>
+<p>The Microsoft Visual Web Developer Design Templates are designed to work in the following browsers. Modifications and added code to the templates will require additional testing on your targeted browsers. Each browser's support for <abbr title="cascading style sheets" lang="en">CSS</abbr> and <acronym title="extensible hypertext markup language">XHTML</acronym> strict vary. It is a good idea to have a clear list of the browsers you intend to support before your projects begin.</p>
+<ul>
+  <li> Microsoft Windows XP
+    <ul>
+      <li>Internet Explorer 6</li>
+      <li>Mozilla Firefox 1</li>
+    </ul>
+  </li>
+  <li>Microsoft Windows 2000
+    <ul>
+      <li>Internet Explorer 6</li>
+      <li>Mozilla Firefox 1</li>
+    </ul>
+  </li>
+  <li>Apple Macintosh OSX    <ul>
+      <li>Mozilla Firefox 1.0.1</li>
+      <li>Safari 1.2.4 </li>
+    </ul>
+  </li>
+</ul>
+<h3>Cascading Style Sheets <a name="section-six" id="section-six"></a></h3>
+<div class="toclink" title="Go to the table of contents for this document."><a href="#toc">Table of contents</a></div>
+<p><abbr title="cascading style sheets" lang="en">CSS</abbr> is a style sheet programming language that allows you to attach style (color, fonts and layout) to structural documents (<acronym title="hypertext markup language">HTML</acronym>, <acronym title="extensible hypertext markup language">XHTML</acronym>). Authoring, viewing and maintaining Web sites is simplified by separating the style from the content. </p>
+<p>Cascading style sheets are powerful and can be quite in-depth. This documentation will touch on the basic principles of <abbr title="cascading style sheets" lang="en">CSS</abbr>. The <a href="http://www.w3.org/TR/REC-CSS1" title="Go to the official CSS 1 specification.">Official <abbr title="cascading style sheets" lang="en">CSS</abbr> 1 Specification</a> contains much more detailed information and is a valuable resource. </p>
+<h4>Why <abbr title="cascading style sheets" lang="en">CSS</abbr></h4>
+<p>See <a href="#keepingstylesoutofmarkup" title="Go to the HTML mark-up section of this document.">Keeping styles out of the <acronym title="hypertext markup language">HTML</acronym> mark-up.</a></p>
+<h4>What is a <abbr title="cascading style sheets" lang="en">CSS</abbr> rule</h4>
+<p>A <abbr title="cascading style sheets" lang="en">CSS</abbr> rule is made up of selectors, properties and values. Selectors tell the browser which items on your page to style. Properties identify the type of style you want to apply. Values set the style. </p>
+<p>In the example below &quot;<abbr title="heading one">H1</abbr>&quot; is the selector, &quot;COLOR&quot; is the property and &quot;black&quot; is the value. </p>
+<div class="example">
+  <p>A <abbr title="cascading style sheets" lang="en">CSS</abbr> rule is made up of selectors, properties and values.</p>
+  <p><code>h1 {<br />
+ &nbsp;&nbsp;&nbsp;&nbsp; color: black;<br />
+ &nbsp;&nbsp;&nbsp;&nbsp; </code><code>}</code></p>
+  <p>The example below is the same as the example above since &quot;#000000&quot; is the <abbr title="hexadecimal" lang="en">hex</abbr> color value for black.</p>
+  <p><code>h1 {<br />
+ &nbsp;&nbsp;&nbsp;&nbsp; color: #000000;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; }</code></p>
+</div>
+<h4><abbr title="cascading style sheets" lang="en">CSS</abbr> selectors (classes, id's or <acronym title="hypertext markup language">HTML</acronym> tags)</h4>
+<p>A selector can be a class, an <abbr title="identifier" lang="en">ID</abbr>, an <acronym title="hypertext markup language">HTML</acronym> tag or a combination of many of these. </p>
+<h5>The difference between classes and <abbr title="identifier" lang="en">ID</abbr>s. </h5>
+<p>Classes can appear several times within a single <acronym title="extensible hypertext markup language">XHTML</acronym> (or <acronym title="hypertext markup language">HTML</acronym>) document. There can only be one instance of an <abbr title="identifier" lang="en">ID</abbr> in each page. </p>
+<h5>HTML tags as a <abbr title="cascading style sheets" lang="en">CSS</abbr> selectors</h5>
+<p>You can apply <abbr title="cascading style sheets" lang="en">CSS</abbr> styles to <acronym title="hypertext markup language">HTML</acronym> tags. For example, in <acronym title="extensible hypertext markup language">XHTML</acronym> strict pages it is not valid to add MARGINTOP=&quot;0&quot; in the BODY tag. So, instead, apply this margin style in your <abbr title="cascading style sheets" lang="en">CSS</abbr> document with &quot;BODY&quot; as a selector.</p>
+<div class="example">
+  <p>You can use an <acronym title="hypertext markup language">HTML</acronym> tag as a selector. In this case &quot;BODY&quot; is the <abbr title="cascading style sheets" lang="en">CSS</abbr> selector.</p>
+  <p><code>body {<br />
+  </code><code>&nbsp;&nbsp;&nbsp;&nbsp; margin-top: 0px;<br />
+ &nbsp;&nbsp;&nbsp;&nbsp; }</code></p>
+  <p>If you wanted to make the entire page use a gray, sans-serif font you can use the BODY tag as the selector and then apply styles to it. Notice that each property and value set must be separated by a semi-colon (;). </p>
+  <p><code>body {<br />
+   &nbsp;&nbsp;&nbsp;&nbsp; color:#999999;<br />
+   &nbsp;&nbsp;&nbsp;&nbsp; font-family:sans-serif;<br />
+ &nbsp;&nbsp;&nbsp;&nbsp; </code><code>}</code> </p>
+</div>
+<h5><abbr title="identifier" lang="en">ID</abbr>s as <abbr title="cascading style sheets" lang="en">CSS</abbr> selectors </h5>
+<p>If you're styling an element that only appears once in your source mark-up you can apply an <abbr title="identifier" lang="en">ID</abbr> to your element then style the <abbr title="identifier" lang="en">ID</abbr> in your <abbr title="cascading style sheets" lang="en">CSS</abbr> file. For example, if you have only one main menu <abbr title="division tag" lang="en">DIV</abbr> in your source mark-up then you can apply an <abbr title="identifier" lang="en">ID</abbr> to this <abbr title="division tag" lang="en">DIV</abbr> then style the <abbr title="identifier" lang="en">ID</abbr> in your <abbr title="cascading style sheets" lang="en">CSS</abbr> file.</p>
+<div class="example">
+  <p><abbr title="identifier" lang="en">ID</abbr>s only can only appear once in your source mark-up. In the mark-up you identify the element by assigning it an <abbr title="identifier" lang="en">ID</abbr>.</p>
+  <p><code>&lt;div id=&quot;mainmenu&quot;&gt;Home Products Services&lt;/div&gt;</code></p>
+  <p>Then, you can style this <abbr title="identifier" lang="en">ID</abbr> in your <abbr title="cascading style sheets" lang="en">CSS</abbr> file by using the <abbr title="identifier" lang="en">ID</abbr> name as the selector in your <abbr title="cascading style sheets" lang="en">CSS</abbr> file. You signify that a selector is an <abbr title="identifier" lang="en">ID</abbr> with the pound sign (#). There can be no spaces between the pound sign and the selector name. </p>
+  <p><code>#mainmenu {<br />
+&nbsp;&nbsp;&nbsp; position:absolute;<br />
+&nbsp;&nbsp;&nbsp; top:10px;<br />
+&nbsp;&nbsp;&nbsp; left:10px; </code><code><br />
+    </code><code>&nbsp;&nbsp;&nbsp; color:#FF0000;<br />
+    </code><code>&nbsp;&nbsp;&nbsp; font-weight:bold;<br />
+    </code><code>&nbsp;&nbsp;&nbsp;	}</code></p>
+  <p>The example above absolute positions the main menu <abbr title="division tag" lang="en">DIV</abbr> ten pixels from the top of the browser and ten pixels to the left. </p>
+</div>
+<h5>Classes as <abbr title="cascading style sheets" lang="en">CSS</abbr> selectors</h5>
+<p>If you're styling an element that appears more than once in your source mark-up apply a class to it. For example, if you have many separate strings of text that need to be small you can assign a class to each occurrence of this small text in your mark-up then style the class in your <abbr title="cascading style sheets" lang="en">CSS</abbr> file.</p>
+<div class="example">
+  <p>Classes can appear many times in your source mark-up. In the mark-up you identify the element by assigning it a class.</p>
+  <p><code>&lt;p class=&quot;small-text&quot;&gt;This text will be small&lt;/p&gt;<br />
+&lt;p&gt;Some more text here&lt;/p&gt;<br />
+&lt;p class=&quot;small-text&quot;&gt;And more small text here&lt;/p&gt;</code></p>
+  <p>Then, you can style this class in your <abbr title="cascading style sheets" lang="en">CSS</abbr> file by using the class name as the selector in your <abbr title="cascading style sheets" lang="en">CSS</abbr> file. You signify that a selector is class with a period (.). There can be no spaces between the period and the selector name. </p>
+  <p><code>.small-text {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; font-size:.7em;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+}</code></p>
+</div>
+<h4>Class and <abbr title="identifier" lang="en">ID</abbr> naming guidelines</h4>
+<p> Class and <abbr title="identifier" lang="en">ID</abbr> names can contain only alphanumeric characters and the hyphen (-). </p>
+<p>Do not name your classes or <abbr title="identifier" lang="en">ID</abbr>s by the style or layout they produce. For example, do not name a class or <abbr title="identifier" lang="en">ID</abbr> &quot;redtext&quot; since you may easily change the style of this element to use blue text down the road. The name will then have little meaning and will be confusing. You could instead name this element &quot;productname&quot; or &quot;requiredtext&quot; or &quot;importanttext&quot;. </p>
+<h4>Links &amp; pseudo classes (link, hover, active, visited) </h4>
+<p>Browsers display visited and non-visited links differently to users so they can see what links they have visited and what links they have not. There are two special <abbr title="cascading style sheets" lang="en">CSS</abbr> classes, called pseudo classes, that allow you to control how visited and non-visited links are styled. </p>
+<p>&quot;:LINK&quot; is a pseudo class that controls the appearance of non-visited links. &quot;:VISITED&quot; is a pseudo class that controls the appearance of visited links.</p>
+<div class="example">
+  <p>Including the following two rules in your <abbr title="cascading style sheets" lang="en">CSS</abbr> file will make all non-visited links red and all visited links orange. </p>
+  <p>&quot;:LINK&quot; is a pseudo class that controls the appearance of non-visited links.&nbsp; </p>
+  <p><code>a:link {<br />
+ &nbsp;&nbsp;&nbsp;&nbsp; color: red;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; }</code></p>
+  <p>&quot;:VISITED&quot; is a pseudo class that controls the appearance of visited links.&nbsp; </p>
+  <p><code>a:visited {<br />
+ &nbsp;&nbsp;&nbsp;&nbsp; color: orange;<br />
+ &nbsp;&nbsp;&nbsp;&nbsp; </code><code>}</code></p>
+</div>
+<p>There are two more dynamic pseudo classes that control the appearance of items that are hovered (by a pointing device, typically a mouse pointer) and activated. </p>
+<p>&quot;:HOVER&quot; is a pseudo class that controls the appearance of hovered links. &quot;:ACTIVE&quot; is a pseudo class that controls the appearance of activated links.</p>
+<div class="example">
+  <p>To have complete control over the appearance of your links use all four pseudo-classes in your <abbr title="cascading style sheets" lang="en">CSS</abbr> document.</p>
+  <p>To work properly the following four rules must be written in this order (LINK, VISITED, HOVER and ACTIVE).</p>
+  
+  <p><code>a:link {<br />
+   &nbsp;&nbsp;&nbsp;&nbsp; color:blue;<br />
+   &nbsp;&nbsp;&nbsp;&nbsp; text-decoration:underline;<br />
+  &nbsp;&nbsp;&nbsp;&nbsp; } </code></p>
+  <p><code>a:visited {<br />
+   &nbsp;&nbsp;&nbsp;&nbsp; color:purple;<br />
+   &nbsp;&nbsp;&nbsp;&nbsp; } </code></p>
+  <p><code>a:hover {<br />
+   &nbsp;&nbsp;&nbsp;&nbsp; color:red;<br />
+   &nbsp;&nbsp;&nbsp;&nbsp; text-decoration:none;<br />
+   &nbsp;&nbsp;&nbsp;&nbsp; } </code></p>
+  <p><code>a:active {<br />
+   &nbsp;&nbsp;&nbsp;&nbsp; color:green;<br />
+   &nbsp;&nbsp;&nbsp;&nbsp; } </code></p>
+</div>
+<h4>Heading tags</h4>
+<p>As mentioned in the <a href="#section-three" title="Go to the accessibility section of this document.">accessibility section</a> it's important to use headings to build an outline of your page content. It's wrong to use headings solely to change the font size or weight of text.</p>
+<p>You'll probably want to change the default appearance of your headings after you build your page contents. To do this, simply use the heading tags as selectors in your <abbr title="cascading style sheets" lang="en">CSS</abbr> file and make them the size and style you prefer.</p>
+<div class="example">
+  <p>To style your heading tags use the <abbr title="heading one" lang="en">H1</abbr>, <abbr title="heading two" lang="en">H2, </abbr><abbr title="heading three" lang="en">H3</abbr>, <abbr title="heading four" lang="en">H4</abbr>, <abbr title="heading five" lang="en">H5</abbr> and <abbr title="heading six" lang="en">H6</abbr> tags as selectors then apply styles to them.
+</p>
+  <p><code>h1, h2, h3, h4, h5, h6 {<br />
+   &nbsp;&nbsp;&nbsp;&nbsp; color:red;<br />
+   &nbsp;&nbsp;&nbsp;&nbsp; font-variant: small-caps;<br />
+ &nbsp;&nbsp;&nbsp;&nbsp; }</code></p>
+</div>
+<h4>Form tags </h4>
+<p>See <a href="#makeformsaccessible" title="Go to the 'making forms accessible' section of this document.">Making forms accessible</a>.</p>
+<h4>Lists as menus (horizontal or vertical) </h4>
+<p>Ordered and unordered lists (the <abbr title="ordered list" lang="en">OL</abbr> tag and the <abbr title="unordered list" lang="en">UL</abbr> tag respectively) are appropriately used to make navigational menus. Create the menu as a list in the source mark-up then style the list layout and appearance with <abbr title="cascading style sheets" lang="en">CSS</abbr>. <abbr title="cascading style sheets" lang="en">CSS</abbr> can turn lists into a horizontal menu (top menu) or vertical menu (side menu). With <abbr title="cascading style sheets" lang="en">CSS</abbr> we can add padding, margin, background color, etc. to your menu items with great control. Here are some benefits of making navigational menus from lists rather than tables or other means.</p>
+<ul>
+  <li>Navigational menus made from lists produce cleaner more efficient source mark-up.</li>
+  <li>Navigational menus made from lists are more accessible to people with disabilities compared to navigational menus made with TABLE tags.</li>
+  <li>Navigational menus made from lists produce a more predictable and usable display when viewed without style sheets than navigational menus built with TABLE tags.</li>
+  <li>Maintaining a navigational menu made from a list is fast and easy since all the visual control and layout of the menu is maintained through a single <abbr title="cascading style sheets" lang="en">CSS</abbr> file. The source mark-up does not need to change. </li>
+</ul>
+<div class="example">
+  <p>It is clean and efficient to make navigation menus from ordered and unordered lists. Here is a simple navigation list without styles.</p>
+  <p><code>&lt;div id=&quot;mainmenu&quot;&gt; <br />
+&nbsp; &lt;ul&gt;<br />
+&nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br />
+&nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;News&lt;/a&gt;&lt;/li&gt;<br />
+&nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;<br />
+&nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;<br />
+&nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;<br />
+&nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Login&lt;/a&gt;&lt;/li&gt;<br />
+&nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Join&lt;/a&gt;&lt;/li&gt;<br />
+&nbsp; &lt;/ul&gt;<br />
+&lt;/div&gt; </code></p>
+  <p>The source markup above produces this list.</p>
+  <div id="listmenu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Login</a></li>
+      <li><a href="#">Join</a></li>
+    </ul>
+  </div>
+</div>
+<p>&nbsp;</p>
+<div class="example">
+  <p>We take this same source mark-up and make horizontal navigation menu with it using <abbr title="cascading style sheets" lang="en">CSS</abbr>. </p>
+  <p><code>&lt;div id=&quot;mainmenu&quot;&gt; <br />
+&nbsp; &lt;ul&gt;<br />
+&nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br />
+&nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;News&lt;/a&gt;&lt;/li&gt;<br />
+&nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;<br />
+&nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;<br />
+&nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;<br />
+&nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Login&lt;/a&gt;&lt;/li&gt;<br />
+&nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Join&lt;/a&gt;&lt;/li&gt;<br />
+&nbsp; &lt;/ul&gt;<br />
+&lt;/div&gt; </code></p>
+  <p>By adding these three <abbr title="cascading style sheets" lang="en">CSS</abbr> rules to our <abbr title="cascading style sheets" lang="en">CSS</abbr> file we turn the list above into a horizontal navigation menu. </p>
+  <p><code>#mainmenu ul {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; margin:0px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; padding:0px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; }<br />
+    #mainmenu ul li{<br />
+&nbsp;&nbsp;&nbsp;&nbsp; list-style:none;<br />
+&nbsp; &nbsp;&nbsp; display:inline;<br />
+&nbsp; &nbsp;&nbsp; text-transform:uppercase;<br />
+&nbsp; &nbsp;&nbsp; font-size:.8em;<br />
+&nbsp; &nbsp;&nbsp; margin:0px;<br />
+&nbsp; &nbsp;&nbsp; padding:1px 10px;<br />
+&nbsp; &nbsp;&nbsp; background: #CCCCCC;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; } <br />
+    #mainmenu ul a:link {<br />
+&nbsp; &nbsp;&nbsp; text-decoration:none;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; }</code></p>
+  <p>The three <abbr title="cascading style sheets" lang="en">CSS</abbr> rules above produce this navigation menu. The source mark-up for both examples are exactly the same. </p>
+  <div id="mainmenu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Login</a></li>
+      <li><a href="#">Join</a></li>
+    </ul>
+  </div>
+  <p>Or by using these three <abbr title="cascading style sheets" lang="en">CSS</abbr> rules we turn the list above into a vertical navigation menu. </p>
+  <p><code>#mainmenu-vertical ul {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; margin:0px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; padding:0px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; }<br />
+    #mainmenu-vertical ul li{<br />
+&nbsp;&nbsp;&nbsp;&nbsp; list-style:none;<br />
+&nbsp; &nbsp;&nbsp; display:inline;<br />
+&nbsp; &nbsp;&nbsp; text-transform:uppercase;<br />
+&nbsp; &nbsp;&nbsp; font-size:.8em;<br />
+&nbsp; &nbsp;&nbsp; margin:0px;<br />
+&nbsp; &nbsp;&nbsp; padding:1px 10px;<br />
+&nbsp; &nbsp;&nbsp; background: #CCCCCC;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; } <br />
+    #mainmenu-vertical ul a:link {<br />
+&nbsp; &nbsp;&nbsp; text-decoration:none;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; }</code></p>
+  <div id="mainmenu-vertical">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Login</a></li>
+      <li><a href="#">Join</a></li>
+    </ul>
+  </div>
+</div>
+<p>You'll notice that each of the three <abbr title="cascading style sheets" lang="en">CSS</abbr> rules above start with the &quot;#mainmenu&quot; or &quot;#mainmenu-vertical&quot; <abbr title="division tag" lang="en">DIV</abbr> <abbr title="identifier" lang="en">ID</abbr>. If this <abbr title="division tag" lang="en">DIV</abbr> <abbr title="identifier" lang="en">ID</abbr> was not used in the selector every <abbr title="unordered list" lang="en">UL</abbr> tag on all of your pages would be styled the same way as the main menu. Therefore, it's important to target the specific lists you want to style by first targeting its containing element. In this case the container was the &quot;#mainmenu&quot; or &quot;#mainmenu-vertical&quot; <abbr title="division tag" lang="en">DIV</abbr>. </p>
+<p>In this template you'll find three different types of list styles.</p>
+<ol>
+  <li>#mainnav-container (the main menu area)</li>
+  <li>#mainnav-side (the main menu area) </li>
+  <li>#content (the main content area) </li>
+  <li>#content-left (the side content)</li>
+  <li>#content-right (the side content) </li>
+</ol>
+<h4>Specifying font families</h4>
+<p>See <a href="#fontfamilies" title="Go to the 'font families' section of this document.">Font families</a>.</p>
+<h4>Creating the layout with <abbr title="division tag" lang="en">DIV</abbr>s<a name="creatinglayoutwithdivs" id="creatinglayoutwithdivs"></a> </h4>
+<h5>What is a <abbr title="division tag" lang="en">DIV</abbr>?</h5>
+<p><abbr title="division tag" lang="en">DIV</abbr> is short for division or section. The <abbr title="division tag" lang="en">DIV</abbr> tag is a generic or empty block level element that defines a section of the document. A <abbr title="division tag" lang="en">DIV</abbr> starts with the opening <abbr title="division tag" lang="en">DIV</abbr> tag, &lt;DIV&gt; and ends with the closing <abbr title="division tag" lang="en">DIV</abbr> tag &lt;/DIV&gt;.</p>
+<p>Visual browsers add a line break before and after all block level elements. As apposed to a SPAN tag (also an empty container tag) except that line breaks are not added before and after a SPAN tag. Some other block level <acronym title="hypertext markup language">HTML</acronym> tags include the <abbr title="paragraph" lang="en">P</abbr> tag, the heading tags <abbr title="heading one" lang="en">H1</abbr>, <abbr title="heading two" lang="en">H2, </abbr><abbr title="heading three" lang="en">H3</abbr>, <abbr title="heading four" lang="en">H4</abbr>, <abbr title="heading five" lang="en">H5</abbr> and <abbr title="heading six" lang="en">H6, </abbr> the BODY tag and others.</p>
+<p><abbr title="division tag" lang="en">DIV</abbr> tags are often viewed as rectangle blocks that hold a section of content. By applying <abbr title="cascading style sheets" lang="en">CSS</abbr> classes or a unique <abbr title="identifier" lang="en">ID</abbr> to <abbr title="division tag" lang="en">DIV</abbr> tags we can control the visual appearance of the <abbr title="division tag" lang="en">DIV</abbr>  itself and the content contained in the <abbr title="division tag" lang="en">DIV</abbr>.</p>
+<div class="example">
+  <p><abbr title="division tag" lang="en">DIV</abbr> tags  can be styled with <abbr title="cascading style sheets" lang="en">CSS</abbr>. We can also target the content inside the <abbr title="division tag" lang="en">DIV</abbr> to be styled. Here is a <abbr title="division tag" lang="en">DIV</abbr> with a white background and red text inside.</p>
+  <div style="background:#FFFFFF;color:red">This red text is inside a white DIV</div>
+  <p>Here is the <abbr title="cascading style sheets" lang="en">CSS</abbr> that creates this look. </p>
+  <p><code>.your-class-name{<br />
+   &nbsp;&nbsp;&nbsp;&nbsp; background:#FFFFFF;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; color:red;<br />
+   &nbsp;&nbsp;&nbsp;&nbsp; }</code> </p>
+  <p>Here is the source mark-up.</p>
+  <p><code>&lt;div class=&quot;your-class-name&quot;&gt;This red text is inside a white div&lt;/div&gt;</code></p>
+</div>
+<p>&nbsp;</p>
+<div class="example">
+  <p>The <abbr title="division tag" lang="en">DIV</abbr> below also has a width set to it and only the heading two tag is red. </p>
+  <div style="background:#FFFFFF;width:200px">
+    <p style="color:red;display:block;font-size:1.6em;font-weight:bold">This heading tag is red</p>
+    This text is the default color</div>
+  <p>The two <abbr title="cascading style sheets" lang="en">CSS</abbr> rules below create this look. </p>
+  <p><code>.your-class-name{<br />
+&nbsp;&nbsp;&nbsp;&nbsp; background:#FFFFFF;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; width:200px;<br />
+   &nbsp;&nbsp;&nbsp;&nbsp; }</code></p>
+  <p><code>.your-class-name h2{<br />
+&nbsp;&nbsp;&nbsp;&nbsp; color:red;<br />
+   &nbsp;&nbsp;&nbsp;&nbsp; }</code> </p>
+  <p>Here is the source mark-up.</p>
+  <p><code>&lt;div class=&quot;your-class-name&quot;&gt;<br />
+&nbsp; &lt;h2&gt;This heading tag is red&lt;/h2&gt;<br />
+&nbsp; This text is the default color<br />
+    </code><code>&lt;/div&gt;</code></p>
+</div>
+<p>&nbsp;</p>
+<div class="example">
+  <p>The <abbr title="division tag" lang="en">DIV</abbr> below has a width set to it, it has a border and it has another <abbr title="division tag" lang="en">DIV</abbr> inside it. </p>
+  <div style="background:#FFFFFF;width:200px;border:1px solid black">
+    <p style="color:red;display:block;font-size:1.6em;font-weight:bold">This heading tag is red</p>
+    This text is the default color.
+    <div style="text-align:center;background:green;color:white">This text is white and centered with a green background</div>
+  </div>
+  <p>The three <abbr title="cascading style sheets" lang="en">CSS</abbr> rules below create this look. </p>
+  <p><code>.your-class-name{<br />
+&nbsp;&nbsp;&nbsp;&nbsp; background:#FFFFFF;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; width:200px;<br />
+   &nbsp;&nbsp;&nbsp;&nbsp; }</code></p>
+  <p><code>.your-class-name h2{<br />
+&nbsp;&nbsp;&nbsp;&nbsp; color:red;<br />
+   &nbsp;&nbsp;&nbsp;&nbsp; }</code></p>
+  <p> <code>.another-class-name {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; text-align:center;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; background:green;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; color:white;<br />
+   &nbsp;&nbsp;&nbsp;&nbsp; }</code> </p>
+  <p>Here is the source mark-up.</p>
+  <p><code>&lt;div class=&quot;your-class-name&quot;&gt;<br />
+&nbsp; &lt;h2&gt;This heading tag is red&lt;/h2&gt;<br />
+&nbsp; This text is the default color.<br />
+&nbsp; &lt;div class=&quot;another-class-name&quot;&gt;This text is white and centered with a green background</code><code>&lt;/div&gt;<br />
+&lt;/div&gt;</code></p>
+</div>
+<h5>How padding, margin and width work on <abbr title="division tag" lang="en">DIV</abbr>s </h5>
+<p>The margin is the blank space outside the <abbr title="division tag" lang="en">DIV</abbr> (or any block level element it's applied to). </p>
+<p>The padding is the blank space inside a <abbr title="division tag" lang="en">DIV</abbr>. </p>
+<p>The complete physical size of a <abbr title="division tag" lang="en">DIV</abbr> is its width plus margin plus padding. </p>
+<div class="example">
+  <div style="width:250px;background:white;">This <abbr title="division tag" lang="en">DIV</abbr> has no margin and no padding.</div>
+  <p>Here is <abbr title="cascading style sheets" lang="en">CSS</abbr> rule for the <abbr title="division tag" lang="en">DIV</abbr> above:</p>
+  <p><code>.your-class-name {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; width:250px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; background:white;<br />
+   &nbsp;&nbsp;&nbsp;&nbsp; }</code> </p>
+</div>
+<p>&nbsp;</p>
+<div class="example">
+  <div style="width:250px;margin-left:100px;background:white;"> This <abbr title="division tag" lang="en">DIV</abbr> has a 100 pixel left margin and no padding.</div>
+  <p>Here is <abbr title="cascading style sheets" lang="en">CSS</abbr> rule for the <abbr title="division tag" lang="en">DIV</abbr> above:</p>
+  <p><code>.your-class-name {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; width:250px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; background:white;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; margin-left:100px; </code><code><br />
+   &nbsp;&nbsp;&nbsp;&nbsp; }</code> </p>
+</div>
+<p>&nbsp;</p>
+<div class="example">
+  <div style="width:250px;margin-left:100px;background:white;padding:30px ">This <abbr title="division tag" lang="en">DIV</abbr> has a 100 pixel left margin and a 30 pixel padding.</div>
+  <p>Here is <abbr title="cascading style sheets" lang="en">CSS</abbr> rule for the <abbr title="division tag" lang="en">DIV</abbr> above:</p>
+  <p><code>.your-class-name {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; width:250px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; background:white;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; margin-left:100px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; padding:30px; <br />
+   &nbsp;&nbsp;&nbsp;&nbsp; }</code> </p>
+</div>
+<p>&nbsp;</p>
+<div class="example">
+  <div style="width:250px;margin-left:100px;background:white;padding:30px;border:1px dashed black ">This <abbr title="division tag" lang="en">DIV</abbr> has a 100 pixel left margin, 30 pixel padding and a dashed black border.</div>
+  <p>Here is <abbr title="cascading style sheets" lang="en">CSS</abbr> rule for the <abbr title="division tag" lang="en">DIV</abbr> above:</p>
+  <p><code>.your-class-name {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; width:250px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; background:white;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; margin-left:100px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; padding:30px<br />
+&nbsp;&nbsp;&nbsp;&nbsp; border:1px dashed #000000; <br />
+   &nbsp;&nbsp;&nbsp;&nbsp; }</code> </p>
+</div>
+<h5>CSS shorthand <a name="cssshorthand" id="cssshorthand"></a></h5>
+<p>You can set the top, right, bottom and left PADDING or MARGIN as separate <abbr title="cascading style sheets" lang="en" xml:lang="en">CSS</abbr> attributes or you can use <abbr title="cascading style sheets" lang="en" xml:lang="en">CSS</abbr> shorthand to set them all within one attribute. <abbr title="cascading style sheets" lang="en" xml:lang="en">CSS</abbr> shorthand uses less lines of code thus it loads faster and is faster to write and edit. </p>
+
+<div class="example">
+  This <abbr title="cascading style sheets" lang="en" xml:lang="en">CSS</abbr> rule ...
+  <p><code>.your-class-name {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; padding-top:10px;<br />
+&nbsp; &nbsp;&nbsp; padding-right:0px;<br />
+&nbsp; &nbsp;&nbsp; padding-bottom:5px;<br />
+&nbsp; &nbsp;&nbsp; padding-left:22px;<br /> 
+&nbsp;&nbsp;&nbsp;&nbsp;
+}
+</code></p>
+  <p>... produces the same results as this <abbr title="cascading style sheets" lang="en" xml:lang="en">CSS</abbr> rule:</p>
+  <p><code>.your-class-name {<br />
+&nbsp; &nbsp;&nbsp; padding:10px 0px 5px 22px; <br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+}</code> </p>
+</div>
+<h5>Floating <abbr title="division tag" lang="en">DIV</abbr>s<a name="floatingdivs" id="floatingdivs"></a></h5>
+<p>The <abbr title="cascading style sheets" lang="en">CSS</abbr> attribute FLOAT makes a <abbr title="division tag" lang="en">DIV</abbr> (or other block level elements such as an <abbr title="image" lang="en">IMG</abbr>) align to the right or left of its containing element. FLOAT is a necessary and fundamental attribute in many types of layouts. </p>
+<p>Always set a width on a <abbr title="division tag" lang="en">DIV</abbr> that is floated. If no width is set the results are unpredictable.</p>
+<div class="example">
+  <div style="float:right;background:white;width:45%;">
+    <p>This <abbr title="division tag" lang="en">DIV</abbr> is set to float right. It uses this <abbr title="cascading style sheets" lang="en">CSS</abbr> rule:</p>
+    <p><code>.your-class-name {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; width:45%;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; background:white;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; float:right; </code><code><br />
+     &nbsp;&nbsp;&nbsp;&nbsp; }</code> </p>
+  </div>
+  <div style="clear:both;"></div>
+</div>
+<h5>Using container <abbr title="division tag" lang="en">DIV</abbr>s and the <abbr title="cascading style sheets" lang="en">CSS</abbr> clear attribute<a name="clearattribute" id="clearattribute"></a> </h5>
+<p>Due to the nature of &quot;floated&quot; <abbr title="division tag" lang="en">DIV</abbr>s it is often  necessary to put them within a container <abbr title="division tag" lang="en">DIV</abbr>. </p>
+<div class="example">
+  <p>The example below uses three <abbr title="division tag" lang="en">DIV</abbr>s. There is a dark gray container <abbr title="division tag" lang="en">DIV</abbr> and two other <abbr title="division tag" lang="en">DIV</abbr>s that float left and right. </p>
+  <div style="background-color:#CCCCCC;padding:10px;">
+    <p>This is the container <abbr title="division tag" lang="en">DIV</abbr>. It uses this <abbr title="cascading style sheets" lang="en">CSS</abbr> rule:</p>
+    <p><code>.your-class-name-container {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; background-color:#999999;<br />
+      </code><code>&nbsp;&nbsp;&nbsp;&nbsp; padding:10px</code><code>;<br />
+     &nbsp;&nbsp;&nbsp;&nbsp; }</code> </p>
+    <div style="float:left;background:white;width:45%;">
+      <p>This <abbr title="division tag" lang="en">DIV</abbr> is set to float left. It uses this <abbr title="cascading style sheets" lang="en">CSS</abbr> rule:</p>
+      <p><code>.your-class-name1 {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; width:45%;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; background:white;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; float:left; </code><code><br />
+       &nbsp;&nbsp;&nbsp;&nbsp; }</code> </p>
+    </div>
+    <div style="float:right;background:white;width:45%;">
+      <p>This <abbr title="division tag" lang="en">DIV</abbr> is set to float right. It uses this <abbr title="cascading style sheets" lang="en">CSS</abbr> rule:</p>
+      <p><code>.your-class-name2 {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; width:45%;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; background:white;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; float:right; </code><code><br />
+       &nbsp;&nbsp;&nbsp;&nbsp; }</code> </p>
+    </div>
+  </div>
+  <div style="clear:both;"></div>
+  <p>&nbsp;</p>
+  <p>Although the gray container <abbr title="division tag" lang="en">DIV</abbr> completely surrounds the two white floated <abbr title="division tag" lang="en">DIV</abbr>s in the source mark-up the <abbr title="division tag" lang="en">DIV</abbr> does not expand down along with the white <abbr title="division tag" lang="en">DIV</abbr>s because they are both floated. </p>
+  <p>The example above uses this simplified source mark-up.<code>
+  </code></p>
+  <code>
+  &lt;div class=&quot;your-class-name-container&quot;&gt;<br />  
+  &nbsp; &lt;div class=&quot;your-class-name1&quot;&gt;&lt;/div&gt;<br />  
+  &nbsp; &lt;div class=&quot;your-class-name2&quot;&gt;&lt;/div&gt;<br />
+&lt;/div&gt;
+  </code></div>
+<p>&nbsp;</p>
+<div class="example">
+  <p>In the previous example the gray container <abbr title="division tag" lang="en">DIV</abbr> does not expand down along with the white floated<abbr title="division tag" lang="en"> DIV</abbr>s. By adding a fourth<abbr title="division tag" lang="en"> DIV</abbr> set to <abbr title="cascading style sheets" lang="en">CSS</abbr> &quot;clear:both&quot; and putting this <abbr title="division tag" lang="en" xml:lang="en">DIV</abbr> as the last <abbr title="division tag" lang="en" xml:lang="en">DIV</abbr> inside the container we can force the container <abbr title="division tag" lang="en">DIV</abbr> to expand down with the white floated <abbr title="division tag" lang="en">DIV</abbr>s.</p>
+  <div style="background-color:#CCCCCC;padding:10px;">
+    <p>This is the container <abbr title="division tag" lang="en">DIV</abbr>. It uses this <abbr title="cascading style sheets" lang="en">CSS</abbr> rule:</p>
+    <p><code>.your-class-name-container {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; background-color:#999999;<br />
+      </code><code>&nbsp;&nbsp;&nbsp;&nbsp; padding:10px</code><code>;<br />
+     &nbsp;&nbsp;&nbsp;&nbsp; }</code> </p>
+    <div style="float:left;background:white;width:45%;">
+      <p>This <abbr title="division tag" lang="en">DIV</abbr> is set to float left. It uses this <abbr title="cascading style sheets" lang="en">CSS</abbr> rule:</p>
+      <p><code>.your-class-name1 {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; width:45%;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; background:white;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; float:right; </code><code><br />
+       &nbsp;&nbsp;&nbsp;&nbsp; }</code> </p>
+    </div>
+    <div style="float:right;background:white;width:45%;">
+      <p>This <abbr title="division tag" lang="en">DIV</abbr> is set to float right. It uses this <abbr title="cascading style sheets" lang="en">CSS</abbr> rule:</p>
+      <p><code>.your-class-name2 {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; width:45%;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; background:white;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; float:right; </code><code><br />
+       &nbsp;&nbsp;&nbsp;&nbsp; }</code> </p>
+    </div>
+    <div style="clear:both;"></div>
+  </div>
+  <div style="clear:both;"></div>
+  <p>&nbsp;</p>
+  <p>The example above uses this abstracted source mark-up:<code>
+  </code></p>
+  <p><code>&lt;div class=&quot;your-class-name-container&quot;&gt;<br />
+&nbsp; &lt;div class=&quot;your-class-name1&quot;&gt;&lt;/div&gt;<br />
+&nbsp; &lt;div class=&quot;your-class-name2&quot;&gt;&lt;/div&gt;<br />
+&nbsp; &lt;div style=&quot;clear:both&quot;&gt;&lt;/div&gt;<br />
+&lt;/div&gt;
+</code></p>
+  <p>The <abbr title="cascading style sheets" lang="en">CSS</abbr> CLEAR attribute controls weather or not a nearby element will appear on the same line as a float or after a float. See <a href="http://www.w3.org/TR/REC-CSS1#clear" title="Go to the official CSS specification for the CLEAR property on the W3C Web site.">The Official <abbr title="cascading style sheets" lang="en">CSS</abbr> Specification for the CLEAR Property</a>. </p>
+</div>
+<p>For the purposes of this documentation we look at the basic examples of floating <abbr title="division tag" lang="en">DIV</abbr>s left and right and &quot;clearing&quot; a container <abbr title="division tag" lang="en">DIV</abbr>. There are many more complexities in the way different browsers render floated elements. However, each of the five Microsoft Visual Web Developer Templates provides several unique examples and strategies for different layout types, from two or three column layouts to fixed width and variable width layouts.</p>
+<h4>The 5 layout types included in the Microsoft Visual Studio Design Templates</h4>
+<p>Each of the 5 Microsoft Visual Studio design templates uses a different layout type, different CSS and different mark-up strategy. The list below is a quick reference for these layouts types.</p>
+<blockquote>
+  <h5>The Rounded template</h5>
+  <ul>
+    <li>2 column layout</li>
+    <li>Both columns are fixed width</li>
+  </ul>
+  <h5> The Simple template </h5>
+  <ul>
+    <li>3 column layout</li>
+    <li>The side columns are fixed width. The middle column is &quot;stretchy&quot;</li>
+  </ul>
+  <h5>The Grid template </h5>
+  <ul>
+    <li>3 column layout is used in the header section </li>
+    <li>2 column layout is used for the body section </li>
+    <li>All the columns are &quot;stretchy&quot;</li>
+  </ul>
+  <h5>The Fun template </h5>
+  <ul>
+    <li>2 column layout</li>
+    <li>Both columns are stretchy</li>
+    <li>This layout uses absolute positioning</li>
+  </ul>
+  <h5>The Basic template </h5>
+  <ul>
+    <li>2 column layout</li>
+    <li>Both columns are fixed width</li>
+  </ul>
+</blockquote>
+<h4>How to create this template's three column layout with <abbr title="division tag" lang="en">DIV</abbr>s and <abbr title="cascading style sheets" lang="en">CSS</abbr></h4>
+<p>The  main navigation area of this layout is made with four <abbr title="division tag" lang="en">DIV</abbr>s and <abbr title="cascading style sheets" lang="en">CSS</abbr>. </p>
+<div class="example">
+  <p>The main navigation area is made from four <abbr title="division tag" lang="en">DIV</abbr>s. A container <abbr title="division tag" lang="en">DIV</abbr>, the main <abbr title="division tag" lang="en">DIV</abbr>, the side <abbr title="division tag" lang="en">DIV</abbr> and a &quot;cleared&quot; <abbr title="division tag" lang="en">DIV</abbr>.</p>
+  <p><code>&lt;div id=&quot;mainnav-container&quot;&gt;<br />
+&nbsp;&nbsp;&nbsp;	&lt;div id=&quot;mainnav&quot;&gt;main nav items&lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;	&lt;div id=&quot;mainnav-side&quot;&gt;login and join&lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;	&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;<br />
+&lt;/div&gt;</code></p>
+</div>
+<p>Then using the <abbr title="cascading style sheets" lang="en">CSS</abbr> below we tell these DIVs where to live, what color to be, how wide and tall to be, etc.</p>
+<div class="example">
+  <p>First, we set the styles on the container <abbr title="division tag" lang="en">DIV</abbr>. This is the <abbr title="division tag" lang="en">DIV</abbr> that contains all the color, width, height and border styles for the main navigation area. See <a href="#cssshorthand" title="Go to the 'CSS shorthand' section of this docuement.">CSS shorthand</a> to learn how to set top, right, bottom and left PADDING in a single attribute. Using shorthand reduces the lines of code in your <abbr title="cascading style sheets" lang="en">CSS</abbr>. </p>
+  <p><code>#mainnav-container {<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;
+padding:8px 10px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+border-bottom:2px solid #7F7F7F;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+border-right:1px solid #7F7F7F;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+border-left:1px solid #EDEDED;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+margin-bottom:1px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+background: #FFFFFF url(bg-topnav.gif) repeat-x top; 
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+}</code></p>
+  <p>Then we put two <abbr title="division tag" lang="en">DIV</abbr>s inside the container <abbr title="division tag" lang="en">DIV</abbr>. One holds the main nav and one holds the LOGIN and JOIN buttons. Both of these <abbr title="division tag" lang="en">DIV</abbr>s only require  FLOAT and WIDTH attributes (along with a TEXT-ALIGN attribute set on the side <abbr title="division tag" lang="en">DIV</abbr>). Remember, if you set the FLOAT attribute be sure to also set a WIDTH. Notice also that the width of both <abbr title="division tag" lang="en">DIV</abbr>s equals 100%. </p>
+  <p><code>#mainnav {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; float:left;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; width:70%;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; }</code></p>
+  <p><code>#mainnav-side {<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;
+float:right;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+width:30%;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+text-align:right;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+}</code></p>
+  <p>Lastly, we add an empty <abbr title="division tag" lang="en">DIV</abbr> and assign it the .clear CSS class below. This will ensure that the container <abbr title="division tag" lang="en">DIV</abbr> fully surrounds the nav items even if they wrap into two or more lines. See <a href="#clearattribute">Using container <abbr title="division tag" lang="en">DIV</abbr>s and the <abbr title="cascading style sheets" lang="en">CSS</abbr> clear attribute</a>. </p>
+  <p><code>.clear {<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;
+clear:both;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+} </code></p>
+</div>
+<p>The breadcrumb area is set up the exact same way as the main navigation area since it also has two columns, the breadcrumbs on the left and the search box on the right.</p>
+<p>The main body of this template uses a three column layout. 4 <abbr title="division tag" lang="en">DIV</abbr>s and  CSS are used to create this three column section. </p>
+<div class="example">
+  <p>The main body area is made from four <abbr title="division tag" lang="en">DIV</abbr>s. A container <abbr title="division tag" lang="en">DIV</abbr>, the side <abbr title="division tag" lang="en">DIV</abbr>, the main <abbr title="division tag" lang="en">DIV</abbr> and a second side <abbr title="division tag" lang="en">DIV</abbr>.</p>
+  <p><code>&lt;div id=&quot;content-container&quot;&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;	&lt;div id=&quot;content-side&quot;&gt;side content&lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;	&lt;div id=&quot;content&quot;&gt;content&lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;	&lt;div id=&quot;content-side-2&quot;&gt;side content 2&lt;/div&gt;<br />
+&lt;/div&gt;</code></p>
+</div>
+<p>Then using the <abbr title="cascading style sheets" lang="en">CSS</abbr> below we tell these <abbr title="division tag" lang="en">DIV</abbr>s where to live, what color to be, how wide to be, etc.</p>
+<div class="example">
+  <p>First, we style the content container. The color of this content container (#F6F6F6) is the gray of the left and right columns. Note that we  specify the position of <abbr title="division tag" lang="en">DIV</abbr>  to RELATIVE. We do this so that <abbr title="division tag" lang="en">DIV</abbr>s inside it can be set to an absolute position. </p>
+  <p><code>#content-container {<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;
+background-color:#F6F6F6;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+border-top:1px solid #CBCBCB;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+border-right:1px solid #7F7F7F;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+border-bottom:2px solid #7F7F7F;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+border-left:1px solid #CBCBCB;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+padding:0px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+margin:0px 0px 1px 0px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+position:relative;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+}</code></p>
+  <p>Then we set the position of the side <abbr title="division tag" lang="en">DIV</abbr>. We always want this <abbr title="division tag" lang="en">DIV</abbr> to appear in the top left corner of the parent <abbr title="division tag" lang="en">DIV</abbr> (#content-container) so we give it an absolute position. Whenever a <abbr title="division tag" lang="en">DIV</abbr> is absolute positioned you must also specify the TOP (or BOTTOM) and LEFT (or RIGHT) attributes. When a <abbr title="division tag" lang="en">DIV</abbr> is absolute positioned it is taken out of the normal &quot;flow&quot; of the document and will be positioned in relation to it's parent container. In this case the parent container is the #content-container <abbr title="division tag" lang="en">DIV</abbr>. </p>
+  <p><code>#content-side {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; position:absolute;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; top:0px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; left:0px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; width:150px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; padding:10px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; }</code></p>
+  <p>Then we set the position and style of the middle  content column. This is the white area. Lets look at the MARGIN <abbr title="cascading style sheets" lang="en">CSS</abbr> attribute closely below. There are four values in for this attribute. These values represent a 0px top margin, a 140px right margin, a 0px bottom margin and a 171px left margin. We set the left and right margins so that this middle content div does not overlap with the side columns.</p>
+  <p>Remember that the  full width of the #content-side <abbr title="division tag" lang="en">DIV</abbr> is it's width plus it's padding. So, the full width of the #content-side <abbr title="division tag" lang="en">DIV</abbr> is 170px, thus we set a 171px left margin on this content <abbr title="division tag" lang="en">DIV</abbr> below to ensure the two <abbr title="division tag" lang="en">DIV</abbr>s do not overlap. </p>
+  <p><code>#content {<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;
+padding:10px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+margin:0px 140px 0px 171px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+height:100%;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+background-color:#FFFFFF;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+border-left:1px dashed #D0D0BF;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+border-right:1px dashed #D0D0BF;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+}</code></p>
+  <p>Lastly, we set the position of the second side <abbr title="division tag" lang="en">DIV</abbr>. In this case this is the right side column that contains the vertical banner advertisements. We always want this <abbr title="division tag" lang="en">DIV</abbr> to appear in the top right corner of the parent <abbr title="division tag" lang="en">DIV</abbr> (#content-container) so we give it an absolute position. </p>
+  <p>Whenever a <abbr title="division tag" lang="en">DIV</abbr> is absolute positioned you must also specify the TOP (or BOTTOM) and RIGHT (or LEFT) attributes. When a <abbr title="division tag" lang="en">DIV</abbr> is absolute positioned it is taken out of the normal &quot;flow&quot; of the document and will be positioned in relation to it's parent container. In this case the parent container is the #content-container <abbr title="division tag" lang="en">DIV</abbr>. </p>
+  <p><code>#content-side-2 {<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;
+position:absolute;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+top:0;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+right:0px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+width:120px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+padding:10px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+}</code></p>
+  <p>When we put all these together we get two absolute positioned <abbr title="division tag" lang="en">DIV</abbr>s on the left and right sides that appear to be gray (the gray color is actually the outermost container <abbr title="division tag" lang="en">DIV</abbr>) with a middle section that is white whose margin is set to avoid overlap with the side columns. </p>
+</div>
+<p>Inside the main content area there is a three column section. This section uses 4 <abbr title="division tag" lang="en">DIV</abbr>s and some tricky and <abbr title="cascading style sheets" lang="en">CSS</abbr>. </p>
+<div class="example">
+  <p>The three column section within the main content area is built with 4 <abbr title="division tag" lang="en">DIV</abbr>s and some tricky and <abbr title="cascading style sheets" lang="en">CSS</abbr>. Notice that the third column appears before the third column in the mark up below. </p>
+  <p><code>&lt;div id=&quot;three-column-container&quot;&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;div id=&quot;three-column-left&quot;&gt;first column content&lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;div id=&quot;three-column-right&quot;&gt;third column content&lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;div id=&quot;three-column-middle&quot;&gt;second column content&lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;<br />
+&lt;/div&gt;</code></p>
+</div>
+<p>Then using <abbr title="cascading style sheets" lang="en">CSS</abbr> we tell the these four <abbr title="division tag" lang="en">DIV</abbr>s where to live, how wide and tall to be, etc.</p>
+<div class="example">
+  <p>First we set the width and margin on the container. The top and bottom MARGIN is set to 10 pixels. The left and right margin is set to 0.</p>
+  <p><code>#three-column-container {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; width:100%;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; margin:10px 0px;<br />
+ &nbsp;&nbsp;&nbsp;&nbsp; text-align:justify; </code><code><br />
+&nbsp;&nbsp;&nbsp;&nbsp; }</code></p>
+  <p>We then &quot;float&quot; the left column and set it's width to 30%. &quot;Floated&quot; elements should always be accompanied by a width. See <a href="#floatingdivs" title="Go to the 'Floating DIVs' section of this document">floating divs</a> for more information. </p>
+  <p><code>#three-column-left {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; float:left;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; width:30%<br />
+&nbsp;&nbsp;&nbsp;&nbsp; }</code></p>
+  <p>Next we &quot;float&quot; the left column and set it's width to 30%. </p>
+  <p><code>#three-column-right {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; float:right;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; width:30%<br />
+&nbsp;&nbsp;&nbsp;&nbsp; }</code></p>
+  <p>Lastly, we make room for the floated <abbr title="division tag" lang="en">DIV</abbr>s on both sides by setting the left and right margin on the middle <abbr title="division tag" lang="en">DIV</abbr>. If we didn't add this margin to the middle <abbr title="division tag" lang="en">DIV</abbr> then it would overlap with the &quot;floats&quot;.</p>
+  <p><code>#three-column-middle {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; width:30%;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; margin:0px 32% 0px 35%<br />
+&nbsp;&nbsp;&nbsp;&nbsp; }</code></p>
+</div>
+<h5>The behavior of the side columns<a name="behaviorofthesidecolumns" id="behaviorofthesidecolumns"></a></h5>
+<p>You'll find two versions of this layout made with <abbr title="cascading style sheets" lang="en" xml:lang="en">CSS</abbr> and <abbr title="division tag" lang="en" xml:lang="en">DIV</abbr>s. The second version named &quot;msvs_template_simple_divs_small_content.htm&quot; demonstrates the expected behavior of the side columns when there is a small amount of content in the middle column. </p>
+<p>Although creating layouts with <abbr title="cascading style sheets" lang="en" xml:lang="en">CSS</abbr> and <abbr title="division tag" lang="en" xml:lang="en">DIV</abbr>s has many advantages, there also limitations. In this template it is impossible to have a three column layout with fixed-width side columns and a &quot;stretchy&quot; middle column while also forcing both side column backgrounds to push down to the bottom of any of the longest columns. In other words, the side column backgrounds will only push down  to the bottom of the middle column. (There are ways to make the side column backgrounds extend to the longest column but at  more dramatic costs to other areas of the layout.) </p>
+<p>In most cases you're side column content will be shorter than the middle content column. However, if your side column content is longer it will not have a background. This is the expected behavior in this template.</p>
+<h4>Background images</h4>
+<h5>Summary</h5>
+<p><abbr title="cascading style sheets" lang="en">CSS</abbr> allows you to set the background image (<acronym title="Joint Photographic Experts Group" lang="en">JPEG</acronym>, <acronym title="Graphics Interchange Format" lang="en">GIF</acronym> or <acronym title="Portable Network Graphics" lang="en">PNG</acronym> files) on most <acronym title="hypertext markup language">HTML</acronym> tags. It is  common to use background images on <abbr title="division tag" lang="en">DIV</abbr> tags, list items, the BODY tag and other elements to archive a certain visual layout. This template uses a gray gradient background image in the BODY tag, a different gray gradient in the #mainnav-container <abbr title="division tag" lang="en">DIV</abbr>, in the #header <abbr title="division tag" lang="en">DIV</abbr>, in the #breadcrumb-container <abbr title="division tag" lang="en">DIV</abbr> and in the #footer <abbr title="division tag" lang="en">DIV</abbr>. </p>
+<div class="example">
+  <p>This template uses background images on the BODY tag and on several <abbr title="division tag" lang="en">DIV</abbr>s. Below is a simplified version of the CSS code that applies the background to each element.</p>
+  <p><code>body {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; background: #CBCBCB url(bg-main.gif) repeat-x;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; }</code></p>
+  <p><code>#mainnav-container {<br />
+
+&nbsp;&nbsp;&nbsp;&nbsp; background: #FFFFFF url(bg-topnav.gif) repeat-x;<br />
+
+&nbsp;&nbsp;&nbsp;&nbsp; }</code></p>
+  <p><code>#header {<br />
+
+&nbsp;&nbsp;&nbsp;&nbsp; background: #580808 url(bg-header.gif) repeat-x;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; }</code></p>
+  <p><code>#breadcrumb-container {<br />
+
+&nbsp;&nbsp;&nbsp;&nbsp; background: #FFFFFF url(bg-topnav.gif) repeat-x;<br />
+
+&nbsp;&nbsp;&nbsp;&nbsp; }</code></p>
+  <p><code>#footer {<br />
+
+&nbsp;&nbsp;&nbsp;&nbsp; background: #FFFFFF url(bg-topnav.gif) repeat-x;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; }</code></p>
+</div>
+<h5>Include a background color along with the background image</h5>
+<p>Note that there is also a <abbr title="hexidecimal" lang="en">hex</abbr> color value listed in the background value. It's a good idea to include a <abbr title="hexidecimal" lang="en">hex</abbr> color that approximates the color of the background image. In case the image does not load you will still be certain that your general color palette is maintained and the text in this area will still be readable. If a <abbr title="hexidecimal" lang="en">hex</abbr> color value is not set and the background graphic does not load or is not yet downloaded you may end up with white text and a white background that is unreadable.</p>
+<h5>Specifying the repeat value x, y or none </h5>
+<p>In the example above the repeat-x value is also given. This value indicates  the background graphic should repeat horizontally. </p>
+<p>Using the repeat-y value indicates  the background graphic should repeat vertically. </p>
+<p>Using the repeat-none value indicates the background graphic should not repeat.</p>
+<p>Not specifying a repeat value will cause the background image to repeat both horizontally and vertically. </p>
+<h5>Specifying the horizontal position value right, left, center or amount </h5>
+<p>If you do not want the graphic to repeat horizontally you may want to align the background graphic to the right, left, center or position the background graphic by a left offset amount.</p>
+<div class="example">
+  <p>This background graphic will align itself to the left of its container and not repeat. </p>
+  <p><code>#your-element {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; background: #828AD0 url(your-graphic.jpg) no-repeat  left;<br />
+   &nbsp;&nbsp;&nbsp;&nbsp; } </code></p>
+
+  <p>This background graphic will align itself to the center of its container and will repeat vertically (y). </p>
+  <p><code>#your-element {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; background: #828AD0 url(your-graphic.jpg) repeat-y center;<br />
+   &nbsp;&nbsp;&nbsp;&nbsp; } </code></p>
+
+  <p>This background graphic will align itself to the right of its container and not repeat. </p>
+  <p><code>#your-element {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; background: #828AD0 url(your-graphic.jpg) no-repeat right;<br />
+   &nbsp;&nbsp;&nbsp;&nbsp; } </code></p>
+
+  <p>This background graphic will align itself offset from the left of its container by 25% of the container's width and will repeat vertically (y). </p>
+  <p><code>#your-element {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; background: #828AD0 url(your-graphic.jpg) repeat-y 25%;<br />
+   &nbsp;&nbsp;&nbsp;&nbsp; } </code></p>
+</div>
+<h5>Specifying the vertical position top, center, bottom or amount</h5>
+<p>If you do not want the graphic to repeat vertically you may want to align the background graphic to the top, center, bottom or position the background graphic by a top offset amount.</p>
+<div class="example">
+  <p>This background graphic will align itself to the top of its container and not repeat. </p>
+  <p><code>#your-element {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; background: #828AD0 url(your-graphic.jpg) no-repeat top;<br />
+   &nbsp;&nbsp;&nbsp;&nbsp; } </code></p>
+
+  <p>This background graphic will align itself to the center of its container and will repeat horizontally (x). </p>
+  <p><code>#your-element {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; background: #828AD0 url(your-graphic.jpg) repeat-x center;<br />
+   &nbsp;&nbsp;&nbsp;&nbsp; } </code></p>
+
+  <p>This background graphic will align itself to the bottom of its container and not repeat. </p>
+  <p><code>#your-element {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; background: #828AD0 url(your-graphic.jpg) no-repeat bottom;<br />
+ &nbsp;&nbsp;&nbsp;&nbsp; } </code></p>
+</div>
+
+<h3>Validating your pages<a name="section-seven" id="section-seven"></a> </h3>
+<div class="toclink" title="Go to the table of contents for this document."><a href="#toc">Table of contents</a></div>
+<h4>Summary</h4>
+<p>As <a href="#xhtmlstrictdoctype" title="Go to the 'XHTML Strict Doctype' section of this document.">mentioned earlier</a> the <acronym title="extensible hypertext markup language">XHTML</acronym> strict doctype is not forgiving. Your source mark-up needs to be well-structured and free of errors. Because of this it is helpful to run your pages through a validator that checks for errors and offers solutions and explanations for errors it finds. <abbr title="cascading style sheets" lang="en">CSS</abbr> is generally more forgiving but it is also helpful to run your <abbr title="cascading style sheets" lang="en">CSS</abbr> file through a <abbr title="cascading style sheets" lang="en">CSS</abbr> validator. </p>
+<h4>HTML validation</h4>
+<p>Microsoft Visual Studio and many other desktop applications contain  <acronym title="extensible hypertext markup language">XHTML</acronym> strict validators. You can also find many free on line validators. The W3C, is the organization responsible to the official <acronym title="extensible hypertext markup language">XHTML</acronym> strict specification. The <a href="http://validator.w3.org/" title="Go to the free XHTML validator on the W3C web site.">W3C has a free <acronym title="extensible hypertext markup language">XHTML</acronym> validator</a>. </p>
+<h4><abbr title="cascading style sheets" lang="en">CSS</abbr> validation</h4>
+<p>Microsoft Visual Studio and many other desktop applications contain  <abbr title="cascading style sheets" lang="en">CSS</abbr> validators. You can also find many free on line validators. The W3C, is the organization responsible for <a href="http://www.w3.org/TR/REC-CSS1" title="Go to the Official CSS 1 Specification on the W3C Web site.">The Official <abbr title="cascading style sheets" lang="en">CSS</abbr> 1 Specification</a>. The <a href="http://jigsaw.w3.org/css-validator/" title="Go to the free CSS validator on the W3C Web site.">W3C has a free <abbr title="cascading style sheets" lang="en">CSS</abbr> validator</a>. </p>
+<h4>&quot;Bobby&quot; can help test your site's usability</h4>
+<p>See <a href="#Accessibilityresources" title="Go to the 'accessibility resources' section of this document.">Accessibility resources</a>.</p>
+<h3>Aesthetics<a name="section-eight" id="section-eight"></a> </h3>
+<div class="toclink" title="Go to the table of contents for this document."><a href="#toc">Table of contents</a></div>
+<h4>Use of scale</h4>
+<p>Using graphic elements and fonts in a range from small to large can help add professional polish to your design as well as add clarity to your main sections and scanability of the content. For example:</p>
+<ul>
+  <li>The site name is the largest font in the page and the page title is the second largest font. If the page title were the same size as the body text then it would not look as good and it would be more difficult to scan the page. If the slogan line used the same size font as the site name they would compete against one another for attention. Instead there is an order to the scale of these titles on the page and this helps the aesthetics and readability of the page. </li>
+  <li>The red area that holds the site name uses lots of blank space (to the right). White space or blank space can more efficiently delineate a separation of elements. In this case the blank space emphasizes the site name. </li>
+</ul>
+<h4>Use of color</h4>
+<p>The primary colors are red, blue and yellow.  </p>
+<div style="width:250px;background-color:#FF0000;height:50px;color:#FFFFFF">&nbsp;Primary red <br />
+  #FF0000</div>
+<div style="width:250px;background-color:#0000FF;height:50px;color:#FFFFFF">&nbsp;Primary blue <br />
+  #0000FF
+</div>
+<div style="width:250px;background-color:#FFFF00;height:50px;color:#000000">&nbsp;Primary Yellow<br />
+  #FFFF00
+</div>
+<p>The secondary colors are made (in theory, when using physical colors like oil paint) from two primary colors (red + blue = purple, blue + yellow = green, etc..).</p>
+<div style="width:250px;background-color:#FF00FF;height:50px;color:#FFFFFF">&nbsp;Purple<br />
+#FF00FF</div>
+<div style="width:250px;background-color:#00FF00;height:50px;color:#000000">&nbsp;Green<br />
+  #00FF00
+</div>
+<div style="width:250px;background-color:#FFCC00;height:50px;color:#000000">&nbsp;Orange<br />
+  #FFCC00
+</div>
+<p>The primary and secondary colors above are extremely bright and cartoon-like. In some cases it's appropriate to use these primary and secondary colors in small amounts (perhaps as a link color, in order for a link color or active link color to stand out from the page). But, for the most part using these colors in large areas (such as the background of a page) will make your page look amateur and childish. Instead, it's recommended to use a further subset of colors called tertiary colors. In color theory (and when physically mixing paint, like oil paint) tertiary colors are created by mixing two secondary colors. </p>
+<p>On many computer color picker applications you will find an option for color saturation. You can also lessen the child-like, extremely bright feel of primary colors by decreasing the saturation of the color. Decreasing the saturation of a color is another way to produce a more sophisticated and refined color palette for your site.</p>
+<p>In all cases, it is important to produce text color and background color combinations that produce highly readable text. You must also be sure your link colors will stand out from the normal text color so users know what text is clickable. Providing enough contrast between your text color and background color is an important part of a site's usability. </p>
+<p>Here are the colors used in this template. <a name="colorsusedinthistemplat" id="colorsusedinthistemplat"></a></p>
+
+<div style="width:250px;background-color:#580808;height:50px;color:#FFFFFF">&nbsp;Dark red  (header background) <br />
+  #580808</div>
+<p>&nbsp;</p>
+<div style="width:250px;background-color:#666666;height:50px;color:#FFFFFF">&nbsp;Dark  gray (text) <br />
+#666666</div>
+<p>&nbsp;</p>
+<div style="width:250px;background-color:#F6F6F6;height:50px;color:#000000">&nbsp;Light gray (set on the #content-container DIV but appears only in the side columns.) <br />
+#F6F6F6</div><p>&nbsp;</p>
+<div style="width:250px;background-color:#D0D0BF;height:50px;color:#000000">&nbsp;Warm gray  (dashed lines) <br />
+  #D0D0BF</div><p>&nbsp;</p>
+<div style="width:250px;background-color:#7F7F7F;height:50px;color:#FFFFFF">&nbsp;Dark gray (bottom &amp; right borders) <br />
+  #7F7F7F</div>
+<div style="width:250px;background-color:#CBCBCB;height:50px;color:#FFFFFF">Gray (top &amp; left borders) <br />
+  #CBCBCB</div>
+<p>&nbsp;</p>
+<div style="width:250px;background-color:#FF6600;height:50px;color:#000000">&nbsp;Orange (a:link) <br />
+  #FF6600</div>
+<div style="width:250px;background-color:#CC6600;height:50px;color:#FFFFFF">&nbsp;Dark orange (a:visited) <br />
+  #CC6600</div>
+<div style="width:250px;background-color:#FF3300;height:50px;color:#000000">&nbsp;Red (a:hover) <br />
+  #FF3300</div>
+<div style="width:250px;background-color:#669966;height:50px;color:#000000">&nbsp;Low saturation green (a:active) <br />
+  #669966</div>
+<p>&nbsp;</p>
+<h4>Fonts families<a name="fontfamilies" id="fontfamilies"></a></h4>
+  <p>There are two general classifications of font-families, (1) serif and (2) sans-serif. </p>
+  <p>A serif is a small decorative stoke added to a letter's edge. Serifs were originally used in printed text to help  create a line across the width of a page so that the eye can easily skip back and forth  from one line to the next. Font families that contain serifs are called serif fonts. Times New Roman is a serif font. You can see in the example below that there are extended horizontal stokes at the top of most capital letters and some of the lower case letters (the &quot;w&quot; in &quot;New&quot; below).</p>
+  <p style="font-family:'Times New Roman', Times, serif;font-size:2.5em">Times New Roman is a serif font </p>
+  <p>Font families that do not use  serifs are called sans serif (sans means without). Sans serif font families do not have these extra strokes. Arial is an example of a sans-serif font family.</p>
+  <p style="font-family:Arial, Helvetica, sans-serif;font-size:2.5em">Arial is a sans serif font </p>
+  <p>This template uses the Geneva font. It is a sans-serif font. </p>
+  <p style="font-family:font-family:Geneva, Arial, Helvetica, sans-serif;;font-size:2.5em">Geneva is used in this template</p>
+  <p style="font-family:'trebuchet MS', tahoma, verdana, arial, helvetica, sans-serif;font-size:2.5em"></p>
+  <p>The <abbr title="cascading style sheets" lang="en">CSS</abbr> used to specify Geneva is below. If the user does not have Geneva installed on their computer, the Arial font will be used. If the user does not have Arial installed in their computer Helvetica will be used and so on through the comma separated list of font names. The last font name is &quot;sans-serif&quot;. This value instructs the browser to use any sans-serif font installed on the user's system if none of the previous fonts exist.</p>
+  <div class="example"> 
+    <p>This <abbr title="cascading style sheets" lang="en">CSS</abbr> rule tells the browser what font to use through the page. The browser will use the first font in the font-family list that the user has installed on their system. The majority of Microsoft Windows users will have all of these fonts installed on their computers. </p>
+    <p><code>body {<br />
+   &nbsp;&nbsp;&nbsp;&nbsp; font-family:Geneva, Arial, Helvetica, sans-serif;<br />
+   &nbsp;&nbsp;&nbsp;&nbsp; }</code>
+    </p>
+  </div>
+  <h4>Details add polish </h4>
+  <p>Many times the small details you add to your design will add the polish a page needs to look professional and trustworthy. Here is a list of small details that help finish this template.</p>
+  <ul>
+    <li>The subtle gradients in the navigation, breadcrumb and footer areas add polish and feel. </li>
+    <li>The reverse gradient on the search button adds dimension against its background. </li>
+    <li>The different border colors on each section add dimension to the elements.</li>
+    <li>The dashed lines separating the side columns and add texture and feel. </li>
+    <li>The arrows and hover effect on the bulleted lists add subtle detail and usability feedback to the user</li>
+  </ul>
+  <h4>Making the favicon.ico file</h4>
+  <p>Each of the Microsoft Visual Web Developer Design Templates comes with a favicon.ico file that matches the template's design. If you want to create your own <abbr title="favorite icon">favicon</abbr> file that matches your company logo for example you'll have to make one using one of the many <a href="http://search.msn.com/results.aspx?q=how+to+make+a+favicon.ico" title="Go to the search results for 'favicon.ico' on MSN.com." >.ico file tools available on the Web</a>. </p>
+  <h4>A note on consistency</h4>
+  <p>Even though it's not a good idea to make all text the same size and color,  it is a good idea to keep certain design features consistent on each page and between pages on your site. Here are a few design features in this template that should be kept consistent:</p>
+  <ul>
+    <li>Each vertical section is separated by 1 pixel bottom margin.</li>
+    <li>The  padding on all content is ten pixels on all sides. </li>
+    <li>All lists and lists of links use the same style.</li>
+  </ul>
+  <h3>Extending this Template<a name="section-nine" id="section-nine"></a> </h3>
+<div class="toclink" title="Go to the table of contents for this document."><a href="#toc">Table of contents</a></div>
+<h4>Changing the colors</h4>
+<p>There are ten main colors used in <a href="#colorsusedinthistemplat" title="Go to the 'color palette' section of this document.">this template's color palette</a>. However, most of the color in this template exists in the red header background and the red links. It is quite simple to change the entire feel of this template by changing the color of the background graphics and a few color values in the <abbr title="cascading style sheets" lang="en">CSS</abbr>. </p>
+<p>In the folder for this template you'll find a folder called &quot;themes&quot;. In it there is a blue theme for this template and the default red theme. To use the blue theme change the name of the &quot;blue&quot; folder to &quot;default&quot;.</p>
+<p>If you examine the differences between the blue and red files you'll see it is quite simple to change the entire color scheme of the template with only a few changes.</p>
+<div class="example">
+  <p>These are the changed <abbr title="cascading style sheets" lang="en">CSS</abbr> values in the blue color modification.</p>
+  <p><code>.body {<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;
+font-family:Geneva, Arial, Helvetica, sans-serif;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+color:#666666;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+margin:15px 40px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+background: #C7C7CF url(bg-main.gif) repeat-x; /* changed from red to light blue-gray */<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+font-size:.72em;<br />
+}</code></p>
+  <p><code>.a:link {<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;
+  color:#0000FF; /* changed from red to blue */<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+  }</code></p>
+  <p><code>a:visited {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; color:#0099CC; /* changed from green to blue-green */<br />
+&nbsp;&nbsp;&nbsp;&nbsp; }</code></p>
+  <p><code>a:hover {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; color:#000099; /* changed from dark red to dark blue */<br />
+&nbsp;&nbsp;&nbsp;&nbsp; text-decoration:none;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; }</code></p>
+  <p><code>#mainnav-container a:link {<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;
+color:#0000FF; /* changed from red to blue */<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+}</code></p>
+  <p><code>#mainnav-container a:visited {<br />
+ &nbsp;&nbsp;&nbsp;&nbsp; color:#0000FF; /* changed from red to blue */<br />
+ &nbsp;&nbsp;&nbsp;&nbsp; }</code></p>
+  <p><code>#mainnav-container a:hover {<br />
+ &nbsp;&nbsp;&nbsp;&nbsp; color:#000099; /* changed from red to blue */<br />
+ &nbsp;&nbsp;&nbsp;&nbsp; text-decoration:none;<br />
+ &nbsp;&nbsp;&nbsp;&nbsp; }</code></p>
+  <p><code>#breadcrumb-container a {<br />
+&nbsp;&nbsp;&nbsp;&nbsp; color:#0000FF; /* changed from red to blue */<br />
+&nbsp;&nbsp;&nbsp;&nbsp; }</code></p>
+  <p><code>#header {<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;
+margin-bottom:1px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+color:#FFFFFF;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+padding:10px 10px 10px 10px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+border-bottom:2px solid #7F7F7F;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+border-right:1px solid #7F7F7F;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+height:50px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+min-height:50px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+background: #16527D url(bg-header.gif) repeat-x; /* changed from red to blue */<br />
+&nbsp;&nbsp;&nbsp;&nbsp; font-size:1.8em;<br />
+&nbsp;&nbsp;&nbsp;&nbsp; font-weight:bold;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+}</code></p>
+  <p><code>.button-search {<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;
+height:18px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+margin:0px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+padding:0px 0px 0px 0px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+border-top:1px solid #CCCCCC;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+border-right:1px solid #999999;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+border-bottom:1px solid #999999;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+border-left:1px solid #CCCCCC;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+background: url(bg-button-search.gif) repeat-x;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+font-size:10px;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+font-family:Verdana, Arial, Helvetica, sans-serif;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+color:#0000FF; /* changed from red to blue */<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+}</code></p>
+</div>
+<h4>Adding a bit map logo instead of the &quot;site name&quot; text </h4>
+<p>You may want to include your logo as a bit map graphic instead of the text name for your site. Although you'll want to you use your own graphic for this purpose, there is an example logo graphic in the images folder called &quot;logo-graphic.gif&quot;.  You can see that this graphic is anti-aliased to the red background and it is a transparent gif. This allows the red background on the <abbr title="division tag" lang="en">DIV</abbr> to show through the graphic.</p>
+<div class="example"> 
+  <p>You can use your own logo graphic instead of the text for the site name by replacing this line in your source mark-up ...</p>
+  <p><code>&lt;a href=&quot;#&quot; title=&quot;Site name home page&quot;&gt;site name&lt;/a&gt;</code></p>
+  <p>... with this line:</p>
+  <p><code>&lt;a href=&quot;#&quot; title=&quot;Site name home page&quot;&gt;&lt;img src=&quot;themes/default/logo-graphic.gif&quot; alt=&quot;your company name&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;  </code></p>
+</div>
+  <h3>Quick Tips and Tricks<a name="section-ten" id="section-ten"></a></h3>
+
+  <div class="toclink" title="Go to the table of contents for this document."><a href="#toc">Table of contents</a></div>
+  <ol>
+    <li>Disable images in your browser then make sure all the content is still readable.</li>
+    <li>View your pages in 800 pixels and 600 pixels resolution and be sure you do not need to scroll horizontally to view all your content.</li>
+    <li>Validate your <acronym title="extensible hypertext markup language">XHTML</acronym> and <abbr title="cascading style sheets" lang="en" xml:lang="en">CSS</abbr> to find common coding errors.</li>
+    <li>Disable <abbr title="cascading style sheets" lang="en" xml:lang="en">CSS</abbr> in your browser then make sure all your content is still presented logically.</li>
+    <li>Use background images on certain elements to create unique layouts.</li>
+    <li>When creating complex layouts its helpful to remove all your content and simply work with the container elements only. When you get the container elements working as you like then add your content. </li>
+    <li>When making background images that repeat horizontally or vertically they only need to be 1 pixel wide or tall in order to work correctly. But instead make them at least 30 pixels wide or tall. This way, you can see them easily when viewed as thumbnails in Microsoft Windows Explorer. </li>
+    <li>Some browsers will add add a 5 pixel bottom PADDING to inline images. To counteract this we can set images to &quot;block&quot; with <abbr title="cascading style sheets" lang="en" xml:lang="en">CSS</abbr>. <code>.class-name img{display:block;}</code> Why do some browsers do this? It is because &quot;inline&quot; images can exist inline with text and thus some browsers add bottom padding to the image so that text descenders (like a lower case &quot;j&quot; or &quot;g&quot;) have room.</li>
+    <li>To center a <abbr title="division tag" lang="en" xml:lang="en">DIV</abbr> or any element within its container using <abbr title="cascading style sheets" lang="en" xml:lang="en">CSS</abbr> set its left and right MARGIN to AUTO like this <code>#your-div{margin-left:auto;margin-right:auto;}</code></li>
+    <li>Do not use heading tags to make a FONT bold or larger. Use <abbr title="cascading style sheets" lang="en" xml:lang="en">CSS</abbr> to style text.</li>
+    <li>For link pseudo classes to work properly they must be written in this order - LINK, VISITED, HOVER then ACTIVE.</li>
+  </ol>
+  <h3>Web Links, References &amp; Tools <a name="section-eleven" id="section-eleven"></a></h3>
+  <div class="toclink" title="Go to the table of contents for this document."><a href="#toc">Table of contents</a></div>
+  <h4>Microsoft product links</h4>
+  <ul>
+    <li> Get <a href="http://msdn.microsoft.com/asp.net/getvwd/" title="Go to the Microsoft Visual Web Developer 2005 Express Edition web site.">Visual Web Developer 2005 Express Edition</a> today and get started building dynamic, data-driven Web sites with this template.</li>
+    <li>Check out the <a href="http://msdn.microsoft.com/asp.net/design">Design Center on MSDN.</a></li>
+  </ul>
+  <h4>HTML validation</h4>
+  <ul>
+    <li>The <a href="http://validator.w3.org/" title="Go to the free XHTML validator on the W3C web site.">W3C has a free <acronym title="extensible hypertext markup language">XHTML</acronym> validator</a></li>
+  </ul>
+  <h4><abbr title="cascading style sheets" lang="en">CSS</abbr> validation</h4>
+  <ul>
+    <li>The <a href="http://jigsaw.w3.org/css-validator/" title="Go to the free CSS validator on the W3C Web site.">W3C has a free <abbr title="cascading style sheets" lang="en">CSS</abbr> validator</a></li>
+  </ul>
+  <h4>Section 508 Web site</h4>
+  <ul>
+    <li><a href="http://www.section508.gov/" title="Go to the Official Web site for Section 508 of the US Rehabilitation Act.">The Official Web site for Section 508 of the US Rehabilitation Act</a>. </li>
+    <li>Web Aim <a href="http://www.webaim.org/standards/508/checklist" title="Go to the Web Aim Section 508 checklist on the Web AIM Web site.">http://www.webaim.org/standards/508/checklist</a></li>
+    <li>Federal Aviation Administration <a href="http://www.faa.gov/aio/InfoMgmt/508/checklist.htm" title="Go to the Federal Aviation Administration's Section 508 checklist on the Federal Aviation Administration Web site.">http://www.faa.gov/aio/InfoMgmt/508/checklist.htm</a></li>
+    <li>California State University Fresno <a href="http://www.csufresno.edu/webaccess/learningmodules/legal_issues/readings/508_checklist.htm" title="A brief, printable checklist of web accessibility guidelines">http://www.csufresno.edu/webaccess/learningmodules/legal_issues/readings/508_checklist.htm</a></li>
+  </ul>
+  <h4>The <acronym title="Accessible Information Solutions">AIS</acronym> accessibility toolbar for Internet Explorer</h4>
+  <ul>
+    <li>The AIS Web Accessibility Toolbar <a href="http://www.nils.org.au/ais/web/resources/toolbar/index.html" title="A valuable toolbar for Microsoft Internet Explorer that is used to discover accessibility problems and in general aid in the development of your Web pages.">http://www.nils.org.au/ais/web/resources/toolbar/index.html</a></li>
+  </ul>
+</body>
+</html>

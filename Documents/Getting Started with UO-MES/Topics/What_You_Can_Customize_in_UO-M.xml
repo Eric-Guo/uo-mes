@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic template="Default" lasteditedby="Administrator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">可定制的UO MES</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">可定制的UO MES</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">同ERP和底层PLC控制软件不同，MES要负担起承上启下的功能，在不同的企业环境下必然有着不同的上下层软件集成要求，UO MES在设计之初，就将可定制方便性作为最重要的目标进行设计，您将会发现定制UO MES的工作非常直观，而且和其他国外绝大多数MES的定制方法不同，UO MES不会禁止您运用在其他MES或者软件平台学到的已有知识。虽然您可以使用.NET平台的所有API进行UO MES的定制编程工作，包括最新的WCF进行SOA框架集成，但是您很快会发现，UO MES的定制方法才是最方便直观的：例如UO MES的Excel Modeler工具完全避免了您编制MES配置用户界面的工作，同时您和工厂的计划排程团队还可以继续使用您熟悉的对于输入数据效率极高的Excel界面；UO Service则提供了几乎所有基本MES的动作，您需要做的只是简单的组合这些动作表达您的特定工艺步骤地要求……</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">UO MES再充分释放资深用户能力的同时，也对于初级用户提供了详尽文档，运用我们标准化的基于.NET的模型定义方法，MES初级用户也能直观的定义特定MES系统需要的模型细节，并可迅速掌握面向对象编程的精髓。</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">UO MES支持您通过下列方式定制您自己的MES系统：</text></para>
+    <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:9pt; color:#000000;">
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">通过Excel配置建立并维护您的工厂MES模型</text></li>
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">直接使用或者组合使用MES事务操作工厂模型</text></li>
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">基于模板填写参数制作特定工步的Web操作界面</text></li>
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">基于WCF的异构平台集成</text></li>
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">访问UO MES对象模型编写报表</text></li>
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">其他任意.NET平台下的扩展编程</text></li>
+    </list>
+  </body>
+</topic>

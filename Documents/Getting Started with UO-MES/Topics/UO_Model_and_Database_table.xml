@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic template="Default" lasteditedby="Administrator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">UO Model和数据库表的关系</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">UO Model和数据库表的关系</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">UO Model是UO MES的对象模型，出厂的模型已经包括了很多对象，这些对象经过精心组织后分为几个大类模型：</text></para>
+    <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:9pt; color:#000000;">
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">Phsycial物理模型代表了工厂中物理存在的模型对象，这些对象一般都有实际实体对应，例如Employee对应工厂的雇员，Resource对应工厂可以用于生产的资源，最主要的一类资源是设备，等等；</text></li>
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">Process流程模型代表了工厂流程相关的模型对象，这些对象强调处理过程，例如产品，产品订单，或者工艺，基本上您对生产的特殊要求都可以找到对应的对象放置相应的控制或者配置信息；</text></li>
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">Execution执行模型强调执行中的信息，批次相关的数据都被划分到这个模型的相关对象中，执行模型也包括了主历史纪录，主历史纪录记录所有操作中共性的信息，例如批次号，操作雇员信息，日期等等；</text></li>
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">ServiceHistory服务历史模型记录了所有操作中的非共性信息，每一个操作中的所有数据都会纪录下来保存到相应历史记录表，以便之后追踪和报表统计；</text></li>
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">Workflow流程模型封装了流程控制和执行工作流程所需的对象，UO MES会在内部使用Workflow模型信息控制批次的流转，不建议用户对这个模型中的对象进行改动；</text></li>
+    </list>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">UO Model中的对象都有直接对应的数据库相关表格，UO-MES的业务逻辑定制开发人员不必了解具体数据库的架构，而报表开发人员则不必了解UO MES的对象模型，UO MES的底层ORM技术将自动维护对象模型和数据库架构这两种数据表示方式。</text></para>
+  </body>
+</topic>

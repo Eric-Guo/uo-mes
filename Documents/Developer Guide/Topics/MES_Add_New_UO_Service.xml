@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic template="Default" lasteditedby="Eric" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">添加新的UO Service服务</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">添加新的UO Service服务</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">定制一个</text><link displaytype="text" defaultstyle="true" type="topiclink" href="Concept_UO_Service" styleclass="Normal" translate="true">UO Service服务</link><text styleclass="Normal" translate="true">反映工厂的一个实际业务操作往往是定制UO MES的最终目的，</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MES_Add_New_Model_Object" styleclass="Normal" translate="true">添加新模型对象</link><text styleclass="Normal" translate="true">也往往是为了支持新的UO Service服务，添加一个UO Service服务流程如下：</text></para>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">1.确定新UO Service服务的基类和命名空间</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">确定此服务属于的命名空间和基类，关于命名空间和基类的介绍请参考前一章的</text><link displaytype="text" defaultstyle="true" type="topiclink" href="Concept_UO_Service" styleclass="Normal" translate="true">UO Service服务</link><text styleclass="Normal" translate="true">一节。</text></para>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">2.添加新UO Service服务</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">在UO Service项目中添加新服务，添加相应用户输入属性(public properties for users)和TxnName属性、ValidateService、RecordServiceHistory、ModifyEntity方法。</text></para>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">3.添加新UO Service的服务明细（可选）</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">在同一个UO Service文件中，添加ServiceDetail，ServiceDetail中只包含值类型，添加后再在UO Service中添加ObjectDataSource的四个方法，方便后续的WebForm编写。</text></para>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">4.添加ServiceHistory</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">添加ServiceHistory到UO Model模型对象，若Service服务有明细，还需添加ServiceHistoryDetail。History模型对象的字段、属性大小写以及app.config文件更新要求同</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MES_Add_New_Model_Object" styleclass="Normal" translate="true">添加新模型对象</link><text styleclass="Normal" translate="true">一致。</text></para>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">5. 编写相应NUnit测试（可选）</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">NUnit测试能够自动测试新添加的UO Service服务，因此推荐创建一个，在UO UnitTest项目中，按照模型和测试执行顺序加入到自动测试集中。</text></para>
+  </body>
+</topic>

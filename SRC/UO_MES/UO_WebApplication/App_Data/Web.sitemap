@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" enableLocalization="true">
+    <siteMapNode url="~/Default.aspx" title="$resources:SiteMap, HOME"  description="$resources:SiteMap, HOME_desc">
+        <siteMapNode url="~/MES.aspx" title="$resources:SiteMap, MES"  description="$resources:SiteMap, MES_desc">
+            <siteMapNode url="~/ShopFloor/AssociateLot.aspx" title="$resources:SiteMap, Associate_Lot"  description="$resources:SiteMap, Associate_Lot_desc" />
+            <siteMapNode url="~/ShopFloor/CombineLot.aspx" title="$resources:SiteMap, Combine_Lot"  description="$resources:SiteMap, Combine_Lot_desc" />
+            <siteMapNode url="~/ShopFloor/DefectLot.aspx" title="$resources:SiteMap, Defect_Lot"  description="$resources:SiteMap, Defect_Lot_desc" />
+            <siteMapNode url="~/ShopFloor/DisassociateLot.aspx" title="$resources:SiteMap, Disassociate_Lot"  description="$resources:SiteMap, Disassociate_Lot_desc" />
+            <siteMapNode url="~/ShopFloor/Hold.aspx" title="$resources:SiteMap, Hold"  description="$resources:SiteMap, Hold_desc" />
+            <siteMapNode url="~/ShopFloor/MoveOut.aspx" title="$resources:SiteMap, Move_Out"  description="$resources:SiteMap, Move_Out_desc" />
+            <siteMapNode url="~/ShopFloor/MoveTxn.aspx" title="$resources:SiteMap, Move_Txn"  description="$resources:SiteMap, Move_Txn_desc" />
+            <siteMapNode url="~/ShopFloor/Release.aspx" title="$resources:SiteMap, Release"  description="$resources:SiteMap, Release_desc" />
+            <siteMapNode url="~/ShopFloor/ResourceSetup.aspx" title="$resources:SiteMap, ResourceSetup"  description="$resources:SiteMap, ResourceSetup_desc" />
+            <siteMapNode url="~/ShopFloor/ResourceThruput.aspx" title="$resources:SiteMap, ResourceThruput"  description="$resources:SiteMap, ResourceThruput_desc" />
+            <siteMapNode url="~/ShopFloor/SerializeLot.aspx" title="$resources:SiteMap, Serialize_Lot"  description="$resources:SiteMap, Serialize_Lot_desc" />
+            <siteMapNode url="~/ShopFloor/SplitLot.aspx" title="$resources:SiteMap, Split_Lot"  description="$resources:SiteMap, Split_Lot_desc" />
+            <siteMapNode url="~/ShopFloor/StartLot.aspx" title="$resources:SiteMap, Start_Lot"  description="$resources:SiteMap, Start_Lot_desc" />
+            <siteMapNode url="~/ShopFloor/Thruput.aspx" title="$resources:SiteMap, Thruput"  description="$resources:SiteMap, Thruput_desc" />
+        </siteMapNode>
+        <siteMapNode url="~/Report.aspx" title="$resources:SiteMap, Report"  description="$resources:SiteMap, Report_desc">
+        </siteMapNode>
+        <siteMapNode provider="MESSiteMapProvider" />
+        <siteMapNode url="~/About.aspx" title="$resources:SiteMap, About" description="$resources:SiteMap, About_desc" />
+    </siteMapNode>
+</siteMap>

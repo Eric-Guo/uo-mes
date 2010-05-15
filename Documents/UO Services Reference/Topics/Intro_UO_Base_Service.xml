@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic template="Default" lasteditedby="Administrator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">UO MES基本服务</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">UO MES基本服务</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">UO MES基本服务是所有UO MES操作服务的基类，基本服务主要封装了同数据库交互和处理主历史纪录（HistoryMainLine）的逻辑。</text></para>
+  </body>
+</topic>

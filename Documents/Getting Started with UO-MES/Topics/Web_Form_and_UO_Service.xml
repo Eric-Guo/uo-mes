@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic template="Default" lasteditedby="Administrator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Web界面和UO Service</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Web界面和UO Service</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">UO Service提供了业务操作的集合，这些业务操作仍然需要相应数据，这些数据可以通过设备自动化，但是绝大多数需要用户填写，Web界面就是UO MES系统和用户交互的缺省界面。</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Web界面将提供用户同UO Service交互的一个窗口，基于标准ASP.NET 2.0设计的Web界面可以支持IE, FireFox等多种浏览器，给与用户最大的灵活性。</text></para>
+  </body>
+</topic>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic template="Default" lasteditedby="Administrator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">UO MES介绍</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">UO MES介绍</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">UO MES是一种建立在微软.NET架构之上基于SOA（Service-oriented architecutre）理念设计的工厂管理应用程序。UO MES在设计中强调灵活性和扩展性，同时通过使用先进的ORM对象数据库映射技术，隐藏数据访问细节，使得数据库交互变得简单易行，UO即为Universal Object的缩写，名称即说明了UO MES提供了工厂MES的通用对象建模能力。</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">UO MES采用分布式架构包括数据层，应用层和客户端。</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">用于区分不同的数据处理强度和成本预算，UO-MES还支持多种数据库(SQL Server, Oracle, My SQL) </text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">在设计上，UO MES具有高产量、高可靠性和高可用性的特性。可以通过扩展服务器集群来满足企业不断增长的需求，同时最大程度上降低应用程序支持的成本。多工厂可以使用中央位置的事务服务器，或者现场可以在本地服务器上运行。开发上UO MES突破大多数MES模式，实现模块化，继承化；让开发者更容易地复用已有功能和新功能。</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">UO MES通过WCF技术方便地实现和其他系统的实时整合，也可支持使用传统Message Bus等其他技术实现整合。</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">UO MES系统还最大程度地整合了报表系统，使报表能更高效的展现。出厂配备的报表系统突破传统的SQL开发模式，可支持多数据库，当然用户也能开发传统基于数据库优化的SQL报表。</text></para>
+  </body>
+</topic>

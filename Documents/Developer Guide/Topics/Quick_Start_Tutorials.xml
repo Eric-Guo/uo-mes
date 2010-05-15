@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic template="Default" lasteditedby="Eric" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">快速开始演练</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">快速开始演练</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">UO MES已经提供了常见的MES功能，但是不同的行业与工厂都有着各自独特的要求，快速开始研练将提供一些典型的定制例子，帮助您一步步熟悉UO MES的定制开发。</text></para>
+  </body>
+</topic>

@@ -1,0 +1,172 @@
+﻿/******************
+HTML Tags
+******************/
+#content p, table {
+	margin:0px 0px 20px 0px;
+	}
+
+#breadcrumb-side label {
+	display:none
+	}
+
+/******************
+Layout Divs
+******************/
+#three-column-container {
+	width:100%;
+	margin:10px 0px;
+	text-align:justify;
+	}
+
+#three-column-left {
+	float:left;
+	width:30%
+	}
+
+#three-column-right {
+	float:right;
+	width:30%
+	}
+
+#three-column-middle {
+	width:30%;
+	margin:0px 32% 0px 35%
+	}
+
+
+/******************
+HEADINGS
+******************/
+h1 {
+	font-size:1.6em;
+	padding:0;
+	margin:0 0 10px 0;
+	}
+h2 { font-size:1.1em;}
+h3 { font-size:1.4em;}	
+h4 { font-size:1.1em;}	
+h5 { font-size:0.9em;}	
+h6 { font-size:0.8em;}
+
+#three-column-container h2 {
+	margin:0px 0px 10px 0px;
+	padding:0px;
+	}
+
+/******************
+MENU ITEMS
+******************/
+#mainnav-container ul {
+	margin:0px;
+	padding:0px;
+	}
+
+#mainnav-container li {
+	padding:0px;
+	list-style:none;
+	display:inline;
+	margin:5px 10px 5px 0px;
+	}
+
+#mainnav-side li {
+	padding:0px;
+	margin:5px 0px 5px 10px;
+	}
+
+/******************
+FORM STYLES
+******************/
+#content-container form {
+	margin:20px 0px;
+	padding:0px 0px 0px 0px;
+	}
+
+#content-container fieldset {
+	margin:10px 0px 20px 0px;
+	padding:0px 10px 10px 20px;
+	}
+
+/* a nested fieldset */
+#content-container fieldset fieldset {
+	margin:15px 0px 5px 0px;
+	padding:0px 5px 5px 5px;
+	}
+
+#content-container legend {
+	margin-bottom:0px;
+	padding:0px 10px 5px 5px;
+	color:#666666;
+	font-weight:bold;
+	}
+
+/* a nested legend */
+#content-container fieldset fieldset legend {
+	margin-bottom:0px;
+	padding:0px;
+	font-weight:normal;
+	}
+
+#content-container label {
+	padding-top:8px;
+	}
+
+#breadcrumb-side form {
+	margin:0px;
+	padding:0px;
+	text-align:right;
+	}
+
+#breadcrumb-side form fieldset {
+	margin:0px;
+	padding:0px;
+	border:none;
+	}
+
+#breadcrumb-side form legend {
+	display:none;
+	}
+
+/******************
+CLASSES
+******************/
+.button-big {
+	margin-top:8px;
+	}
+
+.none {
+	display:none;
+	}
+
+.clear {
+	clear:both;
+	}	
+
+/******************
+HINTBOX
+******************/
+.hintbox_list_container ul {
+	background-color: #FFFFFF;
+	width: 200px; 
+	padding: 0;
+	margin: 0;
+	border: 1px solid #7F9DB9;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	font-size: 14px;
+}
+.hintbox_list_container ul li {
+	line-height: 16px;
+	margin: 0;
+	padding: 1px 1px 1px 3px;
+	border: 0;
+}
+.hintbox_input {
+	margin: 0;
+	padding: 1px 18px 1px 4px; 
+	width: 160px;
+	border: 1px solid #7F9DB9;
+}
+.hintbox_loading {
+	background: url(ajax-loader.gif) no-repeat center right;
+}

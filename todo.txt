@@ -1,0 +1,7 @@
+Things need todo:
+*. Add more validate to the transaction
+*. Add report system that support multi-language and multi-db by using ODL language
+*. Workflow GUI editor
+
+next reorgnize code in construct SVN todo:
+*. Reorginize webform

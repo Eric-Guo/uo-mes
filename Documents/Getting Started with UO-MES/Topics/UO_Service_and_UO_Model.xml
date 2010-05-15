@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic template="Default" lasteditedby="Eric" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">UO Service和UO Model</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">UO Service和UO Model</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">UO Service是UO MES业务操作服务的集合，业务操作是工厂中的一项具体工作的抽象，基本业务操作则是将一项具体工作进行细分后形成的原子操作，例如，一般的产品装箱就可以用基本业务操作表达为合并已有产品的批次和将合并完的产品发往仓库两个操作，当然，每一个工厂的产品装箱都有特殊的考量，例如有些需要同时贴上标签，另外的还需要记录重量等等。</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">由于工厂中特定的具体工作多种多样，UO-MES无法通过预先设计来涵盖所有这些具体操作情况，所以，UO MES引用面向对象编程技术中的继承和组合机制，允许您将基本业务操作扩展和组合，以形成特定行业和特定工厂的业务操作。</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">UO Service中的业务操作的就是UO Model中的工厂模型对象，两者的关系就是算法和数据结构的关系。UO Service中也会引用UO Model中的对象，但是和UO Model中的引用完全不同，UO Service中的引用只是临时的，随着这个业务操作结束而结束，而UO Model的引用是持久性的，会直接记录数据库，这一点在编写业务操作服务的时候需要区分注意。</text></para>
+  </body>
+</topic>

@@ -1,0 +1,2 @@
+"C:\Program Files\Telerik\OpenAccess ORM\bin\VSchema.exe" -assembly:"..\UO_MES\UO_Model\bin\Debug\UO_Model.dll" -config:"..\UO_MES\UO_Model\App.config" -create -connectionId:MES_Ora_DBConnection -direct+
+pause

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic template="Default" lasteditedby="Eric" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">MES常见任务工作流程</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">MES常见任务工作流程</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">MES系统中有许多常见任务，在解决复杂的工厂需求的过程中，往往可以将复杂的定制任务分解为这些常见任务，因此，开发者首先熟悉这些常见任务是十分必要的，本章将详细讲解如何完成这些UO MES的常见任务，后面的</text><link displaytype="text" defaultstyle="true" type="topiclink" href="Quick_Start_Tutorials" styleclass="Normal" translate="true">快速开始演练</link><text styleclass="Normal" translate="true">中将只提到这些任务的名字和做法，不再详细介绍如何完成这些常见任务。</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">这些任务如果导致新文件的产生，在递交到SVN时，就要注意添加新增的*.cs文件和同步VS2008, VS2005的项目文件，在具体任务流程中，将不再重复这一点。</text></para>
+  </body>
+</topic>

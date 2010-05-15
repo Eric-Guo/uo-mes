@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic template="Default" lasteditedby="Eric" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Start（开始批次）</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Start（开始批次）</text></para>
+    </header>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">Start（开始批次）介绍：</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">开始批次服务将会开始一个新的批次，批次可以包括一个或者多个追踪层次，不同层次批次之间的关系是母子关系。多个追踪层次批次中的数量计算方式为，各个子批次的数量相加为母批次的数量。</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">当所有子批次都将以相同方式处理的时候，可以仅在母批次上做此操作服务，此时MES将自动应用操作服务至子批次。</text></para>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">Start（开始批次）服务所涉及的栏位：</text></para>
+    <para styleclass="Normal"><table styleclass="Default" rowcount="6" colcount="2">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">字段</text></para>
+        </td>
+        <td>
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">描述</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">MfgOrder</text></para>
+        </td>
+        <td>
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">批次相关生产订单</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">Workflow</text></para>
+        </td>
+        <td>
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">批次将要走的流程</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">WorkflowStep</text></para>
+        </td>
+        <td>
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">批次将要走的流程步</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">StartReason</text></para>
+        </td>
+        <td>
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">开始此批次的原因</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">Details</text></para>
+        </td>
+        <td>
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">开始批次的详细信息</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">StartDetail的栏位：</text></para>
+    <para styleclass="Normal"><table styleclass="Default" rowcount="9" colcount="2">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">字段</text></para>
+        </td>
+        <td>
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">描述</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">ContainerName</text></para>
+        </td>
+        <td>
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">批次名</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">ContainerLevel_Name</text></para>
+        </td>
+        <td>
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">批次层次</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para><text style="font-family:新宋体; font-size:9pt; color:#000000;" translate="true">ContainerStatus_Name</text></para>
+        </td>
+        <td>
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">批次状态</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para><text style="font-family:新宋体; font-size:9pt; color:#000000;" translate="true">DueDate</text></para>
+        </td>
+        <td>
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">到期日</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para><text style="font-family:新宋体; font-size:9pt; color:#000000;" translate="true">Product_Revision</text></para>
+        </td>
+        <td>
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">批次所属产品</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para><text style="font-family:新宋体; font-size:9pt; color:#000000;" translate="true">Qty</text></para>
+        </td>
+        <td>
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">批次数量</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para><text style="font-family:新宋体; font-size:9pt; color:#000000;" translate="true">UOM_Name</text></para>
+        </td>
+        <td>
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">批次计量单位</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para><text style="font-family:新宋体; font-size:9pt; color:#000000;" translate="true">ChildContainers</text></para>
+        </td>
+        <td>
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">子批次的详细信息</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">Start（开始批次）服务产生的结果：</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">产生出相应的批次，记录此次开始批次的历史信息</text></para>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">Start（开始批次）服务所关联的数据表：</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Container, CurrentStatus, StartHistory, StartHistoryDetail</text></para>
+  </body>
+</topic>

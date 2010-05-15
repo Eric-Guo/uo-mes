@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic template="Default" lasteditedby="Administrator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">如何定制UO MES</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">如何定制UO MES</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">如何定制UO MES将在其他开发文档中详细说明，本UO MES的入门文档将只根据定制任务列出开发环境需求，UO MES的安装请参考UO MES安装手册。</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">&#32;</text></para>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">通过Excel配置建立并维护您的工厂MES模型</text></para>
+    <list id="3" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:9pt; color:#000000;">
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">Excel XP或更高版本（需向微软单独购买，一般作为Office的一部分已经集成在用户电脑中了）</text></li>
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">.NET Framework 2.0 运行库</text></li>
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">UO MES Excel Modeler</text></li>
+    </list>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">定制MES事务以便操作工厂模型</text></para>
+    <list id="4" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:9pt; color:#000000;">
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">MS Visual Studio 2005/2008 Express Edition（微软网站免费下载使用）</text></li>
+    </list>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">定制MES的Web操作界面</text></para>
+    <list id="4" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:9pt; color:#000000;">
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">MS Visual Web Developer 2005/2008 Express Edition（微软网站免费下载使用）</text></li>
+    </list>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">基于WCF的异构平台集成</text></para>
+    <list id="4" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:9pt; color:#000000;">
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">MS Visual Web Developer 2008 Express Edition（若仅使用IIS做容器）</text></li>
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">MS Visual Studio 2008（需向微软单独购买，若将独立出单独Windows服务做服务容器）</text></li>
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">若使用Java等异构开发平台需用户自备，UO MES官方仅支持WCF（WCF已经包括Web Service, MSMQ, COM+及WSE扩展协议）方式同MES集成</text></li>
+    </list>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">访问UO MES对象模型编写报表</text></para>
+    <list id="4" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:9pt; color:#000000;">
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">MS Visual Web Developer 2005/2008 Express Edition（若采用UO-MES集成报表方式，推荐）</text></li>
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">若采用传统SQL方式编写报表，需用户自备相关数据库报表工具</text></li>
+    </list>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">任意.NET平台下的扩展编程</text></para>
+    <list id="5" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:9pt; color:#000000;">
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">可使用任何开发工具，UO MES是标准的.NET 2.0应用程序</text></li>
+    </list>
+  </body>
+</topic>

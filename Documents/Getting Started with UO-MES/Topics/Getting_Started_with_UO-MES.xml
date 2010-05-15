@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic template="Default" lasteditedby="Administrator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">开始UO MES系统</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">开始UO MES系统</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">在这一章中将逐一介绍UO MES的架构，基本模块和模块间的关系。阅读本章后将对UO MES有一个整体印象。</text></para>
+  </body>
+</topic>

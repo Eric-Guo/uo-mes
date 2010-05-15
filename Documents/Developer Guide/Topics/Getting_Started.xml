@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic template="Default" lasteditedby="Eric" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">MES从这里开始</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">MES从这里开始</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">UO MES基于简洁原则设计，这意味着便于理解，便于定制，培训简单。但UO MES本身并不简单，它支持MES自动化，系统支持Oracle, SQL Server, MySQL多种数据库，不但支持一台机器部署全部系统，更可扩展至标准的三层架构乃至应用服务器集群。</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">虽然市场上充斥的“开箱即用”，“功能完整”，“完全免编程”，“只需配置”的MES宣传口号，但我们仍然相信：</text></para>
+    <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:9pt; color:#000000;">
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">量身定制、简洁、易于改变的系统才是客户真正想要的MES；</text></li>
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">代码而不是配置才是真正表达客户业务逻辑的真正方法；</text></li>
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">便于掌握，使用大众技术的开源MES才不会锁定在一家供应商上。</text></li>
+    </list>
+    <para styleclass="Normal"></para>
+  </body>
+</topic>

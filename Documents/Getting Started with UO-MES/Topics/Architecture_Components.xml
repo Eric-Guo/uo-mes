@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic template="Default" lasteditedby="Administrator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">组成UO MES的组件</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">组成UO MES的组件</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">UO MES的架构是非常典型的多层架构：逻辑上的数据层(Data tier)，业务层(Logic tier)和表示层(Presentation tier)。它们都分别被仔细的封装。</text></para>
+    <para styleclass="Normal"><image src="UO-MES_archecture.png" scale="100.00%" styleclass="Image Caption"><caption translate="true"><![CDATA[UO MES架构图]]></caption></image></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">数据层中UO MES采用了ORM（Object-Relational Mapping）技术，不仅将数据库中的表表示为具体的工厂对象模型结构，而且同时获得了支持多种数据库（包括Oracle, MS SQL Server, MySQL）的能力。</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">业务层中UO MES将每个业务操作分门别类，利用面向对象语言的继承，多态和封装能力，大幅度减少了描述每个类的业务逻辑代码量。与此同时与其他一些MES不同，我们始终相信，所谓的“0编码，配置代替编程”对于新功能的开发是不切实际的。在UO MES中业务逻辑以面向对象的语言表示，您将会发现，这种描述不仅比配置直观的多，而且还使您可以使用熟悉的VS.NET来调试业务逻辑，极大的提升开发速度。</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">在表示层中，由于已经对业务层进行了完全封装，UO MES的表示层其实可以使用任何您希望的技术实现。不过我们仍然推荐使用UO MES出厂配备的标准ASP.NET网页作为参考实现。</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">UO Web Application缺省即支持多语言，界面主题更换，角色管理和登录控制更是和ASP.NET和Windows本身机制集成。UO Web Application支持采用Web标准设计，可以支持从IE 7, Firefox到PDA等的各类设备（一些屏幕过小设备必须选择优化显示的界面主题）。</text></para>
+    <para styleclass="Normal"></para>
+  </body>
+</topic>

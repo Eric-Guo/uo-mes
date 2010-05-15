@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic template="Default" lasteditedby="Administrator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">相关的.NET技术及技能</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">相关的.NET技术及技能</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">定制UO MES对于.NET的技能要求不高，因为绝大多数定制UO MES的情况都只需按照文档建议的流程定制即可。但若用户对于相关的.NET技术和技能有更多了解，则不仅可以知其然，而更知其所以然，编写出更好更优秀的代码。</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">UO MES定制将会用到下列.NET技术，期望掌握的程度为：买一本相关的.NET书籍，通读一遍。</text></para>
+    <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:9pt; color:#000000;">
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">ASP.NET 2.0</text></li>
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">C#</text></li>
+    </list>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">UO MES采用大量面向对象的系统分析与设计方法，相关的知识和技术书籍较少，用户在使用UO MES过程中会慢慢体会到，另外UO MES的开发者手册（Developer Guide）中也有相应的演练，强烈推荐准备对进行定制UO MES的用户仔细演练体会。</text></para>
+    <para styleclass="Normal"></para>
+  </body>
+</topic>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic template="Default" lasteditedby="Administrator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">UO MES架构</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">UO MES架构</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">UO MES的架构参考了一些已有MES的实现，综合评估了复杂性。架构的目的是分层和隔离，增强灵活性和隔离改动对整个系统的影响；但是过多的分层是有害的，接口部分复杂性如果超过了隔离的部分，就失去了分层的意义。UO MES的架构综合考虑的这些因素。</text></para>
+  </body>
+</topic>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic template="Default" lasteditedby="Administrator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">UO MES对象维护服务</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">UO MES对象维护服务</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">对象维护服务是UO MES中创建工厂模型对象的服务，工厂模型对象是可持久储存于数据库中的对象，UO MES的Excel Modeler将调用这些服务，当然，用户也可以在.NET中或者通过WCF提供的接口调用这些服务。</text></para>
+  </body>
+</topic>

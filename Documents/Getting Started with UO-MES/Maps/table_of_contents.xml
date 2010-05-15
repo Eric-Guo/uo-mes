@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XInclude">
+  <topicref type="topic" id="399516195908618" build="ALL" modified="2009-06-01T16:40:53.612Z" icon="0" href="Overview">
+    <caption translate="true">UO MES简介</caption>
+    <topicref type="topic" id="399515113783795" build="ALL" modified="2009-05-18T10:47:36.656Z" icon="0" href="Manufacturing_Execution_System">
+      <caption translate="true">制造执行系统(MES)</caption>
+    </topicref>
+    <topicref type="topic" id="399513108606600" build="ALL" modified="2009-06-01T16:40:59.659Z" icon="0" href="UO-MES_Overview">
+      <caption translate="true">UO MES介绍</caption>
+    </topicref>
+    <topicref type="topic" id="399516216727211" build="ALL" modified="2009-06-01T16:42:39.191Z" icon="0" href="UO-MES_Core_Feature_Summary">
+      <caption translate="true">UO MES核心功能</caption>
+    </topicref>
+  </topicref>
+  <topicref type="topic" id="399515196192729" build="ALL" modified="2009-06-01T16:42:43.879Z" icon="0" href="Getting_Started_with_UO-MES">
+    <caption translate="true">开始UO MES系统</caption>
+    <topicref type="topic" id="399514593088723" build="ALL" modified="2009-06-01T16:48:11.568Z" icon="0" href="UO-MES_Architecture">
+      <caption translate="true">UO MES架构</caption>
+      <topicref type="topic" id="399513993865446" build="ALL" modified="2009-06-01T16:48:28.584Z" icon="0" href="Architecture_Components">
+        <caption translate="true">组成UO MES的组件</caption>
+      </topicref>
+      <topicref type="topic" id="399513177499989" build="ALL" modified="2009-05-18T10:49:36.437Z" icon="0" href="Architecture_Client">
+        <caption translate="true">客户端</caption>
+      </topicref>
+      <topicref type="topic" id="399515770836892" build="ALL" modified="2009-06-01T16:48:32.756Z" icon="0" href="Architecture_UO-MES_Server">
+        <caption translate="true">UO MES应用服务器</caption>
+      </topicref>
+      <topicref type="topic" id="399515235904357" build="ALL" modified="2009-05-18T10:49:51.953Z" icon="0" href="Architecture_Database">
+        <caption translate="true">数据库</caption>
+      </topicref>
+    </topicref>
+    <topicref type="topic" id="399512784677171" build="ALL" modified="2009-06-01T16:48:16.553Z" icon="0" href="Base_UO-MES_Modules">
+      <caption translate="true">UO MES的基本模块</caption>
+    </topicref>
+    <topicref type="topic" id="399514445100261" build="ALL" modified="2009-05-18T10:51:26.687Z" icon="0" href="Interface_and_Support_Tool_Rel">
+      <caption translate="true">模块界面关系和处理工具</caption>
+      <topicref type="topic" id="399516325335530" build="ALL" modified="2009-05-18T10:52:21.000Z" icon="0" href="UO_Model_and_Database_table">
+        <caption translate="true">UO Model和数据库表的关系</caption>
+      </topicref>
+      <topicref type="topic" id="399513948779999" build="ALL" modified="2009-05-18T10:52:42.656Z" icon="0" href="UO_Service_and_UO_Model">
+        <caption translate="true">UO Service和UO Model</caption>
+      </topicref>
+      <topicref type="topic" id="399514530663682" build="ALL" modified="2009-05-18T10:52:55.796Z" icon="0" href="Web_Form_and_UO_Service">
+        <caption translate="true">Web界面和UO Service</caption>
+      </topicref>
+    </topicref>
+  </topicref>
+  <topicref type="topic" id="399513243653773" build="ALL" modified="2009-06-01T16:42:48.348Z" icon="0" href="Customizing_UO-MES">
+    <caption translate="true">定制UO MES</caption>
+    <topicref type="topic" id="399513179158578" build="ALL" modified="2009-06-01T16:48:00.240Z" icon="0" href="What_You_Can_Customize_in_UO-M">
+      <caption translate="true">可定制的UO MES</caption>
+    </topicref>
+    <topicref type="topic" id="399512655305388" build="ALL" modified="2009-06-01T16:48:04.646Z" icon="0" href="What_You_Need_to_Customize_the">
+      <caption translate="true">如何定制UO MES</caption>
+    </topicref>
+    <topicref type="topic" id="399512228512394" build="ALL" modified="2009-05-18T10:55:14.781Z" icon="0" href="Required_NET_Technology_Skil">
+      <caption translate="true">相关的.NET技术及技能</caption>
+    </topicref>
+    <topicref type="topic" id="399515779495594" build="ALL" modified="2009-05-18T10:55:22.609Z" icon="0" href="For_More_Information">
+      <caption translate="true">更多信息</caption>
+    </topicref>
+  </topicref>
+</map>

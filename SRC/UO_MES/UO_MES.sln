@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UO_Model", "UO_Model\UO_Model.csproj", "{EA2CB1A1-AC03-4C9B-A021-4049FCAE3A6C}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UO_Service", "UO_Service\UO_Service.csproj", "{225F7893-550B-4569-B8ED-6CAD5A72041D}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UO_UnitTest", "UO_UnitTest\UO_UnitTest.csproj", "{19A9C1BD-EFEB-4F97-A387-22017633C46F}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UO_ExcelModeler", "UO_ExcelModeler\UO_ExcelModeler.csproj", "{5356B7AD-1081-427B-987F-30C7A67A45C7}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UO_WebApplication", "UO_WebApplication\UO_WebApplication.csproj", "{EF664956-E675-41F4-ADE4-C989F1F35782}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA2CB1A1-AC03-4C9B-A021-4049FCAE3A6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA2CB1A1-AC03-4C9B-A021-4049FCAE3A6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA2CB1A1-AC03-4C9B-A021-4049FCAE3A6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA2CB1A1-AC03-4C9B-A021-4049FCAE3A6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{225F7893-550B-4569-B8ED-6CAD5A72041D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{225F7893-550B-4569-B8ED-6CAD5A72041D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{225F7893-550B-4569-B8ED-6CAD5A72041D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{225F7893-550B-4569-B8ED-6CAD5A72041D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19A9C1BD-EFEB-4F97-A387-22017633C46F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19A9C1BD-EFEB-4F97-A387-22017633C46F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19A9C1BD-EFEB-4F97-A387-22017633C46F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19A9C1BD-EFEB-4F97-A387-22017633C46F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5356B7AD-1081-427B-987F-30C7A67A45C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5356B7AD-1081-427B-987F-30C7A67A45C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5356B7AD-1081-427B-987F-30C7A67A45C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5356B7AD-1081-427B-987F-30C7A67A45C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF664956-E675-41F4-ADE4-C989F1F35782}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF664956-E675-41F4-ADE4-C989F1F35782}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF664956-E675-41F4-ADE4-C989F1F35782}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF664956-E675-41F4-ADE4-C989F1F35782}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

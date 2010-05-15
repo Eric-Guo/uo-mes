@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic template="Default" lasteditedby="Eric" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">添加新模型对象</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">添加新模型对象</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">UO MES中通过简单的在UO Model（或者UO某个行业扩展Model）项目中定义一个.NET的新类来实现添加一个新的模型对象的工作，可以通过下列流程完成添加一个新模型对象的工作：</text></para>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">1.确定新类的基类和命名空间</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">确定此类属于的命名空间和基类，关于命名空间和基类的介绍请参考</text><link displaytype="text" defaultstyle="true" type="topiclink" href="Concept_Model_Object" styleclass="Normal" translate="true">前一章的模型对象</link><text styleclass="Normal" translate="true">一节。</text></para>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">2.添加新类</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">添加的新类中的所有字段(Field)必须为private，然后用public的属性(Property)包裹这些字段，命名规则是private的名字第一个word首字母小写，其后Word为大写，对应public的属性的第一个首字母大写，其余和private相同。</text></para>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">3.添加App.config中的新类对应条目</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">新类添加完成后还需要在UO_Model（或者UO某个行业扩展Model）项目中的App.config中添加此新类的条目，请找到类对应的命名空间后，按照类名的字母顺序添加，最少需要添加，其中表名同类名相同：</text></para>
+    <para styleclass="Code Example"><text styleclass="Code Example" translate="true">&lt;class name=&quot;ContainerLevel&quot;&gt;</text></para>
+    <para styleclass="Code Example"><text styleclass="Code Example" translate="true"> &#160; &#160;&lt;extension key=&quot;db-table-name&quot; value=&quot;ContainerLevel&quot; /&gt;</text></para>
+    <para styleclass="Code Example"><text styleclass="Code Example" translate="true"> &#160; &#160;&lt;extension key=&quot;db-key-generator&quot; value=&quot;HIGHLOW&quot; /&gt;</text></para>
+    <para styleclass="Code Example"><text styleclass="Code Example" translate="true">&lt;/class&gt;</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">class下面的column名字仅在field</text><text styleclass="Normal" style="font-weight:bold;" translate="true">名字和类型名字不符合时</text><text styleclass="Normal" translate="true">需要添加，例如，ComponentIssueHistoryDetail有Product字段，类型已经是Product，所以就不必添加了，但是FromContainer和ToContainer的类型都是Container，所以就需要添加，因为不添加采用缺省数据库字段对应是不对的，底层的ORM将会生成形如Container1, Container2之类的字段名，报表开发人员将无法将这些字段同有意义的FromContainer和ToContainer对应。</text></para>
+  </body>
+</topic>

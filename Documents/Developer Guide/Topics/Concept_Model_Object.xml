@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic template="Default" lasteditedby="Eric" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">UO Model模型对象</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">UO Model模型对象</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">UO MES中的模型对象是指将会持续存在超过MES服务生存周期的一类对象，从数据库角度看，模型对象就是有对应数据表存储对象实例信息的对象。UO MES的服务最终的目的也是改变或者生成模型对象以反映工厂的生产状态信息。因此，掌握如何</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MES_Add_New_Model_Object" styleclass="Normal" translate="true">添加新模型对象</link><text styleclass="Normal" translate="true">是UO MES定制开发中的基础，了解UO MES模型对象概念则是基础中的基础。</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">UO MES的模型对象可以分成不同的类别，UO MES中主要有两种分类方法，按照命名空间划分和按照继承基类划分。</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">UO MES的命名空间和用途如下：</text></para>
+    <para styleclass="Normal"><table styleclass="Default" rowcount="7" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:128px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">命名空间</text></para>
+        </td>
+        <td style="width:523px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">用途</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:128px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">Base</text></para>
+        </td>
+        <td style="width:523px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">MES基类所在的命名空间，用户不应该更改在此命名空间下的对象</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:128px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">Execution</text></para>
+        </td>
+        <td style="width:523px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">MES执行相关对象所在的命名空间，执行对象由MES服务管理，一般不提供对应的对象维护服务</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:128px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">Physical</text></para>
+        </td>
+        <td style="width:523px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">包含在工厂中物理上实际存在的对象</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:128px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">Process</text></para>
+        </td>
+        <td style="width:523px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">包含在工厂中控制生产流程和物理上不存在的对象</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:128px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">ServiceHistory</text></para>
+        </td>
+        <td style="width:523px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">包含主生产历史纪录和各个特定服务历史纪录，模型对象更改历史纪录跟随模型对象定义的命名空间，不应使用本命名空间</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:128px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">Workflow</text></para>
+        </td>
+        <td style="width:523px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">批次生产流程相关对象所在的命名空间</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">UO MES可供继承的基类和用途如下：</text></para>
+    <para styleclass="Normal"><table styleclass="Default" rowcount="11" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:180px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">基类</text></para>
+        </td>
+        <td style="width:472px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">用途</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:180px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">NamedObject</text></para>
+        </td>
+        <td style="width:472px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">命名对象基类，命名对象是可以通过名称来唯一确定某个对象实例的UO MES模型对象</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:180px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">NamedObjectChangeHistory</text></para>
+        </td>
+        <td style="width:472px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">命名对象更改历史纪录基类，若某命名对象需要纪录更改历史可从此基类派生</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:180px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">RevisionBase</text></para>
+        </td>
+        <td style="width:472px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">版本对象名称基类，提供具有相同名称不同版本对象的唯一名称和当前版本信息</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:180px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">RevisionedObject</text></para>
+        </td>
+        <td style="width:472px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">版本对象基类，版本对象是通过名称和版本来唯一确定某个对象实例的UO MES模型对象</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:180px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">RevisionedObjectChangeHistory</text></para>
+        </td>
+        <td style="width:472px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">版本对象更改历史纪录基类，若需要纪录版本对象更改历史可从此基类派生</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:180px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">ServiceHistorySummary</text></para>
+        </td>
+        <td style="width:472px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">服务历史纪录基类</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:180px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">ServiceHistoryDetail</text></para>
+        </td>
+        <td style="width:472px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">服务明晰历史纪录基类</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:180px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">UserCode</text></para>
+        </td>
+        <td style="width:472px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">用户自定义代码的基类，从此处派生用户的特定自定义代码可共享一个数据表存储</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:180px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">UserReason</text></para>
+        </td>
+        <td style="width:472px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">用户自定义原因的基类，从此处派生用户的特定自定义原因可共享一个数据表存储</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:180px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">UserStatus</text></para>
+        </td>
+        <td style="width:472px;">
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">用户自定义状态的基类，从此处派生用户的特定自定义状态可共享一个数据表存储</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">在新建模型对象的时候，用户需要按照这些分类决定模型对象是基于何种基类和命名空间。</text></para>
+  </body>
+</topic>

@@ -1,0 +1,137 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EA2CB1A1-AC03-4C9B-A021-4049FCAE3A6C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UO_Model</RootNamespace>
+    <AssemblyName>UO_Model</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\Microsoft.NET\Framework\v3.0\Windows Communication Foundation\System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.OpenAccess, Version=2008.3.1110.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Base\NamedObject.cs" />
+    <Compile Include="Base\NamedObjectChangeHistory.cs" />
+    <Compile Include="Base\RevisionBase.cs" />
+    <Compile Include="Base\RevisionedObject.cs" />
+    <Compile Include="Base\RevisionedObjectChangeHistory.cs" />
+    <Compile Include="Base\ServiceHistoryDetail.cs" />
+    <Compile Include="Base\ServiceHistorySummary.cs" />
+    <Compile Include="Base\UserCode.cs" />
+    <Compile Include="Base\UserReason.cs" />
+    <Compile Include="Base\UserStatus.cs" />
+    <Compile Include="Execution\Container.cs" />
+    <Compile Include="Execution\CurrentStatus.cs" />
+    <Compile Include="Execution\ExecutionCode.cs" />
+    <Compile Include="Execution\ExecutionReason.cs" />
+    <Compile Include="Execution\ExecutionStatus.cs" />
+    <Compile Include="Execution\ResourceProductionInfo.cs" />
+    <Compile Include="Execution\SiteMap.cs" />
+    <Compile Include="Physical\PhysicalCode.cs" />
+    <Compile Include="Physical\PhysicalStatus.cs" />
+    <Compile Include="Physical\PhysicalReason.cs" />
+    <Compile Include="Physical\Customer.cs" />
+    <Compile Include="Physical\Employee.cs" />
+    <Compile Include="Physical\EmployeeProfile.cs" />
+    <Compile Include="Physical\Enterprise.cs" />
+    <Compile Include="Physical\Factory.cs" />
+    <Compile Include="Physical\Resource.cs" />
+    <Compile Include="Physical\ResourceGroup.cs" />
+    <Compile Include="Physical\Role.cs" />
+    <Compile Include="Physical\ShipmentDestination.cs" />
+    <Compile Include="Physical\Site.cs" />
+    <Compile Include="Physical\SystemSecurityGroup.cs" />
+    <Compile Include="Physical\Team.cs" />
+    <Compile Include="Physical\Vendor.cs" />
+    <Compile Include="Physical\WorkCenter.cs" />
+    <Compile Include="Process\ContainerLevel.cs" />
+    <Compile Include="Process\DataCollectionDef.cs" />
+    <Compile Include="Process\DataCollectionDefBase.cs" />
+    <Compile Include="Process\MfgOrder.cs" />
+    <Compile Include="Process\Operation.cs" />
+    <Compile Include="Process\Product.cs" />
+    <Compile Include="Process\ProductBase.cs" />
+    <Compile Include="Process\ProductFamily.cs" />
+    <Compile Include="Process\ProcessStatus.cs" />
+    <Compile Include="Process\ProcessCode.cs" />
+    <Compile Include="Process\ProcessReasons.cs" />
+    <Compile Include="Process\SalesOrder.cs" />
+    <Compile Include="Process\Setup.cs" />
+    <Compile Include="Process\SetupBase.cs" />
+    <Compile Include="Process\Shift.cs" />
+    <Compile Include="Process\Spec.cs" />
+    <Compile Include="Process\SpecBase.cs" />
+    <Compile Include="Process\UOM.cs" />
+    <Compile Include="ServiceHistory\AssociateHistory.cs" />
+    <Compile Include="ServiceHistory\CollectDataHistory.cs" />
+    <Compile Include="ServiceHistory\CollectResDataHistory.cs" />
+    <Compile Include="ServiceHistory\CombineHistory.cs" />
+    <Compile Include="ServiceHistory\ComponentIssueHistory.cs" />
+    <Compile Include="ServiceHistory\ComponentRemoveHistory.cs" />
+    <Compile Include="ServiceHistory\DefectHistory.cs" />
+    <Compile Include="ServiceHistory\DisassociateHistory.cs" />
+    <Compile Include="ServiceHistory\HistoryMainLine.cs" />
+    <Compile Include="ServiceHistory\HoldReleaseHistory.cs" />
+    <Compile Include="ServiceHistory\MoveHistory.cs" />
+    <Compile Include="ServiceHistory\MoveInHistory.cs" />
+    <Compile Include="ServiceHistory\ResourceStatusHistory.cs" />
+    <Compile Include="ServiceHistory\ResourceThruputHistory.cs" />
+    <Compile Include="ServiceHistory\SerializeHistory.cs" />
+    <Compile Include="ServiceHistory\SplitHistory.cs" />
+    <Compile Include="ServiceHistory\StartHistory.cs" />
+    <Compile Include="ServiceHistory\ThruputHistory.cs" />
+    <Compile Include="Workflow\Path.cs" />
+    <Compile Include="Workflow\SpecStep.cs" />
+    <Compile Include="Workflow\Step.cs" />
+    <Compile Include="Workflow\Workflow.cs" />
+    <Compile Include="Workflow\WorkflowBase.cs" />
+    <Compile Include="Constants.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties OpenAccess_ConfigFile="App.config" OpenAccess_ConnectionId="MESDatabaseConnection" OpenAccess_Enhancing="True" OpenAccess_UpdateDatabase="True" OpenAccess_EnhancementOutputLevel="1" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

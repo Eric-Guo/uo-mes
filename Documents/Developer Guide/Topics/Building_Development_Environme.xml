@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic template="Default" lasteditedby="6749" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">建构开发环境</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">建构开发环境</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">本章将详细描述如何建构UO MES的开发环境，让您可以迅速开始UO MES的开发工作。</text></para>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">开始前需要预先安装的开发工具</text></para>
+    <list id="24" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" style="font-family:Symbol; font-size:9pt; color:#000000;">
+      <li><text styleclass="Normal" translate="true">VS.NET 2005或者VS.NET 2008（均推荐打上SP1补丁）</text></li>
+    </list>
+    <para styleclass="Notes"><text styleclass="Notes" translate="true">若使用VS.NET 2005开发，需要安装.NET Framework 3.0运行库或者.NET Framework 3.5 SP1（推荐）</text></para>
+    <list id="25" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:9pt; color:#000000;">
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">ORM组件，Telerik OpenAccess ORM.NET Q3 2008或更高版本</text></li>
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">微软AJAX组件 1.0 for ASP.NET 2.0</text></li>
+    </list>
+    <para styleclass="Notes"><text styleclass="Notes" translate="true">使用VS.NET 2008也需安装此组件以保持同VS.NET 2005的兼容，可从(</text><link displaytype="text" defaultstyle="true" type="weblink" href="http://go.microsoft.com/fwlink/?LinkID=77296" target="_blank" styleclass="Notes" translate="true">http://go.microsoft.com/fwlink/?LinkID=77296</link><text styleclass="Notes" translate="true">)下载</text></para>
+    <list id="25" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:9pt; color:#000000;">
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">单元测试公具，NUnit 2.4.8</text></li>
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">数据库，SQL Server 2005或2008（开发推荐Express版本），Oracle 9i或10g</text></li>
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">SubVersion源代码工具，推荐Syncro SVN Client v3.2或更高版本，TortoiseSVN也可</text></li>
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">文档书写工具，Help &amp; Manual 5.1.1或更高版本</text></li>
+    </list>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">从SubVersion源代码服务器取得UO MES代码</text></para>
+    <list id="26" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:宋体; font-size:9pt; color:#000000;">
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">打开SVN Client程序，Repository-&gt;New Repository，连接服务器填：svn://ericguo.3322.org:23</text></li>
+    </list>
+    <para styleclass="Normal"><image src="CheckOut_SVN_1.jpg" scale="100.00%" styleclass="Image Caption"></image></para>
+    <list id="26" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:宋体; font-size:9pt; color:#000000;">
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">添加Repository成功后，右键单击svn://ericguo.3322.org:23，选择Check Out</text></li>
+    </list>
+    <para styleclass="Normal"><image src="CheckOut_SVN_2.jpg" scale="100.00%" styleclass="Image Caption"></image></para>
+    <list id="26" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:宋体; font-size:9pt; color:#000000;">
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">选择或者新建一个空目录以存放UO-MES代码，选择OK后输入用户名和密码</text></li>
+    </list>
+    <para styleclass="Normal"><image src="CheckOut_SVN_3.jpg" scale="100.00%" styleclass="Image Caption"></image></para>
+    <list id="26" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:宋体; font-size:9pt; color:#000000;">
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">按确定，等待所有代码成功CheckOut</text></li>
+    </list>
+    <para styleclass="Normal"><image src="CheckOut_SVN_4.jpg" scale="100.00%" styleclass="Image Caption"></image></para>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">源代码CheckOut后的项目生成</text></para>
+    <list id="27" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:宋体; font-size:9pt; color:#000000;">
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">打开.\SRC\UO_MES\UO_MES.sln。（若使用VS 2008开发，则打开UO_MES_VS2008.sln）</text></li>
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">若使用SQL Server，新建一个数据库：UO_MES</text></li>
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">生成整个解决方案并确认项目均生成成功</text></li>
+    </list>
+    <para styleclass="Notes"><text styleclass="Notes" translate="true">UO_Model项目需要在成功生成后运行VEnhance，一般情况下会自动调用VEnhance，但是若您使用是Visual Web Developer Express快速版，则无法支持自定义项目属性，此时需要在UO Model项目中的生成事件选项卡的生成后事件命令行中添加"C:\Program Files\Telerik\OpenAccess ORM\sdk\VEnhance.exe&quot; -assembly:&quot;$(TargetPath)&quot;手工调用VEnhance。</text></para>
+    <para styleclass="Notes"><text styleclass="Notes" translate="true">UO_ExcelModeler需要Office 2003 PIA支持，若C:\WINDOWS\assembly中找不到Microsoft.Office.Interop.Excel的项目，生成项目将出错，可从微软网站下载(</text><link displaytype="text" defaultstyle="true" type="weblink" href="http://www.microsoft.com/downloads/details.aspx?familyid=3c9a983a-ac14-4125-8ba0-d36d67e0f4ad&amp;displaylang=en" target="_blank" styleclass="Notes" translate="true">http://www.microsoft.com/downloads/details.aspx?familyid=3c9a983a-ac14-4125-8ba0-d36d67e0f4ad&amp;displaylang=en</link><text styleclass="Notes" translate="true">)解决</text></para>
+    <list id="27" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:宋体; font-size:9pt; color:#000000;">
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">设置UO_UnitTest项目为启动项目，在此项目的属性中：</text></li>
+    </list>
+    <list id="28" type="ol" listtype="lower-alpha" formatstring="&#37;&#48;&#58;&#115;&#41;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:宋体; font-size:9pt; color:#000000;">
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">选择调试-&gt;启动操作，选择启动外部程序</text></li>
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">选择NUnit为外部程序，如：C:\Program Files\NUnit 2.4.8\bin\nunit.exe</text></li>
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">启动选项-&gt;命令行参数，输入UO_UnitTest.dll</text></li>
+    </list>
+    <list id="29" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="5" styleclass="Normal" style="font-family:宋体; font-size:9pt; color:#000000;">
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">启动NUnit程序，选中UO_UnitTest-&gt;BaseModel，单击Run</text></li>
+    </list>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">如果都正确，NUnit将显示如下图，查询数据库可以看到MES的基本数据已经导入数据库：</text></para>
+    <para styleclass="Image Caption"><image src="NUnit_Run_Result.jpg" scale="100.00%" styleclass="Image Caption"></image></para>
+    <list id="30" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="6" styleclass="Normal" style="font-family:宋体; font-size:9pt; color:#000000;">
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">从Excel中打开任意一个模型Excel文件，例如下图的S10 Physical Basic Model.xls文件，也可以看到模型被成功导入：</text></li>
+    </list>
+    <para styleclass="Normal"><image src="Excel_Modeler_Result.jpg" scale="100.00%" styleclass="Image Caption"></image></para>
+    <para styleclass="Notes"><text styleclass="Notes" translate="true">若发现没有Excel显示“UO-MES模型”菜单，则可能是由于Excel 2003没有打Service Pack 3补丁造成的，此时UO MES将无法集成UO ExcelModeler到Excel，可参考微软KB908002(</text><link displaytype="text" defaultstyle="true" type="weblink" href="http://support.microsoft.com/kb/908002" target="_blank" styleclass="Notes" translate="true">http://support.microsoft.com/kb/908002</link><text styleclass="Notes" translate="true">)下载安装补丁(</text><link displaytype="text" defaultstyle="true" type="weblink" href="http://download.microsoft.com/download/b/6/7/b6711d3b-b509-4567-8599-98bf3473310f/vs2005-kb908002-enu-x86.exe" target="_blank" styleclass="Notes" translate="true">http://download.microsoft.com/download/b/6/7/b6711d3b-b509-4567-8599-98bf3473310f/vs2005-kb908002-enu-x86.exe</link><text styleclass="Notes" translate="true">)解决。</text></para>
+    <list id="31" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="7" styleclass="Normal" style="font-family:宋体; font-size:9pt; color:#000000;">
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">重新打开UO MES的VS.NET解决方案，将UO_WebApplicaion设置为启动项目，然后运行UO_WebApplication，若出现如下图Web应用程序界面即表示您成功地建构了整个UO MES开发环境。</text></li>
+    </list>
+    <para styleclass="Normal"><image src="WebApp_About.JPG" scale="100.00%" styleclass="Image Caption"></image></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">这也以为着您可以点击左上角的MES系统图标，开始探索您的UO MES功能了。</text></para>
+    <para styleclass="Notes"><text styleclass="Notes" translate="true">若出现如下图错误，表示没有安装MS AJAX 1.0扩展DLL，可从</text><link displaytype="text" defaultstyle="true" type="weblink" href="http://go.microsoft.com/fwlink/?LinkID=77296" target="_blank" styleclass="Notes" translate="true">http://go.microsoft.com/fwlink/?LinkID=77296</link><text styleclass="Notes" translate="true">下载安装，此扩展不包含在VS.NET 2005和VS.NET 2008中，但若想在两种开发环境下使用AJAX技术，则必须安装。</text></para>
+    <para styleclass="Normal"><image src="WebApp_No_AJAX10.JPG" scale="100.00%" styleclass="Image Caption"></image></para>
+    <para styleclass="Normal"></para>
+  </body>
+</topic>

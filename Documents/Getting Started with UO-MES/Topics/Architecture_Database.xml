@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic template="Default" lasteditedby="Administrator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">数据库</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">数据库</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">UO MES支持多种数据库，包括Oracle，MS SQL Server以及完全免费的MySQL，这使得UO MES可以适应新建或者已有的生产环境。</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">在MES系统导入阶段，运用我们的UO Excel Modeler和已有工厂参考模型模板，可以在极短时间内完成为了让MES顺利运行的您的工厂模型。</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">通过UO MES的ORM工具，数据库是自动维护的，您新添加的业务模型对象后，UO MES将会自动创建相关数据表结构。即使UO MES已经投入生产环境，您也可以无忧的让UO MES自动升级和维护您的数据库表结构。</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">同传统MES系统不同，您所要关心的重点已经不是诸如Alter table，index之类的和您工厂业务无关的数据库维护工作，而是您将要通过MES应用于整个工厂的生产业务规则和逻辑。</text></para>
+  </body>
+</topic>

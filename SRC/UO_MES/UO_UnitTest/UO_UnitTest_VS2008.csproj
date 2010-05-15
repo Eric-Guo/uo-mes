@@ -1,0 +1,78 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{19A9C1BD-EFEB-4F97-A387-22017633C46F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UO_UnitTest</RootNamespace>
+    <AssemblyName>UO_UnitTest</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework, Version=2.4.8.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.OpenAccess, Version=2008.3.1327.2, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BaseModel\T00_Import.cs" />
+    <Compile Include="BaseModel\T10_ContainerTxn.cs" />
+    <Compile Include="BaseModel\T20_ResourceTxn.cs" />
+    <Compile Include="BaseModel\T30_CompoundTxn.cs" />
+    <Compile Include="SolarModel\T00_Import.cs" />
+    <Compile Include="Maint\NamedObjectMaint.cs" />
+    <Compile Include="Maint\RevisionedObjectMaint.cs" />
+    <Compile Include="TFModel\T00_Import.cs" />
+    <Compile Include="TFModel\T10_ProcessTxn.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UO_ExcelModeler\UO_ExcelModeler_VS2008.csproj">
+      <Project>{5356B7AD-1081-427B-987F-30C7A67A45C7}</Project>
+      <Name>UO_ExcelModeler_VS008</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UO_Model\UO_Model_VS2008.csproj">
+      <Project>{EA2CB1A1-AC03-4C9B-A021-4049FCAE3A6C}</Project>
+      <Name>UO_Model_VS2008</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UO_Service\UO_Service_VS2008.csproj">
+      <Project>{225F7893-550B-4569-B8ED-6CAD5A72041D}</Project>
+      <Name>UO_Service_VS2008</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

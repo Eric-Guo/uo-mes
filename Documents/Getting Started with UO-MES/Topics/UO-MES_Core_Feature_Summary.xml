@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic template="Default" lasteditedby="Administrator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">UO MES核心功能</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">UO MES核心功能</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">UO MES核心功能是出厂即可用的功能，用户通过UO Excel Modeler建模工具配置工厂实际的各类实体后即可使用，这些功能包括：</text></para>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">工厂建模:</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">集团 (Enterprise),工厂 (Factory),车间(Work Center),设备/设备组(Equipment/Equipment Group)</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">产品流程管理:</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">产品家族(Product Family),产品(Product),生产流程(Workflow),生产工序(Operation)</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">安全管理:</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">用户档案(Employee)，权限角色(Role)</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">生产原因代码:</text></para>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">工单管理功能:</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">工单生成，工单维护</text></para>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">在职品管制功能:</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">批次产生(Start),进站(MoveIn),出站/跳站(MoveTxn),吞吐(Thruput),序列化(Serialize),分批(Split),合批(Combine),关联(Associate),解除关联(Disassociate),次品处理(Defect),扣留(Hold),释放(Release),数据采集(CollectData)</text></para>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">部件单元功能:</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">部件分配(ComponentIssue),部件移除(ComponentRemove)</text></para>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">设备功能:</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">设备吞吐(ResourceThruput),设备设置(ResourceSetup),设备数据采集(CollectResourceData)</text></para>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">客户端:</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">标准的网页应用程序</text></para>
+  </body>
+</topic>

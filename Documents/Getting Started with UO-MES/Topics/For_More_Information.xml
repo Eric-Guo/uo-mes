@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic template="Default" lasteditedby="Administrator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">更多信息</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">更多信息</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">UO MES的更多信息可以参考相关的用户手册，包括：</text></para>
+    <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:9pt; color:#000000;">
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">Installation Manual，安装手册</text></li>
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">Developer Guide，开发者手册</text></li>
+      <li styleclass="Normal"><text styleclass="Normal" translate="true">UO Service服务参考</text></li>
+    </list>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">最后感谢您选择使用UO MES系统，愿您能和我们一样，在使用UO MES的过程中能感到它因为良好设计和灵活方便而带来的愉悦感受。</text></para>
+  </body>
+</topic>

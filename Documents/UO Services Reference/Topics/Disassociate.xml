@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic template="Default" lasteditedby="Administrator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Disassociate（解除关联）</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Disassociate（解除关联）</text></para>
+    </header>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">Disassociate（解除关联）介绍：</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Disassociate(解除关联)服务会把子批从母批下移出。解除Associate（关联）服务所产生的关联关系。Disassociate(解除关联)服务不会改变子批和母批的原有属性和状态。</text></para>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">Disassociate（解除关联）服务所涉及的栏位：</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">Disassociate（解除关联）服务产生的结果：</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">Disassociate（解除关联）服务所关联的数据表：</text></para>
+    <para styleclass="Normal"></para>
+  </body>
+</topic>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XInclude">
+  <topicref type="topic" id="39957181957695" build="ALL" modified="2009-06-02T09:57:53.927Z" icon="0" href="Intro_UO_Service">
+    <caption translate="true">UO MES服务介绍</caption>
+    <topicref type="topic" id="399566631924402" build="ALL" modified="2009-06-02T09:58:02.990Z" icon="0" href="Intro_Overview">
+      <caption translate="true">UO MES服务概览</caption>
+      <topicref type="topic" id="399569327003814" build="ALL" modified="2009-05-23T18:22:14.453Z" icon="0" href="Intro_Overview_Service_Fields">
+        <caption translate="true">服务的字段（输入）</caption>
+      </topicref>
+      <topicref type="topic" id="399568560347967" build="ALL" modified="2009-05-23T18:22:29.562Z" icon="0" href="Intro_Overview_Service_Result">
+        <caption translate="true">服务的结果（输出）</caption>
+      </topicref>
+    </topicref>
+    <topicref type="topic" id="399567989953296" build="ALL" modified="2009-06-02T09:58:15.396Z" icon="0" href="Intro_UO_Base_Service">
+      <caption translate="true">UO MES基本服务</caption>
+    </topicref>
+    <topicref type="topic" id="399568820060244" build="ALL" modified="2009-06-02T09:58:23.583Z" icon="0" href="Intro_Maintenance_Service">
+      <caption translate="true">UO MES对象维护服务</caption>
+    </topicref>
+    <topicref type="topic" id="399568775032241" build="ALL" modified="2009-06-02T09:58:32.037Z" icon="0" href="Intro_Shopfloor_Service">
+      <caption translate="true">UO MES车间层服务</caption>
+    </topicref>
+  </topicref>
+  <topicref type="topic" id="399566832322687" build="ALL" modified="2009-05-23T18:24:22.421Z" icon="0" href="Maintenance_Service">
+    <caption translate="true">对象维护服务</caption>
+    <topicref type="topic" id="399663548019006" build="ALL" modified="2009-06-02T11:03:20.041Z" icon="0" href="MfgOrderMaint">
+      <caption translate="true">MfgOrderMaint</caption>
+    </topicref>
+    <topicref type="topic" id="399664488575541" build="ALL" modified="2009-06-02T11:03:32.151Z" icon="0" href="SpecMaint">
+      <caption translate="true">SpecMaint</caption>
+    </topicref>
+  </topicref>
+  <topicref type="topic" id="399663118504830" build="ALL" modified="2009-06-04T23:06:16.328Z" icon="0" href="Shopfloor_Service">
+    <caption translate="true">车间层服务</caption>
+    <topicref type="topic" id="399568178876223" build="ALL" modified="2009-06-02T10:15:57.820Z" icon="0" href="Container_Service">
+      <caption translate="true">批次相关服务</caption>
+      <topicref type="topic" id="399664414669669" build="ALL" modified="2009-06-04T23:01:59.703Z" icon="0" href="Associate">
+        <caption translate="true">Associate（关联）</caption>
+      </topicref>
+      <topicref type="topic" id="399664894644610" build="ALL" modified="2009-06-04T23:01:44.109Z" icon="0" href="CollectData">
+        <caption translate="true">CollectData（数据采集）</caption>
+      </topicref>
+      <topicref type="topic" id="399664222541753" build="ALL" modified="2009-06-04T23:00:49.578Z" icon="0" href="Combine">
+        <caption translate="true">Combine（合并）</caption>
+      </topicref>
+      <topicref type="topic" id="399663438050526" build="ALL" modified="2009-06-04T23:03:00.453Z" icon="0" href="ComponentIssue">
+        <caption translate="true">ComponentIssue（部件分配）</caption>
+      </topicref>
+      <topicref type="topic" id="399663552718069" build="ALL" modified="2009-06-04T23:04:19.375Z" icon="0" href="ComponentRemove">
+        <caption translate="true">ComponentRemove（部件移除）</caption>
+      </topicref>
+      <topicref type="topic" id="399663135957121" build="ALL" modified="2009-06-09T11:05:47.984Z" icon="0" href="Defect">
+        <caption translate="true">Defect（记录瑕疵）</caption>
+      </topicref>
+      <topicref type="topic" id="399662990154007" build="ALL" modified="2009-06-09T10:38:12.171Z" icon="0" href="Disassociate">
+        <caption translate="true">Disassociate（解除关联）</caption>
+      </topicref>
+      <topicref type="topic" id="399664013267074" build="ALL" modified="2009-06-09T10:39:21.484Z" icon="0" href="Hold">
+        <caption translate="true">Hold（扣留）</caption>
+      </topicref>
+      <topicref type="topic" id="399664325199072" build="ALL" modified="2009-06-09T10:40:28.406Z" icon="0" href="MoveIn">
+        <caption translate="true">MoveIn（进站）</caption>
+      </topicref>
+      <topicref type="topic" id="399662877614090" build="ALL" modified="2009-06-09T11:01:25.312Z" icon="0" href="Release">
+        <caption translate="true">Release（释出）</caption>
+      </topicref>
+      <topicref type="topic" id="399664978048854" build="ALL" modified="2009-06-09T11:01:28.875Z" icon="0" href="Serialize">
+        <caption translate="true">Serialize（切割）</caption>
+      </topicref>
+      <topicref type="topic" id="399665130527321" build="ALL" modified="2009-06-09T11:01:32.156Z" icon="0" href="Split">
+        <caption translate="true">Split（分批）</caption>
+      </topicref>
+      <topicref type="topic" id="399664398912895" build="ALL" modified="2009-06-09T10:43:42.953Z" icon="0" href="Start">
+        <caption translate="true">Start（开始批次）</caption>
+      </topicref>
+      <topicref type="topic" id="399664895554015" build="ALL" modified="2009-06-09T10:47:49.187Z" icon="0" href="Thruput">
+        <caption translate="true">Thruput（记录产出）</caption>
+      </topicref>
+    </topicref>
+    <topicref type="topic" id="399568626084987" build="ALL" modified="2009-06-09T11:12:01.328Z" icon="0" href="Resource_Service">
+      <caption translate="true">资源相关服务</caption>
+      <topicref type="topic" id="399663133605743" build="ALL" modified="2009-06-09T11:11:40.765Z" icon="0" href="CollectResourceData">
+        <caption translate="true">CollectResData（资源数据采集）</caption>
+      </topicref>
+      <topicref type="topic" id="399664794688120" build="ALL" modified="2009-06-02T11:04:02.807Z" icon="0" href="ResourceSetup">
+        <caption translate="true">ResourceSetup</caption>
+      </topicref>
+      <topicref type="topic" id="399665266088907" build="ALL" modified="2009-06-02T11:04:15.260Z" icon="0" href="ResourceThruput">
+        <caption translate="true">ResourceThruput</caption>
+      </topicref>
+    </topicref>
+    <topicref type="topic" id="399565926472374" build="ALL" modified="2009-05-23T18:25:56.250Z" icon="0" href="Compound_Service">
+      <caption translate="true">组合服务</caption>
+      <topicref type="topic" id="399666494463717" build="ALL" modified="2009-06-02T11:04:35.698Z" icon="0" href="MoveOut">
+        <caption translate="true">MoveOut</caption>
+      </topicref>
+    </topicref>
+  </topicref>
+</map>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic template="Default" lasteditedby="Administrator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">服务的字段（输入）</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">服务的字段（输入）</text></para>
+    </header>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">调用UO MES服务就像填表，需要输入数据到字段中，UO MES服务足够智能，可以在输入的同时验证可能的字段问题，UO MES服务的字段如果是对象的话，一般有两种输入可选，对象或者代表对象的名称。</text></para>
+  </body>
+</topic>

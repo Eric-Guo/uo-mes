@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic template="Default" lasteditedby="Administrator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Serialize（切割）</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Serialize（切割）</text></para>
+    </header>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">Serialize（序列化）介绍：</text></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Serialize(序列化)服务被用在生产过程中实际产生子批但又不想Track这些子批的情况。Serialize(序列化)服务会把序列化后的单位作为批次的属性Qty或Qty2，同时每一个单位都会独立的被记录下来收集相关数据。</text></para>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">Serialize（序列化）服务所涉及的栏位：</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">Serialize（序列化）服务产生的结果：</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Heading 2"><text styleclass="Heading 2" translate="true">Serialize（序列化）服务所关联的数据表：</text></para>
+    <para styleclass="Normal"></para>
+  </body>
+</topic>
